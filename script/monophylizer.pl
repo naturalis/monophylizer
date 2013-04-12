@@ -2,9 +2,14 @@
 use strict;
 use warnings;
 use CGI;
+use CGI::Carp 'fatalsToBrowser';
 use Getopt::Long;
 use Bio::Phylo::IO 'parse_tree';
 use Bio::Phylo::Util::Logger ':levels';
+
+# this will be set to true if we are running in a CGI environment
+# so that we then correctly set the MIME-type in the output
+my $as_cgi_process;
 
 # process command line arguments
 my $verbosity = WARN;
@@ -60,15 +65,17 @@ my $metafh;
 
 # process CGI arguments
 my $cgi = CGI->new;
-if ( $cgi->param('cgi') ) {
-	$verbosity  = ERROR;
+if ( $as_cgi_process = $cgi->param('cgi') ) {
+	$verbosity  = INFO;
 	$format     = $cgi->param('format');
 	$separator  = $cgi->param('separator');
 	$comments   = $cgi->param('comments');
 	$whitespace = $cgi->param('whitespace');
 	$trinomials = $cgi->param('trinomials');
-	$infh       = $cgi->param('infile');
-	$metafh     = $cgi->param('metadata');
+	$infile     = $cgi->param('infile');
+	$metadata   = $cgi->param('metadata');
+	$infh       = $cgi->upload('infile')->handle;
+	$metafh     = $cgi->upload('metadata')->handle if $metadata;
 }
 else {
 	open $infh,   '<', $infile   or die $!;
@@ -92,23 +99,25 @@ my $log = Bio::Phylo::Util::Logger->new(
 	'-level' => $verbosity,
 	'-class' => [ 'main' ],
 );
-$log->info("going to read $format tree from file $infile");
+$log->info("going to read $format tree from $infile");
 my $tree = parse_tree(
 	'-format'          => $format,
 	'-handle'          => $infh,
 	'-as_project'      => 1,
-	'-ignore_comments' => $comments,
-	'-keep_whitespace' => $whitespace,
+	'-ignore_comments' => !!$comments,
+	'-keep_whitespace' => !!$whitespace,
 );
 $log->info("done reading tree: $tree");
 
 # read the metadata spreadsheet, if provided
 my %spreadsheet;
+my $fieldcount;
 if ( $metafh ) {
 	$log->info("going to read additional metadata from $metadata");
 	while(<$metafh>) {
 		chomp;
 		my @record = split /\t/, $_;
+		$fieldcount = scalar @record;
 		my $species = shift @record;
 		$spreadsheet{$species} = \@record;
 	}
@@ -119,6 +128,7 @@ if ( $metafh ) {
 my %tipmeta;
 my %seen;
 my $counter = 0;
+my $metacount;
 $log->info("going to traverse the tree");
 $tree->visit_depth_first(
 	'-pre' => sub {
@@ -146,6 +156,7 @@ $tree->visit_depth_first(
 				# a record in a hash table
 				$tipmeta{$taxon} = [] if not $tipmeta{$taxon};
 				push @{ $tipmeta{$taxon} }, \@meta;
+				$metacount = scalar @meta;
 				$log->debug("found taxon '$taxon' with metadata '@meta'");
 
 				# start building a mapping from species names to lists of tips,
@@ -224,6 +235,29 @@ $tree->visit_depth_first(
 );
 
 # now do the final reporting
+if ( $as_cgi_process ) {
+	print <<"HEADER";
+Content-type: text/html
+
+<html>
+	<head>
+		<title>Monophyly assessment result</title>
+		<style type="text/css">
+			td, th { whitespace: nowrap; font-size: small }
+			body { font-family: verdana, arial, sans-serif; font-size: small }
+			th { text-align: left }
+		</style>
+		<script type="text/javascript" src="/sorttable.js"></script>
+	</head>
+	<body>
+		<h1>Results for $infile (click column headers to sort)</h1>
+		<table class="sortable"><tr>
+HEADER
+	for my $i ( 0 .. ( $metacount + $fieldcount + 2 ) ) {
+		print "<th>Column $i</th>";
+	}
+	print '</tr>';
+}
 for my $taxon ( sort { $a cmp $b } keys %tipmeta ) {
 	my @row = ( $taxon );
 
@@ -284,6 +318,13 @@ for my $taxon ( sort { $a cmp $b } keys %tipmeta ) {
 	push @row, @{ $spreadsheet{$taxon} } if $spreadsheet{$taxon};
 
 	# print result
-	print join( "\t", @row ), "\n";
+	if ( $as_cgi_process ) {
+		s/\s/&nbsp;/g for @row;
+		print "<tr><td>", join( "</td><td>", @row ), "</td></tr>\n";
+	}
+	else {
+		print join( "\t", @row ), "\n";
+	}
 }
 
+print "</table></body></html>" if $as_cgi_process;
