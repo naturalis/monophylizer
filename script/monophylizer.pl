@@ -253,8 +253,9 @@ Content-type: text/html
 		<h1>Results for $infile (click column headers to sort)</h1>
 		<table class="sortable"><tr>
 HEADER
+	my @header = qw(Species Assessment Tanglees);
 	for my $i ( 0 .. ( $metacount + $fieldcount + 2 ) ) {
-		print "<th>Column $i</th>";
+		print "<th>",$header[$i] || "Column $i","</th>";
 	}
 	print '</tr>';
 }
