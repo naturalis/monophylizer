@@ -15,7 +15,7 @@ how to do this.
 
 To run the tool on the command line, do this:
 
-	`perl monophylizer.pl -infile <newick tree>`
+	perl monophylizer.pl -infile newickFile.nwk > outputTable.tsv
 
 Additional command line arguments (which you almost certainly won't need) are 
 documented in the source code of monophylizer.pl
