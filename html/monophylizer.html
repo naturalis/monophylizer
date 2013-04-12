@@ -1,0 +1,217 @@
+<html>
+	<head>
+		<title>Monophyly assessment on BOLD trees</title>
+		<style type="text/css">
+			body { font-family: verdana, arial, sans-serif }
+			.toggle { text-decoration: none }
+			.explain { font-size: small; padding-bottom: 10px }
+			table.options { width: 500px }
+		</style>
+		<script type="text/javascript">
+			function toggleExtended(showMe,toggleMe) {
+				var toggleElt = document.getElementById(toggleMe);
+				var showElt = document.getElementById(showMe);
+				if ( showElt.style.display == 'none' ) {
+					showElt.style.display = 'block';
+					toggleElt.innerHTML = '&#9660;';
+					return false;
+				}
+				else {
+					showElt.style.display = 'none';
+					toggleElt.innerHTML = '&#9654;';
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="monophylizer.pl" method="POST">
+			<strong>Tree file:</strong>
+			<input type="file" name="infile" />
+			<input type="hidden" name="cgi" value="1" />
+			<a
+				title="more..."
+				href="#"
+				class="toggle"
+				id="toggle" 
+				onClick="toggleExtended('extended','toggle')">&#9654;</a>
+			<div id="extended" style="display:none">
+				<table class="options">
+					<tr>
+						<td>
+							<a
+								title="more..."
+								href="#"
+								class="toggle"
+								id="toggleComments" 
+								onClick="toggleExtended('comments','toggleComments')">&#9654;</a>
+						</td><td>
+							<strong>Treat square brackets as normal text:</strong>
+							<input 
+								type="checkbox" 
+								checked="checked" 
+								name="comments" />							
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<div id="comments" style="display:none" class="explain">
+							Normally, text inside square brackets ([]) is filtered out of
+							newick and nexus tree descriptions before the tree structure
+							is interpreted. However, some BOLD records incorporate these
+							brackets for other reasons, including cases where they are not
+							balanced (i.e. there is an opening '[' but not a closing ']').
+							This can cause problems when interpreting the tree, unless the
+							square brackets are treated as normal text.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a
+								title="more..."
+								href="#"
+								class="toggle"
+								id="toggleFormat" 
+								onClick="toggleExtended('format','toggleFormat')">&#9654;</a>
+						</td><td>								
+							<strong>Tree file format:</strong>
+							<select name="format">
+								<option value="newick" selected="selected">newick</option>
+								<option value="nexus">nexus</option>
+								<option value="nexml">nexml</option>
+								<option value="phyloxml">phyloxml</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>					
+						<td>
+							<div id="format" style="display:none" class="explain">
+							The default output file format for BOLD is 
+							<a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">newick</a>. 
+							This web service can also operate on other file formats.
+							</div>
+						</td>
+						<td></td>						
+					</tr>
+					<tr>
+						<td>
+							<a
+								title="more..."
+								href="#"
+								class="toggle"
+								id="toggleSeparator" 
+								onClick="toggleExtended('separator','toggleSeparator')">&#9654;</a>
+						</td><td>
+							<strong>Record separator:</strong>
+							<input 
+								type="text" 
+								name="separator" 
+								value="|" />
+						</td>
+					</tr>
+					<tr>
+						<td></td>					
+						<td>
+							<div id="separator" style="display:none" class="explain">
+							The labels of the tips of trees that BOLD exports consist
+							of a taxon name followed by an arbitrary number of metadata
+							fields (specimen and sequence identifiers, localities, etc.).
+							By default, the separator between these fields is the '|'
+							symbol.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a
+								title="more..."
+								href="#"
+								class="toggle"
+								id="toggleWhitespace" 
+								onClick="toggleExtended('whitespace','toggleWhitespace')">&#9654;</a>
+						</td><td>
+							<strong>Keep unescaped whitespace:</strong>
+							<input 
+								type="checkbox" 
+								checked="checked" 
+								name="whitespace" />							
+						</td>
+					</tr>
+					<tr>
+						<td></td>					
+						<td>
+							<div id="whitespace" style="display:none" class="explain">
+							The newick standard recommends that whitespace in species 
+							names is escaped, either by replacing it with underscores 
+							('_') or by putting the entire species name between quotes.
+							This allows some programs to generate pretty indentation to
+							show the 'depth' of a taxon within the tree string. BOLD does
+							not follow this convention: whitespace occurs in unescaped
+							form only to mean true separation between words, so normally
+							this needs to be kept.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a
+								title="more..."
+								href="#"
+								class="toggle"
+								id="toggleTrinomials" 
+								onClick="toggleExtended('trinomials','toggleTrinomials')">&#9654;</a>																				
+						</td><td>
+							<strong>Interpret subspecific epithets:</strong>
+							<input 
+								type="checkbox" 
+								name="trinomials" />							
+						</td>
+					</tr>
+					<tr>
+						<td></td>					
+						<td>	
+							<div id="trinomials" style="display:none" class="explain">
+							By default, this service assumes that any name parts following
+							the first two, if available, are to be ignored. This means 
+							that subspecies (<em>Foo bar vulgaris</em>) are treated as
+							additional instances of the containing species (<em>Foo 
+							bar</em>) and that polyphyly or paraphyly is therefore not
+							assessed separately for subspecies.
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a
+								title="more..."
+								href="#"
+								class="toggle"
+								id="toggleMetadata" 
+								onClick="toggleExtended('metadata','toggleMetadata')">&#9654;</a>						
+						</td><td>
+							<strong>Additional metadata:</strong>							
+							<input type="file" name="metadata" />
+						</td>
+					</tr>
+					<tr>
+						<td></td>					
+						<td>
+							<div id="metadata" style="display:none" class="explain">
+							Here you can provide a tab-separated spreadsheet file whose
+							first column contains species names for which you have 
+							additional metadata not included in the tree description. In
+							the output report, these metadata are cross-referenced with
+							the species names in the tree and included as additional
+							columns in the table.
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div><input type="submit" value="Assess" /></div>
+		</form>
+	</body>
+</html>
