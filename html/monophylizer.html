@@ -76,6 +76,38 @@
                                 title="more..."
                                 href="#"
                                 class="toggle"
+                                id="toggleQuotes" 
+                                onClick="toggleExtended('quotes','toggleQuotes')">&#9654;</a>
+                        </td><td>
+                            <strong>Treat quotes as normal text:</strong>
+                            <input 
+                                type="checkbox" 
+                                checked="checked" 
+                                name="quotes" />                          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="quotes" style="display:none" class="explain">
+                            Normally, single quotes '' are used so that special characters
+                            can be used in species names in newick tree descriptions. For
+                            example, to use parentheses in a name such as
+                            <em>Homo sapiens (Linnaeus)</em> the whole name needs to be
+                            quoted, because parentheses otherwise are interpreted as 
+                            a node in a tree. BOLD doesn't respect this convention: it
+                            uses quotes in things such as Cote d'Azur. Therefore, quotes
+                            should probably be treated as normal text.
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a
+                                title="more..."
+                                href="#"
+                                class="toggle"
                                 id="toggleFormat" 
                                 onClick="toggleExtended('format','toggleFormat')">&#9654;</a>
                         </td><td>                               
