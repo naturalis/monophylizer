@@ -23,6 +23,9 @@ my $separator = '|';
 # any other character without hidden semantics
 my $comments = 1;
 
+# likewise: treat quotes as opaque
+my $quotes = 1;
+
 # treat whitespace as part of the name or metadata:
 # BOLD does not introduce pretty indentation in the 
 # newick string (e.g. as in the NCBI classification 
@@ -57,6 +60,7 @@ GetOptions(
 	'trinomials'  => \$trinomials,
 	'metadata=s'  => \$metadata,
 	'help|?'      => \$help,
+	'quotes'      => \$quotes,
 );
 
 # input file handle for tree and metadata
@@ -74,6 +78,7 @@ if ( $as_cgi_process = $cgi->param('cgi') ) {
 	$trinomials = $cgi->param('trinomials');
 	$infile     = $cgi->param('infile');
 	$metadata   = $cgi->param('metadata');
+	$quotes     = $cgi->param('quotes');
 	$infh       = $cgi->upload('infile')->handle;
 	$metafh     = $cgi->upload('metadata')->handle if $metadata;
 }
@@ -105,6 +110,7 @@ my $tree = parse_tree(
 	'-handle'          => $infh,
 	'-as_project'      => 1,
 	'-ignore_comments' => !!$comments,
+	'-ignore_quotes'   => !!$quotes,
 	'-keep_whitespace' => !!$whitespace,
 );
 $log->info("done reading tree: $tree");
