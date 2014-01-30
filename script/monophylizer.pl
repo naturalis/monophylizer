@@ -234,6 +234,19 @@ $tree->visit_depth_first(
 			
 			# carry forward to deeper nodes
 			else {
+				if ( $node->is_root ) {
+					my $polynode;
+					for my $taxon ( keys %tips ) {
+						if ( $seen{$taxon} ) {
+							$log->info("poly- or paraphyly detected for $taxon");
+							push @{ $seen{$taxon} }, $node;
+							$polynode++;
+						}
+						else {
+							$seen{$taxon} = [ $node ];
+						}
+					}
+				}				
 				$node->set_generic( 'tips' => \%tips );
 			}
 		}
@@ -269,6 +282,7 @@ for my $taxon ( sort { $a cmp $b } keys %tipmeta ) {
 	my @row = ( $taxon );
 
 	# now check to see if the taxon is mono/poly/paraphyletic
+	$log->debug("going to analyze taxon $taxon");
 	my @ancestors = @{ $seen{$taxon} };
 	if ( scalar @ancestors == 1 ) {
 		$log->debug("'$taxon' appears to be monophyletic");
