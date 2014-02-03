@@ -4,8 +4,9 @@
         <style type="text/css">
             body { font-family: verdana, arial, sans-serif }
             .toggle { text-decoration: none }
-            .explain { font-size: small; padding-bottom: 10px }
+            .explain, dd { font-size: small; padding-bottom: 10px }
             table.options { width: 500px }
+            strong, dt { font-weight: bold; font-size: normal }
         </style>
         <script type="text/javascript">
             function toggleExtended(showMe,toggleMe) {
@@ -24,229 +25,302 @@
             }
         </script>
     </head>
-    <body>
-        <form 
-            action="/cgi-bin/monophylizer.pl" 
-            method="POST" 
-            enctype="multipart/form-data">
-            <strong>Tree file:</strong>
-            <input type="file" name="infile" />
-            <input type="hidden" name="cgi" value="1" />
-            <a
-                title="more..."
-                href="#"
-                class="toggle"
-                id="toggle" 
-                onClick="toggleExtended('extended','toggle')">&#9654;</a>
-            <div id="extended" style="display:none">
-                <table class="options">
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleComments" 
-                                onClick="toggleExtended('comments','toggleComments')">&#9654;</a>
-                        </td><td>
-                            <strong>Treat square brackets as normal text:</strong>
-                            <input 
-                                type="checkbox" 
-                                checked="checked" 
-                                name="comments" />                          
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <div id="comments" style="display:none" class="explain">
-                            Normally, text inside square brackets ([]) is filtered out of
-                            newick and nexus tree descriptions before the tree structure
-                            is interpreted. However, some BOLD records incorporate these
-                            brackets for other reasons, including cases where they are not
-                            balanced (i.e. there is an opening '[' but not a closing ']').
-                            This can cause problems when interpreting the tree, unless the
-                            square brackets are treated as normal text.
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleQuotes" 
-                                onClick="toggleExtended('quotes','toggleQuotes')">&#9654;</a>
-                        </td><td>
-                            <strong>Treat quotes as normal text:</strong>
-                            <input 
-                                type="checkbox" 
-                                checked="checked" 
-                                name="quotes" />                          
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <div id="quotes" style="display:none" class="explain">
-                            Normally, single quotes '' are used so that special characters
-                            can be used in species names in newick tree descriptions. For
-                            example, to use parentheses in a name such as
-                            <em>Homo sapiens (Linnaeus)</em> the whole name needs to be
-                            quoted, because parentheses otherwise are interpreted as 
-                            a node in a tree. BOLD doesn't respect this convention: it
-                            uses quotes in things such as Cote d'Azur. Therefore, quotes
-                            should probably be treated as normal text.
-                            </div>
-                        </td>
-                    </tr>
+    <body>    
+		<h1>Monophylizer</h1>
+		<p>The monophylizer is a Perl script written by 
+		<a href="https://science.naturalis.nl/en/people/scientists/rutger-vos/" 
+		target="_blank">Rutger 	Vos</a>, made 
+		available through a webservice that is hosted by 
+		<a href="http://science.naturalis.nl" target="_blank">Naturalis Biodiversity 
+		Center</a>. The monophylizer analyses trees of unlimited size for monophyletic, 
+		molyphyletic and paraphyletic 'species', recognized from taxon names. The source 
+		code is available at: <a href="https://github.com/naturalis/monophylizer" 
+		target="_blank">https://github.com/naturalis/monophylizer</a>.</p>
+	
+		<p>If you found this service useful, please cite us:</p>
+		<blockquote>Mutanen Marko, Huemer Peter, Hausmann Axel, Segerer Andreas, 
+		Godfray Charles, Lopez-Vaamonde Carlos, Dinca Vlad, Vila Roger, Doorenweerd 
+		Camiel, Aarvik Leif, Rougerie Rodolphe, van Nieukerken Erik, Efetov Konstantin, 
+		Tarmann Gerhard, Decaens Thibaud, Johnsen Arild, Vos Rutger, Zahiri Reza, 
+		Ratnasingham Sujeevan, Karsholt Ole, Hebert Paul  (2014) Species-level para- and 
+		polyphyly in DNA barcode gene trees in European Lepidoptera, in Prep.</blockquote>
+		
+		<center>
+		<form 
+				action="/cgi-bin/monophylizer.pl" 
+				method="POST" 
+				enctype="multipart/form-data">
+				<strong>Tree file:</strong>
+				<input type="file" name="infile" />
+				<input type="hidden" name="cgi" value="1" />
+				<a
+					title="more..."
+					href="#"
+					class="toggle"
+					id="toggle" 
+					onClick="toggleExtended('extended','toggle')">&#9654;</a>
+				<div id="extended" style="display:none">
+					<table class="options">
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleComments" 
+									onClick="toggleExtended('comments','toggleComments')">&#9654;</a>
+							</td><td>
+								<strong>Treat square brackets as normal text:</strong>
+								<input 
+									type="checkbox" 
+									checked="checked" 
+									name="comments" />                          
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<div id="comments" style="display:none" class="explain">
+								Normally, text inside square brackets ([]) is filtered out of
+								newick and nexus tree descriptions before the tree structure
+								is interpreted. However, some BOLD records incorporate these
+								brackets for other reasons, including cases where they are not
+								balanced (i.e. there is an opening '[' but not a closing ']').
+								This can cause problems when interpreting the tree, unless the
+								square brackets are treated as normal text.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleQuotes" 
+									onClick="toggleExtended('quotes','toggleQuotes')">&#9654;</a>
+							</td><td>
+								<strong>Treat quotes as normal text:</strong>
+								<input 
+									type="checkbox" 
+									checked="checked" 
+									name="quotes" />                          
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<div id="quotes" style="display:none" class="explain">
+								Normally, single quotes '' are used so that special characters
+								can be used in species names in newick tree descriptions. For
+								example, to use parentheses in a name such as
+								<em>Homo sapiens (Linnaeus)</em> the whole name needs to be
+								quoted, because parentheses otherwise are interpreted as 
+								a node in a tree. BOLD doesn't respect this convention: it
+								uses quotes in things such as Cote d'Azur. Therefore, quotes
+								should probably be treated as normal text.
+								</div>
+							</td>
+						</tr>
 
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleFormat" 
-                                onClick="toggleExtended('format','toggleFormat')">&#9654;</a>
-                        </td><td>                               
-                            <strong>Tree file format:</strong>
-                            <select name="format">
-                                <option value="newick" selected="selected">newick</option>
-                                <option value="nexus">nexus</option>
-                                <option value="nexml">nexml</option>
-                                <option value="phyloxml">phyloxml</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>                   
-                        <td>
-                            <div id="format" style="display:none" class="explain">
-                            The default output file format for BOLD is 
-                            <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">newick</a>. 
-                            This web service can also operate on other file formats.
-                            </div>
-                        </td>
-                        <td></td>                       
-                    </tr>
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleSeparator" 
-                                onClick="toggleExtended('separator','toggleSeparator')">&#9654;</a>
-                        </td><td>
-                            <strong>Record separator:</strong>
-                            <input 
-                                type="text" 
-                                name="separator" 
-                                value="|" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>                   
-                        <td>
-                            <div id="separator" style="display:none" class="explain">
-                            The labels of the tips of trees that BOLD exports consist
-                            of a taxon name followed by an arbitrary number of metadata
-                            fields (specimen and sequence identifiers, localities, etc.).
-                            By default, the separator between these fields is the '|'
-                            symbol.
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleWhitespace" 
-                                onClick="toggleExtended('whitespace','toggleWhitespace')">&#9654;</a>
-                        </td><td>
-                            <strong>Keep unescaped whitespace:</strong>
-                            <input 
-                                type="checkbox" 
-                                checked="checked" 
-                                name="whitespace" />                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>                   
-                        <td>
-                            <div id="whitespace" style="display:none" class="explain">
-                            The newick standard recommends that whitespace in species 
-                            names is escaped, either by replacing it with underscores 
-                            ('_') or by putting the entire species name between quotes.
-                            This allows some programs to generate pretty indentation to
-                            show the 'depth' of a taxon within the tree string. BOLD does
-                            not follow this convention: whitespace occurs in unescaped
-                            form only to mean true separation between words, so normally
-                            this needs to be kept.
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleTrinomials" 
-                                onClick="toggleExtended('trinomials','toggleTrinomials')">&#9654;</a>                                                                               
-                        </td><td>
-                            <strong>Interpret subspecific epithets:</strong>
-                            <input 
-                                type="checkbox" 
-                                name="trinomials" />                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>                   
-                        <td>    
-                            <div id="trinomials" style="display:none" class="explain">
-                            By default, this service assumes that any name parts following
-                            the first two, if available, are to be ignored. This means 
-                            that subspecies (<em>Foo bar vulgaris</em>) are treated as
-                            additional instances of the containing species (<em>Foo 
-                            bar</em>) and that polyphyly or paraphyly is therefore not
-                            assessed separately for subspecies.
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a
-                                title="more..."
-                                href="#"
-                                class="toggle"
-                                id="toggleMetadata" 
-                                onClick="toggleExtended('metadata','toggleMetadata')">&#9654;</a>                       
-                        </td><td>
-                            <strong>Additional metadata:</strong>                           
-                            <input type="file" name="metadata" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>                   
-                        <td>
-                            <div id="metadata" style="display:none" class="explain">
-                            Here you can provide a tab-separated spreadsheet file whose
-                            first column contains species names for which you have 
-                            additional metadata not included in the tree description. In
-                            the output report, these metadata are cross-referenced with
-                            the species names in the tree and included as additional
-                            columns in the table.
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div><input type="submit" value="Assess" /></div>
-        </form>
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleFormat" 
+									onClick="toggleExtended('format','toggleFormat')">&#9654;</a>
+							</td><td>                               
+								<strong>Tree file format:</strong>
+								<select name="format">
+									<option value="newick" selected="selected">newick</option>
+									<option value="nexus">nexus</option>
+									<option value="nexml">nexml</option>
+									<option value="phyloxml">phyloxml</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td></td>                   
+							<td>
+								<div id="format" style="display:none" class="explain">
+								The default output file format for BOLD is 
+								<a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">newick</a>. 
+								This web service can also operate on other file formats.
+								</div>
+							</td>
+							<td></td>                       
+						</tr>
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleSeparator" 
+									onClick="toggleExtended('separator','toggleSeparator')">&#9654;</a>
+							</td><td>
+								<strong>Record separator:</strong>
+								<input 
+									type="text" 
+									name="separator" 
+									value="|" />
+							</td>
+						</tr>
+						<tr>
+							<td></td>                   
+							<td>
+								<div id="separator" style="display:none" class="explain">
+								The labels of the tips of trees that BOLD exports consist
+								of a taxon name followed by an arbitrary number of metadata
+								fields (specimen and sequence identifiers, localities, etc.).
+								By default, the separator between these fields is the '|'
+								symbol.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleWhitespace" 
+									onClick="toggleExtended('whitespace','toggleWhitespace')">&#9654;</a>
+							</td><td>
+								<strong>Keep unescaped whitespace:</strong>
+								<input 
+									type="checkbox" 
+									checked="checked" 
+									name="whitespace" />                            
+							</td>
+						</tr>
+						<tr>
+							<td></td>                   
+							<td>
+								<div id="whitespace" style="display:none" class="explain">
+								The newick standard recommends that whitespace in species 
+								names is escaped, either by replacing it with underscores 
+								('_') or by putting the entire species name between quotes.
+								This allows some programs to generate pretty indentation to
+								show the 'depth' of a taxon within the tree string. BOLD does
+								not follow this convention: whitespace occurs in unescaped
+								form only to mean true separation between words, so normally
+								this needs to be kept.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleTrinomials" 
+									onClick="toggleExtended('trinomials','toggleTrinomials')">&#9654;</a>                                                                               
+							</td><td>
+								<strong>Interpret subspecific epithets:</strong>
+								<input 
+									type="checkbox" 
+									name="trinomials" />                            
+							</td>
+						</tr>
+						<tr>
+							<td></td>                   
+							<td>    
+								<div id="trinomials" style="display:none" class="explain">
+								By default, this service assumes that any name parts following
+								the first two, if available, are to be ignored. This means 
+								that subspecies (<em>Foo bar vulgaris</em>) are treated as
+								additional instances of the containing species (<em>Foo 
+								bar</em>) and that polyphyly or paraphyly is therefore not
+								assessed separately for subspecies.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a
+									title="more..."
+									href="#"
+									class="toggle"
+									id="toggleMetadata" 
+									onClick="toggleExtended('metadata','toggleMetadata')">&#9654;</a>                       
+							</td><td>
+								<strong>Additional metadata:</strong>                           
+								<input type="file" name="metadata" />
+							</td>
+						</tr>
+						<tr>
+							<td></td>                   
+							<td>
+								<div id="metadata" style="display:none" class="explain">
+								Here you can provide a tab-separated spreadsheet file whose
+								first column contains species names for which you have 
+								additional metadata not included in the tree description. In
+								the output report, these metadata are cross-referenced with
+								the species names in the tree and included as additional
+								columns in the table.
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div><input type="submit" value="Assess" /></div>
+			</form>
+		</center>
+		<h1>Suggested workflow</h1>
+		<ol>
+			<li>Select the tree file you wish to analyse by clicking the file chooser.</li>
+			<li>Click on the purple triangle to expand the option menu or show additional
+			information on options. Set the correct parameters for your tree file, default 
+			settings will work for trees generated by BOLD.</li>
+			<li>Click the 'Assess' button</li>
+			<li>From the results page, you may copy paste everything (CTRL+A/CMD+A) into a 
+			spreadsheet (use Paste Special > only values, in Microsoft Excel).</li>
+			<li>Use your browser's back button to analyse another tree file.</li>
+		</ol>
+
+		<h1>Q&A section (please read before reaching out for help)</h1>
+		<dl>		
+			<dt>Question: What does this error mean?<br />
+				<code>Software error:
+					Can't call method "visit_depth_first" on an undefined value at 
+					/usr/lib/cgi-bin/monophylizer.pl line 254, &lt;GEN0&gt; line 1. </code>
+			</dt>
+			<dd>Answer: Your tree file is missing a semicolon at the end, which is a 
+			mandatory for a newick style tree format file to indicate the end of a tree 
+			line. This is a known issue with trees generated by BOLD. Open your tree file 
+			in a text editor and add a semicolon to the end prior to analysing the 
+			tree.</dd>
+
+			<dt>Question: Will the monophylizer only work on BOLD trees?</dt>
+			<dd>Answer: No, the script will work on a wide variety of trees, select the 
+			format of your tree file format accordingly (use the arrow to expand the 
+			menu). Just realize that the script will use the first section of the taxon 
+			name, up to the first record separator, to identify conspecific (or 
+			congeneric) taxa. It expects that the taxon name is composed of a genus name, 
+			followed by a whitespace, and then a species name: the default BOLD output. 
+			If a subspecies name is also added, separated by another whitespace, it can 
+			either ignore this or interpret this through the option menu. If there are 
+			no whitespaces at all, the script will still function but will be unable to 
+			recognize subspecies. Effectively the whole species name will then be 
+			interpreted as a genus name.</dd>
+
+			<dt>Question: Why are there single quote signs before each taxon name in 
+			the output?</dt>
+			<dd>Answer: BOLD does not filter taxon names for the presence of single 
+			quotes, for example when a province name like Cote D'azur is included. The 
+			single quote in Newick format indicates the ending of a taxon name, and would 
+			crash the script if present inside a taxon name. Therefore the option 'Treat 
+			quotes as normal text:' has been added. By ticking this option the script 
+			will not crash when a single quote is present inside a taxon name, but has 
+			the side effect that it will show that one is added before and at the ending 
+			of each taxon name. Only disable this option if  you are certain that there 
+			are no single quotes in the taxon names. Also, keep in mind that in any 
+			additional metadata the taxon names will need to begin with a single quote 
+			as well to match the taxon names on the result page.</dd>
+		</dl>
     </body>
 </html>
