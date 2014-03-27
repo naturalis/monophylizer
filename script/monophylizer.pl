@@ -2,259 +2,272 @@
 use strict;
 use warnings;
 use CGI;
+use Data::Dumper;
 use CGI::Carp 'fatalsToBrowser';
 use Getopt::Long;
+use Bio::Phylo::Factory;
 use Bio::Phylo::IO 'parse_tree';
 use Bio::Phylo::Util::Logger ':levels';
 
-# this will be set to true if we are running in a CGI environment
-# so that we then correctly set the MIME-type in the output
-my $as_cgi_process;
+my %args = process_args();
+my $taxa = make_taxa(@args{qw(tree trinomials separator factory)});
+read_spreadsheet($taxa,$args{'metafh'});
+index_nodes($args{'tree'});
+my @result = do_assessment($taxa);
 
-# process command line arguments
-my $verbosity = WARN;
-my $format = 'newick';
-my $separator = '|';
-
-# treat comment characters as opaque: BOLD does not
-# introduce [newick comments], but it *does*
-# create records that potentially have square
-# brackets in them, which need to be treated as
-# any other character without hidden semantics
-my $comments = 1;
-
-# likewise: treat quotes as opaque
-my $quotes = 1;
-
-# treat whitespace as part of the name or metadata:
-# BOLD does not introduce pretty indentation in the 
-# newick string (e.g. as in the NCBI classification 
-# tree) *and* it does not escape whitespace by quoting,
-# so we need to retain it
-my $whitespace = 1;
-
-# optionally, the user may supply additional metadata
-# in tab-separated format. this needs to be cross-referenced
-# with species names in the final result
-my $metadata;
-
-# this is the input tree file, by default this will be
-# a file with a single newick tree in it that uses the
-# formatting variant implemented by BOLD
-my $infile;
-
-# this flag indicates whether to treat trinomials
-# (i.e. species + subspecific epithet) as separate
-# taxa. by default we do not do this: anything after
-# putative genus + species is ignore
-my $trinomials = 0;
-
-my $help;
-GetOptions(
-	'infile=s'    => \$infile,
-	'verbose+'    => \$verbosity,
-	'format=s'    => \$format,
-	'separator=s' => \$separator,
-	'comments'    => \$comments,
-	'whitespace'  => \$whitespace,
-	'trinomials'  => \$trinomials,
-	'metadata=s'  => \$metadata,
-	'help|?'      => \$help,
-	'quotes'      => \$quotes,
-);
-
-# input file handle for tree and metadata
-my $infh;
-my $metafh;
-
-# process CGI arguments
-my $cgi = CGI->new;
-if ( $as_cgi_process = $cgi->param('cgi') ) {
-	$verbosity  = INFO;
-	$format     = $cgi->param('format');
-	$separator  = $cgi->param('separator');
-	$comments   = $cgi->param('comments');
-	$whitespace = $cgi->param('whitespace');
-	$trinomials = $cgi->param('trinomials');
-	$infile     = $cgi->param('infile');
-	$metadata   = $cgi->param('metadata');
-	$quotes     = $cgi->param('quotes');
-	$infh       = $cgi->upload('infile')->handle;
-	$metafh     = $cgi->upload('metadata')->handle if $metadata;
+if ( $args{'cgi'} ) {
+	print_html(@result);
 }
 else {
-	open $infh,   '<', $infile   or die $!;
-	open $metafh, '<', $metadata or die $! if $metadata;
-}
-
-# emit help message if run with --help, -help, -h or -?
-if ( $help ) {
-	print <<"USAGE";
-$0 -i <tree file> [-f <format>] [-s <separator>] [-m <metadata>] [--verbose]
-
-Default file format is newick, default separator between species name and identifier
-is the '|' symbol.
-
-USAGE
-exit 0;
-}
-
-# instantiate helper objects
-my $log = Bio::Phylo::Util::Logger->new(
-	'-level' => $verbosity,
-	'-class' => [ 'main' ],
-);
-$log->info("going to read $format tree from $infile");
-my $tree = parse_tree(
-	'-format'          => $format,
-	'-handle'          => $infh,
-	'-as_project'      => 1,
-	'-ignore_comments' => !!$comments,
-	'-ignore_quotes'   => !!$quotes,
-	'-keep_whitespace' => !!$whitespace,
-);
-$log->info("done reading tree: $tree");
-
-# read the metadata spreadsheet, if provided
-my %spreadsheet;
-my $fieldcount;
-if ( $metafh ) {
-	$log->info("going to read additional metadata from $metadata");
-	while(<$metafh>) {
-		chomp;
-		my @record = split /\t/, $_;
-		$fieldcount = scalar @record;
-		my $species = shift @record;
-		$spreadsheet{$species} = \@record;
+	for my $r ( sort { $a->[0] cmp $b->[0] } @result ) {
+		print join("\t",@$r), "\n";
 	}
-	$log->info("done reading metadata");
 }
 
-# now traverse the tree
-my %tipmeta;
-my %seen;
-my $counter = 0;
-my $metacount;
-$log->info("going to traverse the tree");
-$tree->visit_depth_first(
-	'-pre' => sub {
-		my $node = shift;
-		
-		# get the name for each tip
-		if ( $node->is_terminal ) {
-			my $name = $node->get_name;
-			
-			# split the name into taxon name (first part) and subsequent metadata
-			my ( $taxon, @meta ) = split /\Q$separator\E/, $name;
-			if ( $taxon ) {
-
-				# split trinomials
-				my @parts = split /\s/, $taxon;
-				if ( not $trinomials and scalar @parts > 2 ) {
-					$log->info("will interpret '$taxon' as '$parts[0] $parts[1]'");
-					$taxon = $parts[0] . ' ' . $parts[1];
+# does the poly/para assessment as per:
+# http://biophylo.blogspot.nl/2013/04/algorithm-for-distinguishing-polyphyly.html
+sub do_assessment {
+	my @result;
+	shift->visit(sub{
+		my $taxon  = shift;
+		my $name   = $taxon->get_name;
+		my $status = 'monophyletic';
+		my @ids    = @{ $taxon->get_generic('ids') };
+		my @meta   = @{ $taxon->get_generic('meta') } if $taxon->get_generic('meta');
+		my @tanglees;	
+		if ( my $nodes = $taxon->get_generic('stopnodes') ) {
+			if ( scalar(@$nodes) > 1 ) {
+				my @n = sort { $a->get_generic('left') <=> $b->get_generic('left') } @$nodes;
+				$status = 'paraphyletic';
+				for my $i ( 0 .. $#n - 1 ) {
+					$status = 'polyphyletic' if $n[$i]->get_generic('right') < $n[$i+1]->get_generic('right');
 				}
-				elsif ( $trinomials and scalar @parts > 2 ) {
-					$log->info("will retain subspecific epithet in '$taxon'");					
-				}
-
-				# store the metadata that was embedded in the tip label as
-				# a record in a hash table
-				$tipmeta{$taxon} = [] if not $tipmeta{$taxon};
-				push @{ $tipmeta{$taxon} }, \@meta;
-				$metacount = scalar @meta;
-				$log->debug("found taxon '$taxon' with metadata '@meta'");
-
-				# start building a mapping from species names to lists of tips,
-				# once we get deeper in the tree we can then test whether these
-				# lists are monophyletic
-				$node->set_generic( 'tips' => { $taxon => [ $node ] } );
-			}
-			
-			# somehow badly formatted name, emit warning
-			else {
-				$log->warn("couldn't process name '$name' with separator '$separator'");
+				my %t = map { $_->get_id => $_ } map { $_->get_taxon } map { @{ $_->get_terminals } } @n;
+				@tanglees = grep { $_ ne $name } map { $_->get_name  } values %t;
 			}
 		}
-		else {
-			$node->set_generic( 'pre' => $counter++ );
-		}
-	},
-	'-post' => sub {
-		my $node = shift;
-		
-		# now process the deeper nodes
-		if ( $node->is_internal ) {
-			$node->set_generic( 'post' => $counter++ );
-			my %tips;
-			
-			# merge the species => tips mappings of all children
-			for my $child ( @{ $node->get_children } ) {
-				my $taxa = $child->get_generic('tips');
-				for my $taxon ( keys %{ $taxa } ) {
-					if ( not $tips{$taxon} ) {
-						$tips{$taxon} = $taxa->{$taxon};
-					}
-					else {
-						push @{ $tips{$taxon} }, @{ $taxa->{$taxon} };
-					}
-				}
-			}
-			
-			# more than 1 species subtended. in this situation the following
-			# scenarios may apply:
-			# 1. this is a deep node that subtends multiple, correctly lineage-sorted
-			#    species
-			# 2. this is a shallow node where an individual from species A pops up
-			#    within a cluster of species B (i.e. species A is paraphyletic with
-			#    respect to species B)
-			# 3. this is a shallow node where species A and B are mangled together,
-			#    (i.e. they are polyphyletic with respect to each other, so report
-			#    all permutations)
-			if ( 1 < scalar keys %tips ) {
-				my $polynode;
-				for my $taxon ( keys %tips ) {
-					if ( $seen{$taxon} ) {
-						$log->info("poly- or paraphyly detected for $taxon");
-						push @{ $seen{$taxon} }, $node;
-						$polynode++;
-					}
-					else {
-						$seen{$taxon} = [ $node ];
-					}
-				}
+		push @result, [ $name, $status, join(',',@tanglees), join(',',@ids), join(',',@meta) ];
+	});
+	return @result;
+}
 
-				# reset the hash, we will evaluate later whether it was poly or para								
-				$node->set_generic( 'tips' => {} );
-				
-				# store the tip labels if this is a polynode so that we can later
-				# report the tangles
-				$node->set_generic( 'tangles' => [ keys %tips ] );
-			}
-			
-			# carry forward to deeper nodes
-			else {
-				if ( $node->is_root ) {
-					my $polynode;
-					for my $taxon ( keys %tips ) {
-						if ( $seen{$taxon} ) {
-							$log->info("poly- or paraphyly detected for $taxon");
-							push @{ $seen{$taxon} }, $node;
-							$polynode++;
-						}
-						else {
-							$seen{$taxon} = [ $node ];
-						}
-					}
-				}				
-				$node->set_generic( 'tips' => \%tips );
-			}
+# makes a taxa block that contains all the distinct species, with their ID annotations
+sub make_taxa {
+	my ( $tree, $trinomials, $separator, $fac ) = @_;
+	my %taxa;
+	for my $tip ( @{ $tree->get_terminals } ) {
+		my $label = $tip->get_name;
+		if ( $label =~ /^'?(.+?)\Q$separator\E(.+?)'?$/ ) {
+			my ( $name, $meta ) = ( $1, $2 );
+			my @parts = split /_/, $name;
+			my $taxon_name = $trinomials ? join ' ', @parts[0..2] : join ' ', @parts[0,1];
+			my $taxon = $taxa{$taxon_name} //= $fac->create_taxon('-name'=>$taxon_name);
+			my $ids = $taxon->get_generic('ids') || [];
+			push @$ids, $meta;
+			$taxon->set_generic( 'ids' => $ids );
+			$tip->set_taxon($taxon);
+		}
+	}
+	my $taxa = $fac->create_taxa;
+	$taxa->insert($_) for values %taxa;
+	return $taxa;
+}
+
+# reads extra metadata from spreadsheet, attaches records to taxa
+sub read_spreadsheet {
+	my ( $taxa, $metafh ) = @_;
+	if ( $metafh ) {
+		while(<$metafh>) {
+			chomp;
+			my @record = split /\t/, $_;
+			my $name = shift @record;
+			my $taxon = $taxa->get_by_name($name);
+			$taxon->set_generic( 'meta' => \@record );
 		}
 	}	
-);
+}
 
-# now do the final reporting
-if ( $as_cgi_process ) {
+# for each taxon, collects its stopnodes and indexes them with left and right counters
+sub index_nodes {
+	my $tree = shift;
+	my $counter = 1;
+	$tree->visit_depth_first(
+		'-pre' => sub { 
+			
+			# apply left index
+			shift->set_generic( 'left'  => $counter++ ) 
+		},
+		'-pre_sister' => sub {
+		
+			# apply right index
+			shift->set_generic( 'right' => $counter++ );
+		},
+		'-post' => sub { 
+			my $node = shift;
+			$node->set_generic( 'right' => $counter++ ) if not $node->get_generic('right');
+			
+			# the node is terminal
+			if ( my $taxon = $node->get_taxon ) {
+			
+				# store its taxon by index
+				$node->set_generic( 'taxa' => { $taxon->get_id => $taxon } );
+			}
+			else {
+			
+				# merge all taxa from the immediate children
+				my %merged;
+				for my $c ( @{ $node->get_children } ) {
+					my %taxa = %{ $c->get_generic('taxa') };
+					$merged{$_} = $taxa{$_} for keys %taxa;
+				}
+				
+				# if two distinct taxa, it's a 'stopnode':
+				# http://biophylo.blogspot.nl/2013/04/algorithm-for-distinguishing-polyphyly.html
+				if ( scalar(keys(%merged)) >= 2 ) {
+									
+					# re-set the tally
+					$node->set_generic( 'taxa' => {}, 'tanglees' => [ values %merged ] );				
+
+					# tell all the subtended taxa about their stopnode				
+					for my $taxon ( values %merged ) {
+						my $stopnodes = $taxon->get_generic('stopnodes') || [];
+						push @$stopnodes, $node;
+						$taxon->set_generic( 'stopnodes' => $stopnodes );
+					}
+				}
+				
+				# continue the tally
+				else {
+					$node->set_generic( 'taxa' => \%merged );
+				}
+			}
+		},
+	);
+}
+
+# process command line / CGI arguments
+sub process_args {
+	# this will be set to true if we are running in a CGI environment
+	# so that we then correctly set the MIME-type in the output
+	my $as_cgi_process;
+
+	# process command line arguments
+	my $verbosity = WARN;
+	my $format = 'newick';
+	my $separator = '|';
+
+	# treat comment characters as opaque: BOLD does not
+	# introduce [newick comments], but it *does*
+	# create records that potentially have square
+	# brackets in them, which need to be treated as
+	# any other character without hidden semantics
+	my $comments = 1;
+
+	# likewise: treat quotes as opaque
+	my $quotes = 1;
+
+	# treat whitespace as part of the name or metadata:
+	# BOLD does not introduce pretty indentation in the 
+	# newick string (e.g. as in the NCBI classification 
+	# tree) *and* it does not escape whitespace by quoting,
+	# so we need to retain it
+	my $whitespace = 1;
+
+	# optionally, the user may supply additional metadata
+	# in tab-separated format. this needs to be cross-referenced
+	# with species names in the final result
+	my $metadata;
+
+	# this is the input tree file, by default this will be
+	# a file with a single newick tree in it that uses the
+	# formatting variant implemented by BOLD
+	my $infile;
+
+	# this flag indicates whether to treat trinomials
+	# (i.e. species + subspecific epithet) as separate
+	# taxa. by default we do not do this: anything after
+	# putative genus + species is ignore
+	my $trinomials = 0;
+
+	my $help;
+	GetOptions(
+		'infile=s'    => \$infile,
+		'verbose+'    => \$verbosity,
+		'format=s'    => \$format,
+		'separator=s' => \$separator,
+		'comments'    => \$comments,
+		'whitespace'  => \$whitespace,
+		'trinomials'  => \$trinomials,
+		'metadata=s'  => \$metadata,
+		'help|?'      => \$help,
+		'quotes'      => \$quotes,
+	);
+
+	# input file handle for tree and metadata
+	my $infh;
+	my $metafh;
+
+	# process CGI arguments
+	my $cgi = CGI->new;
+	if ( $as_cgi_process = $cgi->param('cgi') ) {
+		$verbosity  = INFO;
+		$format     = $cgi->param('format');
+		$separator  = $cgi->param('separator');
+		$comments   = $cgi->param('comments');
+		$whitespace = $cgi->param('whitespace');
+		$trinomials = $cgi->param('trinomials');
+		$infile     = $cgi->param('infile');
+		$metadata   = $cgi->param('metadata');
+		$quotes     = $cgi->param('quotes');
+		$infh       = $cgi->upload('infile')->handle;
+		$metafh     = $cgi->upload('metadata')->handle if $metadata;
+	}
+	else {
+		open $infh,   '<', $infile   or die $!;
+		open $metafh, '<', $metadata or die $! if $metadata;
+	}
+
+	# emit help message if run with --help, -help, -h or -?
+	if ( $help ) {
+		print <<"USAGE";
+	$0 -i <tree file> [-f <format>] [-s <separator>] [-m <metadata>] [--verbose]
+
+	Default file format is newick, default separator between species name and identifier
+	is the '|' symbol.
+
+USAGE
+		exit 0;
+	}
+
+	# instantiate helper objects
+	my $fac = Bio::Phylo::Factory->new;
+	my $log = Bio::Phylo::Util::Logger->new(
+		'-level' => $verbosity,
+		'-class' => [ 'main' ],
+	);
+	$log->info("going to read $format tree from $infile");
+	my $tree = parse_tree(
+		'-format'          => $format,
+		'-handle'          => $infh,
+		'-as_project'      => 1,
+		'-ignore_comments' => !!$comments,
+		'-ignore_quotes'   => !!$quotes,
+		'-keep_whitespace' => !!$whitespace,
+	);
+	$log->info("done reading tree: $tree");
+	return 
+		'tree'       => $tree,
+		'log'        => $log,
+		'metafh'     => $metafh,
+		'separator'  => $separator,
+		'trinomials' => $trinomials,
+		'factory'    => $fac,
+		'cgi'        => $as_cgi_process;
+}
+
+# writes an HTML table
+sub print_html {
+	my @result = @_;
 	print <<"HEADER";
 Content-type: text/html
 
@@ -269,83 +282,16 @@ Content-type: text/html
 		<script type="text/javascript" src="/sorttable.js"></script>
 	</head>
 	<body>
-		<h1>Results for $infile (click column headers to sort)</h1>
+		<h1>Results (click column headers to sort)</h1>
 		<table class="sortable"><tr>
 HEADER
-	my @header = qw(Species Assessment Tanglees);
-	for my $i ( 0 .. ( $metacount + $fieldcount + 2 ) ) {
-		print "<th>",$header[$i] || "Column $i","</th>";
+	for my $column ( qw(Species Assessment Tanglees IDs Metadata) ) {
+		print "<th>$column</th>";
 	}
-	print '</tr>';
+	print '</tr>', "\n";
+	for my $row ( sort { $a->[0] cmp $b->[0] } @result ) {
+		print '<tr>', map { "<td>$_</td>" } @$row;
+		print "</tr>\n";
+	}
+	print "</table></body></html>"	
 }
-for my $taxon ( sort { $a cmp $b } keys %tipmeta ) {
-	my @row = ( $taxon );
-
-	# now check to see if the taxon is mono/poly/paraphyletic
-	$log->debug("going to analyze taxon $taxon");
-	my @ancestors = @{ $seen{$taxon} };
-	if ( scalar @ancestors == 1 ) {
-		$log->debug("'$taxon' appears to be monophyletic");
-		push @row, 'monophyletic', '';
-	}
-	else {
-		# I *think* we can now proceed as follows:
-		# we first sort all the ancestors by their pre-order labeling. then, when we iterate
-		# over them, the post-order label of the focal node should be larger than that of the
-		# next one if the two are nested (i.e. paraphyletic), otherwise they are polyphyletic
-		my @sorted = sort { $a->get_generic('pre') <=> $b->get_generic('pre') } @ancestors;
-		my $jumps = 0;
-		for my $i ( 0 .. $#sorted ) {
-			if ( $i < $#sorted ) {
-				my $pre      = $sorted[ $i     ]->get_generic('pre');
-				my $nextpre  = $sorted[ $i + 1 ]->get_generic('pre');
-				my $post     = $sorted[ $i     ]->get_generic('post');
-				my $nextpost = $sorted[ $i + 1 ]->get_generic('post');
-				if ( $pre + 1 != $nextpre && $post < $nextpost ) {
-					$jumps++;
-				}
-			}
-		}
-
-		# i.e. the ancestors were not all nested
-		if ( $jumps ) {
-			$log->info("'$taxon' appears to be polyphyletic, seen $jumps jumps");
-			push @row, 'polyphyletic';
-		}
-		else {
-			$log->info("'$taxon' appears to be paraphyletic, seen $jumps jumps");
-			push @row, 'paraphyletic';
-		}
-
-		# the sorted ancestors at this point also have the ancestor of the MRCA of the poly tips, we must ignore this
-		my %tangles = map { $_ => 1 } grep { /\S/ } map { @{ $_->get_generic('tangles') } } @sorted[ 1 .. $#sorted ];
-		delete $tangles{$taxon}; # delete self
-		push @row, join ',', keys %tangles;
-	}
-
-	# first collapse all the species-level metadata
-	my @records = @{ $tipmeta{ $taxon } };
-	$log->debug("going to collapse ".scalar(@records)." metadata records");
-	my $fieldcount = $#{ $records[0] };
-	for my $i ( 0 .. $fieldcount ) {
-		my %values;
-		for my $record ( @records ) {
-			$values{ $record->[$i] } = 1;
-		}
-		push @row, join ',', sort { $a cmp $b } keys %values;
-	}
-
-	# finally, append any pre-existing metadata from the spreadsheet
-	push @row, @{ $spreadsheet{$taxon} } if $spreadsheet{$taxon};
-
-	# print result
-	if ( $as_cgi_process ) {
-		s/\s/&nbsp;/g for @row;
-		print "<tr><td>", join( "</td><td>", @row ), "</td></tr>\n";
-	}
-	else {
-		print join( "\t", @row ), "\n";
-	}
-}
-
-print "</table></body></html>" if $as_cgi_process;
