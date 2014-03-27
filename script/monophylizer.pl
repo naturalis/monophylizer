@@ -284,7 +284,7 @@ Content-type: text/html
 		<script type="text/javascript" src="/sorttable.js"></script>
 	</head>
 	<body>
-		<h1>Results (click column headers to sort)</h1>
+		<h1>Results, March 2014 algorithm version  (click column headers to sort)</h1>
 		<table class="sortable"><tr>
 HEADER
 	for my $column ( qw(Species Assessment Tanglees IDs Metadata) ) {
