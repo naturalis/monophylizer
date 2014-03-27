@@ -19,6 +19,8 @@ if ( $args{'cgi'} ) {
 	print_html(@result);
 }
 else {
+	my @header = qw(Species Assessment Tanglees IDs Metadata);
+	print join("\t",@header), "\n";	
 	for my $r ( sort { $a->[0] cmp $b->[0] } @result ) {
 		print join("\t",@$r), "\n";
 	}
