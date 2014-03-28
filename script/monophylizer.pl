@@ -287,7 +287,7 @@ sub process_args {
 		$infh       = $cgi->upload('infile')->handle;
 		$metafh     = $cgi->upload('metadata')->handle if $metadata;
 		if ( CGI->can('Accept') ) {
-			$astsv = ( Accept('text/plain') == 1.0 );
+			$astsv = ( CGI::Accept('text/plain') == 1.0 );
 		}
 		elsif ( CGI->can('CGI::accept') ) {
 			$astsv = ( CGI::accept('text/plain') == 1.0 );			
