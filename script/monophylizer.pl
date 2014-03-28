@@ -286,7 +286,12 @@ sub process_args {
 		# in BioVeL/Taverna workflows.
 		$infh       = $cgi->upload('infile')->handle;
 		$metafh     = $cgi->upload('metadata')->handle if $metadata;
-		$astsv      = ( Accept('text/plain') == 1.0 );
+		if ( CGI->can('Accept') ) {
+			$astsv = ( Accept('text/plain') == 1.0 );
+		}
+		elsif ( CGI->can('CGI::accept') ) {
+			$astsv = ( CGI::accept('text/plain') == 1.0 );			
+		}
 	}
 	else {
 		open $infh,   '<', $infile   or die $!;
