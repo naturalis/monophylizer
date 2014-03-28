@@ -9,16 +9,42 @@ use Bio::Phylo::Factory;
 use Bio::Phylo::IO 'parse_tree';
 use Bio::Phylo::Util::Logger ':levels';
 
+# process the arguments, either from the command line
+# or from CGI parameters
 my %args = process_args();
+
+# create and populate a Bio::Phylo::Taxa object by
+# parsing tip labels in the provided tree
 my $taxa = make_taxa(@args{qw(tree trinomials separator factory)});
+
+# read additional metadata, if any
 read_spreadsheet($taxa,$args{'metafh'});
+
+# do the tree traversal to identify "stopnodes"
 index_nodes($args{'tree'});
+
+# do the final assessment based on the topology of
+# the stopnodes. assemble the list of tanglees
+# accordingly.
 my @result = do_assessment($taxa,$args{'tree'});
 
-if ( $args{'cgi'} ) {
+# HTML is printed when running as a web service
+if ( $args{'cgi'} and not $args{'astsv'} ) {
 	print_html(@result);
 }
 else {
+
+	# this header is printed when we are running as a web service
+	# and the client has requested TSV output, either by clicking
+	# a checkbox (i.e. passing 'astsv=checked' in the query string)
+	# or by explicitly asking for 'text/plain' in the Accept header
+	# (i.e. through content negotiation).
+	if ( $args{'cgi'} ) {
+		print "Content-type: text/plain\n\n";
+	}
+	
+	# the remainder is the same regardless whether we are in the
+	# shell or on a server
 	my @header = qw(Species Assessment Tanglees IDs Metadata);
 	print join("\t",@header), "\n";	
 	for my $r ( sort { $a->[0] cmp $b->[0] } @result ) {
@@ -214,6 +240,13 @@ sub process_args {
 	# taxa. by default we do not do this: anything after
 	# putative genus + species is ignore
 	my $trinomials = 0;
+	
+	# this flag indicates whether to write out tab-separated
+	# data in web service requests. This is handy for clients
+	# wanting to import the results directly into a spreadsheet
+	# program. This flag is either toggled by an HTML checkbox
+	# (i.e. a query parameter) or using content negotiations
+	my $astsv;
 
 	my $help;
 	GetOptions(
@@ -224,6 +257,7 @@ sub process_args {
 		'comments'    => \$comments,
 		'whitespace'  => \$whitespace,
 		'trinomials'  => \$trinomials,
+		'astsv'       => \$astsv,
 		'metadata=s'  => \$metadata,
 		'help|?'      => \$help,
 		'quotes'      => \$quotes,
@@ -245,8 +279,14 @@ sub process_args {
 		$infile     = $cgi->param('infile');
 		$metadata   = $cgi->param('metadata');
 		$quotes     = $cgi->param('quotes');
+		$astsv      = $cgi->param('astsv');
+		
+		# TO DO: maybe make it so that users can also provide a location
+		# for the input data, so that the monophylizer can be embedded
+		# in BioVeL/Taverna workflows.
 		$infh       = $cgi->upload('infile')->handle;
 		$metafh     = $cgi->upload('metadata')->handle if $metadata;
+		$astsv      = ( Accept('text/plain') == 1.0 );
 	}
 	else {
 		open $infh,   '<', $infile   or die $!;
@@ -288,7 +328,8 @@ USAGE
 		'separator'  => $separator,
 		'trinomials' => $trinomials,
 		'factory'    => $fac,
-		'cgi'        => $as_cgi_process;
+		'cgi'        => $as_cgi_process,
+		'astsv'      => $astsv;
 }
 
 # writes an HTML table
