@@ -97,12 +97,18 @@ sub make_taxa {
 sub read_spreadsheet {
 	my ( $taxa, $metafh ) = @_;
 	if ( $metafh ) {
+		my $line = 1;
 		while(<$metafh>) {
 			chomp;
 			my @record = split /\t/, $_;
 			my $name = shift @record;
-			my $taxon = $taxa->get_by_name($name);
-			$taxon->set_generic( 'meta' => \@record );
+			if ( my $taxon = $taxa->get_by_name($name) ) {
+				$taxon->set_generic( 'meta' => \@record );
+			}
+			else {
+				die "Can't locate '$name' on line $line of the metadata in the tree"; 
+			}
+			$line++;
 		}
 	}	
 }
