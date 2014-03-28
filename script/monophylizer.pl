@@ -13,7 +13,7 @@ my %args = process_args();
 my $taxa = make_taxa(@args{qw(tree trinomials separator factory)});
 read_spreadsheet($taxa,$args{'metafh'});
 index_nodes($args{'tree'});
-my @result = do_assessment($taxa);
+my @result = do_assessment($taxa,$args{'tree'});
 
 if ( $args{'cgi'} ) {
 	print_html(@result);
@@ -29,8 +29,9 @@ else {
 # does the poly/para assessment as per:
 # http://biophylo.blogspot.nl/2013/04/algorithm-for-distinguishing-polyphyly.html
 sub do_assessment {
+	my ($taxa,$tree) = @_;
 	my @result;
-	shift->visit(sub{
+	$taxa->visit(sub{
 		my $taxon  = shift;
 		my $name   = $taxon->get_name;
 		my $status = 'monophyletic';
@@ -44,8 +45,9 @@ sub do_assessment {
 				for my $i ( 0 .. $#n - 1 ) {
 					$status = 'polyphyletic' if $n[$i]->get_generic('right') < $n[$i+1]->get_generic('right');
 				}
-				my %t = map { $_->get_id => $_ } map { $_->get_taxon } map { @{ $_->get_terminals } } @n;
-				@tanglees = grep { $_ ne $name } map { $_->get_name  } values %t;
+				my $mrca = $tree->get_mrca( $taxon->get_nodes );
+				my %t = map { $_->get_id => $_ } map { $_->get_taxon } @{ $mrca->get_terminals };
+				@tanglees = sort { $a cmp $b } grep { $_ ne $name } map { $_->get_name  } values %t;
 			}
 		}
 		push @result, [ $name, $status, join(',',@tanglees), join(',',@ids), join(',',@meta) ];
@@ -61,12 +63,28 @@ sub make_taxa {
 		my $label = $tip->get_name;
 		if ( $label =~ /^'?(.+?)\Q$separator\E(.+?)'?$/ ) {
 			my ( $name, $meta ) = ( $1, $2 );
-			my @parts = split /_/, $name;
-			my $taxon_name = $trinomials ? join ' ', @parts[0..2] : join ' ', @parts[0,1];
+			
+			# sometimes it's underscores, sometimes it's spaces
+			my @parts = split /(?:_|\s)/, $name;
+			
+			# make a bi- or trinomial taxon name
+			my $taxon_name;
+			if ( $trinomials and scalar @parts > 2 ) {
+				$taxon_name = join ' ', @parts[0..2];
+			}
+			else {
+				$taxon_name = join ' ', @parts[0,1];
+			}
+			
+			# fetch or instantiate the taxon by that name
 			my $taxon = $taxa{$taxon_name} //= $fac->create_taxon('-name'=>$taxon_name);
+			
+			# attach the sequence ID
 			my $ids = $taxon->get_generic('ids') || [];
 			push @$ids, $meta;
 			$taxon->set_generic( 'ids' => $ids );
+			
+			# link node to taxon
 			$tip->set_taxon($taxon);
 		}
 	}
