@@ -17,17 +17,17 @@ Capperia celeusi	monophyletic		GU707075,GU706888,HQ968539
 Capperia trichodactyla	monophyletic		JF854535	
 Cnaemidophorus rhododactyla	monophyletic		BC_ZSM_Lep_64367,GU707299,GU706872,HM901995	
 Crombrugghia buvati	monophyletic		HQ968536	
-Crombrugghia distans	polyphyletic	Crombrugghia jaeckhi,Crombrugghia tristis,Crombrugghia propedistans	HQ968542,MM14803,MM10605,MM10601	
+Crombrugghia distans	polyphyletic	Crombrugghia jaeckhi,Crombrugghia propedistans,Crombrugghia tristis	HQ968542,MM14803,MM10605,MM10601	
 Crombrugghia jaeckhi	monophyletic		HQ968540	
 Crombrugghia kollari	monophyletic		HQ968547,HQ968546	
 Crombrugghia laetus	monophyletic		HQ968545,JN307279,HQ968541	
 Crombrugghia propedistans	monophyletic		HQ968537	
-Crombrugghia tristis	polyphyletic	Crombrugghia distans,Crombrugghia kollari	HM381512,MM10635,MM03546	
+Crombrugghia tristis	polyphyletic	Crombrugghia buvati,Crombrugghia distans,Crombrugghia jaeckhi,Crombrugghia kollari,Crombrugghia laetus,Crombrugghia propedistans,Oxyptilus chrysodactyla	HM381512,MM10635,MM03546	
 Emmelina monodactyla	monophyletic		TLMF_Lep_08009,UKLB25D04,UKLB28F07,GU706791	
 Geina didactyla	monophyletic		HM871826,MM06822,HM432301	
 Gillmeria miantodactylus	monophyletic		TLMF_Lep_05310	
 Gillmeria ochrodactyla	monophyletic		BC_ZSM_Lep_64381,HM873596,TLMF_Lep_05313	
-Gillmeria pallidactyla	paraphyletic	Gillmeria miantodactylus,Gillmeria ochrodactyla	HM872706,JF859669,HM871459,NHMO-08160,GU707018	
+Gillmeria pallidactyla	paraphyletic	Gillmeria miantodactylus	HM872706,JF859669,HM871459,NHMO-08160,GU707018	
 Gypsochares bigoti	monophyletic		JN307778,JN307777	
 Hellinsia alpinus	monophyletic		TLMF_Lep_03169	
 Hellinsia carphodactyla	monophyletic		RMNH.INS.540932,GU706762	
@@ -46,17 +46,17 @@ Merrifieldia leucodactyla	monophyletic		TLMF_Lep_05319,HM873150,HQ968776,HM38148
 Merrifieldia malacodactyla	monophyletic		JN277265	
 Merrifieldia tridactyla	monophyletic		UKLB41C10,GU706725,GU707014,HM871949,HM871951	
 Oidaematophorus giganteus	monophyletic		TLMF_Lep_03155	
-Oidaematophorus lithodactyla	paraphyletic	Oidaematophorus vafradactylus,Oidaematophorus giganteus	UKLB13B02,NHMO-06072,HM874362,HM874688,TLMF_Lep_07513	
+Oidaematophorus lithodactyla	paraphyletic	Oidaematophorus giganteus	UKLB13B02,NHMO-06072,HM874362,HM874688,TLMF_Lep_07513	
 Oidaematophorus rogenhoferi	monophyletic		HM381420,JF860265,HM873225,HQ968919,HM873344	
 Oidaematophorus vafradactylus	monophyletic		MM19229	
 Oxyptilus chrysodactyla	monophyletic		HM875272,MM21124,MM03469	
 Oxyptilus ericetorum	monophyletic		MM06943,HM873585,KBE-07014	
 Oxyptilus parvidactyla	monophyletic		MM03775,HQ563790,HM874514,HQ955612,HM901992	
 Oxyptilus pilosellae	monophyletic		HM874342,BC_ZSM_Lep_61538,GU707017,GU706701,TLMF_Lep_05316,KBE-07010,JN277228,HM875267,HQ955561,JF853420	
-Platyptilia calodactyla	polyphyletic	Platyptilia tesseradactyla,Platyptilia gonodactyla	HM871821,HQ570336,TLMF_Lep_08411,MM03100,MM18373	
+Platyptilia calodactyla	polyphyletic	Platyptilia gonodactyla,Platyptilia tesseradactyla	HM871821,HQ570336,TLMF_Lep_08411,MM03100,MM18373	
 Platyptilia gonodactyla	monophyletic		TLMF_Lep_05315,HM396483,JF859893,HQ570376,NHMO-07075,GU706668	
 Platyptilia nemoralis	monophyletic		HQ955175,TLMF_Lep_04508,HM873031	
-Platyptilia tesseradactyla	paraphyletic	Platyptilia calodactyla,Platyptilia nemoralis,Platyptilia gonodactyla	JN277220,HM874566,HM872200,JN277245,TLMF_Lep_05317	
+Platyptilia tesseradactyla	paraphyletic	Platyptilia calodactyla,Platyptilia gonodactyla,Platyptilia nemoralis	JN277220,HM874566,HM872200,JN277245,TLMF_Lep_05317	
 Porrittia galactodactyla	monophyletic		HM876547	
 Pselnophorus heterodactyla	monophyletic		HM872837	
 Pterophorus pentadactyla	monophyletic		RMNH.INS.540811,HQ955577,GU707011,UKLB25F04,GU707012,HM386987,HQ955174	
