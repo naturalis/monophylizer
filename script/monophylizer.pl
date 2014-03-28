@@ -270,7 +270,20 @@ sub process_args {
 	# process CGI arguments
 	my $cgi = CGI->new;
 	if ( $as_cgi_process = $cgi->param('cgi') ) {
-		$verbosity  = INFO;
+		
+		# this will spit out results in error_log. 
+		# let's keep this to a minimum
+		$verbosity = WARN;
+		
+		# first check the header and assign that way
+		if ( CGI->can('Accept') ) {
+			$astsv = ( CGI::Accept('text/plain') == 1.0 );
+		}
+		elsif ( CGI->can('CGI::accept') ) {
+			$astsv = ( CGI::accept('text/plain') == 1.0 );			
+		}	
+			
+		# retrieve simple parameter values
 		$format     = $cgi->param('format');
 		$separator  = $cgi->param('separator');
 		$comments   = $cgi->param('comments');
@@ -279,19 +292,18 @@ sub process_args {
 		$infile     = $cgi->param('infile');
 		$metadata   = $cgi->param('metadata');
 		$quotes     = $cgi->param('quotes');
-		$astsv      = $cgi->param('astsv');
+		
+		# if people compose their own request, completely omitting the
+		# parameter, we would still have the conneg one because this
+		# one would be undefined. if they uncheck the box it would be
+		# the empty string.
+		$astsv = $cgi->param('astsv') if defined $cgi->param('astsv');
 		
 		# TO DO: maybe make it so that users can also provide a location
 		# for the input data, so that the monophylizer can be embedded
 		# in BioVeL/Taverna workflows.
 		$infh       = $cgi->upload('infile')->handle;
 		$metafh     = $cgi->upload('metadata')->handle if $metadata;
-		if ( CGI->can('Accept') ) {
-			$astsv = ( CGI::Accept('text/plain') == 1.0 );
-		}
-		elsif ( CGI->can('CGI::accept') ) {
-			$astsv = ( CGI::accept('text/plain') == 1.0 );			
-		}
 	}
 	else {
 		open $infh,   '<', $infile   or die $!;
