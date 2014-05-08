@@ -551,7 +551,7 @@ sub do_assessment {
 		}
 		
 		# simplest case: taxon is monophyletic
-		if ( scalar(@{$tips}) == 1 || scalar(@{$tips}) == scalar(@{$tree->get_mrca($tips)->get_descendants}) ) {
+		if ( scalar(@{$tips}) == 1 || ( scalar(@{$tips}) == scalar(@{$tree->get_mrca($tips)->get_terminals}) ) ) {
 			push @result, [ $name, 'monophyletic', '', $ids, $meta ];
 		}
 		
@@ -590,13 +590,8 @@ sub do_assessment {
 			my $status = scalar(@bins) == 1 ? 'paraphyletic' : 'polyphyletic';
 			
 			# now build the set of tanglees
-			my %tanglees;
-			for my $bin ( @bins ) {
-				my %taxa = %{ $bin->[0]->get_generic('taxa') };
-				$tanglees{$_} = $taxa{$_} for keys %taxa;
-			}
-			delete $tanglees{$tid};
-			my @tanglees = map { $_->get_name } values %tanglees;
+			my @tanglees = keys %{{ map { $_ => 1 } grep { $_ ne $name } map { $_->get_taxon->get_name } @{$tree->get_mrca($tips)->get_terminals} }};
+			
 			push @result, [ $name, $status, join(',',@tanglees), $ids, $meta ];
 		}
 	}

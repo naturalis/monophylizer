@@ -40,8 +40,10 @@ while( my $entry = readdir $dh ) {
 		my @res = parse_tsv($fh);
 		my @focal = grep { $_->{'Tree'} eq $entry } @exp;
 		for my $f ( @focal ) {
-			my ($res) = grep { $_->{'Species'} eq $f->{'Species'} } @res;
-			ok( $res->{'Assessment'} eq $f->{'Assessment'}, "Assessment" );
+			my $species = $f->{'Species'};
+			my ($res) = grep { $_->{'Species'} eq $species } @res;
+			my ( $obs, $exp ) = ( $res->{'Assessment'}, $f->{'Assessment'} );
+			ok( $obs eq $exp, "Assessment for $species ($entry) - obs: $obs exp: $exp" );
 			
 			# validate whether the tanglees match
 			if ( $f->{'Tanglees'} ) {

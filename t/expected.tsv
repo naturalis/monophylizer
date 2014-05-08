@@ -1,2 +1,9 @@
 Tree	Species	Assessment	Tanglees
 RAxML_bipartitions.Coleophoridae_rooted.nwk	Coleophora argenteonivea	paraphyletic	Coleophora serratulella,Coleophora brevipalpella
+Adelidae_outgroup_rerooted.nwk	Cauchas albiantennella	paraphyletic	Cauchas leucocerella
+Eriocraniidae_outgroup_rerooted.nwk	Eriocrania semipurpurella	paraphyletic	Eriocrania sangii
+Psychidae_outgroup_rerooted.nwk	Sterrhopterix fusca	paraphyletic	Sterrhopterix standfussi
+Psychidae_outgroup_rerooted.nwk	Proutia betulina	paraphyletic	Proutia rotunda
+Psychidae_outgroup_rerooted.nwk	Typhonia ciliaris	paraphyletic	Typhonia beatricis,Typhonia pliginskii
+RAxML_bipartitions.Pterophoridae_rooted.nwk	Platyptilia calodactyla	polyphyletic	Platyptilia gonodactyla,Platyptilia tesseradactyla
+RAxML_bipartitions.Pterophoridae_rooted.nwk	Platyptilia tesseradactyla	paraphyletic	Platyptilia calodactyla,Platyptilia gonodactyla,Platyptilia nemoralis
