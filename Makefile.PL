@@ -9,7 +9,7 @@ my %parms = (
     'PL_FILES'     => {},
     'EXE_FILES'    => [ 'script/monophylizer.pl' ],
     'VERSION_FROM' => 'script/monophylizer.pl',
-    'PREREQ_PM'    => { 'Bio::Phylo' => 0 },
+    'PREREQ_PM'    => { 'Bio::Phylo' => 0.58 },
     'LICENSE'      => 'perl',
     'ABSTRACT'     => 'Script to assess monophyly in BOLD trees',
     'clean'        => {},    
