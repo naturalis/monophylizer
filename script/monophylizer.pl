@@ -11,6 +11,7 @@ use Bio::Phylo::Util::Logger ':levels';
 
 # release version for ExtUtils::MakeMaker to parse
 our $VERSION = '0.1';
+my $log;
 
 =head1 NAME
 
@@ -252,6 +253,11 @@ sub process_args {
 		'help|?'      => \$help,
 		'quotes'      => \$quotes,
 	);
+	
+	# emit help message if run with --help, -help, -h or -?
+	if ( $help ) {
+		pod2usage({ '-verbose' => 1 });
+	}	
 
 	# input file handle for tree and metadata
 	my $infh;
@@ -300,21 +306,9 @@ sub process_args {
 		open $metafh, '<', $metadata or die $! if $metadata;
 	}
 
-	# emit help message if run with --help, -help, -h or -?
-	if ( $help ) {
-		print <<"USAGE";
-	$0 -i <tree file> [-f <format>] [-s <separator>] [-m <metadata>] [--verbose]
-
-	Default file format is newick, default separator between species name and identifier
-	is the '|' symbol.
-
-USAGE
-		exit 0;
-	}
-
 	# instantiate helper objects
 	my $fac = Bio::Phylo::Factory->new;
-	my $log = Bio::Phylo::Util::Logger->new(
+	$log = Bio::Phylo::Util::Logger->new(
 		'-level' => $verbosity,
 		'-class' => [ 'main' ],
 	);
@@ -553,44 +547,37 @@ sub do_assessment {
 		# simplest case: taxon is monophyletic
 		if ( scalar(@{$tips}) == 1 || ( scalar(@{$tips}) == scalar(@{$tree->get_mrca($tips)->get_terminals}) ) ) {
 			push @result, [ $name, 'monophyletic', '', $ids, $meta ];
+			$log->info("$name is monophyletic");
 		}
 		
 		# taxon is NOT monophyletic
 		else {
 			my @sn = @{ $taxon->get_generic('stopnodes') };
-			my @bins = ( [] );
+			my $status = 'paraphyletic';
 			
 			# here we traverse the array of stopnodes from more recent
 			# to more ancestral and bin them by path
-			for my $i ( 0 .. $#sn - 1 ) {
-				my $l1 = $sn[$i]->get_generic('left');
-				my $r1 = $sn[$i]->get_generic('right');
-				my $l2 = $sn[$i+1]->get_generic('left');
-				my $r2 = $sn[$i+1]->get_generic('right');
+			PATH: for my $i ( 0 .. $#sn - 1 ) {
+				my $l1 = $sn[$i]->get_generic('left');    # child
+				my $r1 = $sn[$i]->get_generic('right');   # child
+				my $l2 = $sn[$i+1]->get_generic('left');  # parent
+				my $r2 = $sn[$i+1]->get_generic('right'); # parent
 				
 				# test if the focal one indeed nests within the next one
 				if ( $l1 > $l2 and $r1 < $r2 ) {
-					push @{ $bins[-1] }, $sn[$i];
+					next PATH;
 				}
 				else {
-				
-					# the focal node does NOT nest within the next one,
-					# we need to start a new bin if the previous one 
-					# already contains things
-					if ( @{ $bins[-1] } ) {
-						push @bins, [ $sn[$i] ];
-					}
-					else {
-						$bins[-1]->[0] = $sn[$i];
-					}
+					$status = 'polyphyletic';
+					last PATH;
 				}
 			}
-			
-			# if there is only one bin: para, otherwise: poly
-			my $status = scalar(@bins) == 1 ? 'paraphyletic' : 'polyphyletic';
-			
+						
 			# now build the set of tanglees
-			my @tanglees = keys %{{ map { $_ => 1 } grep { $_ ne $name } map { $_->get_taxon->get_name } @{$tree->get_mrca($tips)->get_terminals} }};
+			my @tanglees = keys %{ { map { $_ => 1 } 
+			                grep { $_ ne $name } 
+			                 map { $_->get_taxon->get_name } 
+			                    @{ $tree->get_mrca($tips)->get_terminals} } };
 			
 			push @result, [ $name, $status, join(',',@tanglees), $ids, $meta ];
 		}
