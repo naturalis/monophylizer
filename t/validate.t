@@ -4,21 +4,22 @@ use warnings;
 use Test::More 'no_plan';
 use FindBin '$Bin';
 use File::Spec;
+use Data::Dumper;
 
 # construct and verify required locations
 my $script   = File::Spec->catfile( $Bin, '..', 'script', 'monophylizer.pl' );
 my $datadir  = File::Spec->catdir( $Bin, '..', 'data' );
 my $expected = File::Spec->catfile( $Bin, 'expected.tsv' );
 
-ok( -x $script, "is executable: $script" );
-ok( -d $datadir, "is a directory: $datadir" );
+ok( -x $script,   "is executable: $script" );
+ok( -d $datadir,  "is a directory: $datadir" );
 ok( -e $expected, "exists: $expected" );
 
 # read the file with expected output
-my %exp;
+my @exp;
 {
 	open my $fh, '<', $expected or die $!;
-	%exp = parse_tsv($fh);
+	@exp = parse_tsv($fh);
 }
 
 # read from the data directory
@@ -34,7 +35,21 @@ while( my $entry = readdir $dh ) {
 		# run the script
 		my $result = `$script -i $infile`;
 		open my $fh, '<', \$result;
-		my %res = parse_tsv($fh);
+		
+		# validate the output
+		my @res = parse_tsv($fh);
+		my @focal = grep { $_->{'Tree'} eq $entry } @exp;
+		for my $f ( @focal ) {
+			my ($res) = grep { $_->{'Species'} eq $f->{'Species'} } @res;
+			ok( $res->{'Assessment'} eq $f->{'Assessment'}, "Assessment" );
+			
+			# validate whether the tanglees match
+			if ( $f->{'Tanglees'} ) {
+				my %expected = map { $_ => 1 } split /,/, $f->{'Tanglees'};
+				my %observed = map { $_ => 1 } split /,/, $res->{'Tanglees'};
+				is_deeply( \%observed, \%expected, "Tanglees" );
+			}
+		}		
 	}
 }
 
