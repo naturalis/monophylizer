@@ -34,3 +34,10 @@ files.
 * If the javascript file sorttable.js is not in the "document root", you will need to 
 edit monophylizer.pl such that the output HTML can find it. This is at time of writing
 at line 250.
+
+Build status
+============
+
+Currently, the build status is:
+
+[![Build Status](https://travis-ci.org/naturalis/monophylizer.svg?branch=master)](https://travis-ci.org/naturalis/monophylizer)
