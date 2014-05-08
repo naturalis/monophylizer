@@ -7,3 +7,7 @@ Psychidae_outgroup_rerooted.nwk	Proutia betulina	paraphyletic	Proutia rotunda
 Psychidae_outgroup_rerooted.nwk	Typhonia ciliaris	paraphyletic	Typhonia beatricis,Typhonia pliginskii
 RAxML_bipartitions.Pterophoridae_rooted.nwk	Platyptilia calodactyla	polyphyletic	Platyptilia gonodactyla,Platyptilia tesseradactyla
 RAxML_bipartitions.Pterophoridae_rooted.nwk	Platyptilia tesseradactyla	paraphyletic	Platyptilia calodactyla,Platyptilia gonodactyla,Platyptilia nemoralis
+NJ_Coleophoridae.nwk	Coleophora laricella	paraphyletic	Coleophora sibiricella
+NJ_Coleophoridae.nwk	Coleophora nutantella	paraphyletic	Coleophora graminicolella,Coleophora silenella
+NJ_Coleophoridae.nwk	Coleophora sibiricella	paraphyletic	Coleophora laricella
+ML_Coleophoridae.nwk	Coleophora argenteonivea	paraphyletic	Coleophora serratulella,Coleophora brevipalpella
