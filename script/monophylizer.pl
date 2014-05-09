@@ -8,6 +8,9 @@ use Getopt::Long;
 use Bio::Phylo::Factory;
 use Bio::Phylo::IO 'parse_tree';
 use Bio::Phylo::Util::Logger ':levels';
+use constant MONO => 'monophyletic';
+use constant PARA => 'paraphyletic';
+use constant POLY => 'polyphyletic';
 
 # release version for ExtUtils::MakeMaker to parse
 our $VERSION = '0.1';
@@ -121,7 +124,7 @@ sub main {
 	read_spreadsheet($taxa,$args{'metafh'});
 
 	# do the tree traversal to identify "stopnodes"
-	index_nodes($args{'tree'});
+	index_nodes($args{'tree'},$taxa);
 
 	# do the final assessment based on the topology of
 	# the stopnodes. assemble the list of tanglees
@@ -151,6 +154,7 @@ sub main {
 			print join("\t",@$r), "\n";
 		}
 	}
+	$log->info("done");
 }
 main();
 
@@ -357,6 +361,8 @@ Arguments:
 
 sub make_taxa {
 	my ( $tree, $trinomials, $separator, $fac ) = @_;
+	$log->info("making set of distinct taxa names by splitting leaf labels on $separator");
+	$log->info("will ".($trinomials ? '' : 'not')." include subspecific epithets");
 	my %taxa;
 	for my $tip ( @{ $tree->get_terminals } ) {
 		my $label = $tip->get_name;
@@ -411,6 +417,7 @@ Arguments:
 
 sub read_spreadsheet {
 	my ( $taxa, $metafh ) = @_;
+	$log->info("going to read tab-separated metadata from file handle");
 	if ( $metafh ) {
 		my $line = 1;
 		while(<$metafh>) {
@@ -437,53 +444,59 @@ L<http://biophylo.blogspot.nl/2013/04/algorithm-for-distinguishing-polyphyly.htm
 =cut
 
 sub index_nodes {
-	my $tree = shift;
+	my ($tree,$taxa) = @_;
 	my $counter = 1;
-	$tree->visit_depth_first(
-		'-pre' => sub { 
-			
-			# apply left index
-			shift->set_generic( 'left'  => $counter++ ) 
-		},
-		'-pre_sister' => sub {
+	_recurse($tree->get_root,\$counter);
+	$log->info("applied indexing to ".(($counter-1)/2)." nodes (including leaves)");
+	
+	# iterate over all the taxa
+	for my $taxon ( @{ $taxa->get_entities } ) {
+	
+		# for each taxon, iterate over its leaf nodes
+		NODE: for my $node ( @{ $taxon->get_nodes } ) {
 		
-			# apply right index
-			shift->set_generic( 'right' => $counter++ );
-		},
-		'-post' => sub { 
-			my $node = shift;
-			$node->set_generic( 'right' => $counter++ ) if not $node->get_generic('right');
-			
-			# the node is terminal
-			if ( my $taxon = $node->get_taxon ) {
-			
-				# store its taxon by index
-				$node->set_generic( 'taxa' => { $taxon->get_id => $taxon } );
-			}
-			else {
-			
-				# merge all taxa from the immediate children
-				my %merged;
-				for my $c ( @{ $node->get_children } ) {
-					my %taxa = %{ $c->get_generic('taxa') };
-					$merged{$_} = $taxa{$_} for keys %taxa;
-				}
-				$node->set_generic( 'taxa' => \%merged );
-								
-				# if two or more distinct taxa, it's a 'stopnode':
-				# http://biophylo.blogspot.nl/2013/04/algorithm-for-distinguishing-polyphyly.html
-				if ( scalar(keys(%merged)) > 1 ) {
-
-					# tell all the subtended taxa about their stopnode				
-					for my $taxon ( values %merged ) {
-						my $stopnodes = $taxon->get_generic('stopnodes') || [];
-						push @$stopnodes, $node;
-						$taxon->set_generic( 'stopnodes' => $stopnodes );
+			# traverse to the root
+			while( $node->get_parent ) {
+				$node = $node->get_parent;
+				
+				# get all the distinct taxa subtended by the focal node
+				my @taxa = values %{{ 
+					map { $_->get_id => $_ } 
+					map { $_->get_taxon } 
+					   @{ $node->get_terminals } 
+				}};
+				
+				# if there are more than 1, this is a stopnode
+				if ( @taxa > 1 ) {
+					my $sn = $taxon->get_generic('stopnodes') || [];
+					my $id = $node->get_id;
+					
+					# add the node as a stopnode if we haven't already
+					# by way of the path from a different leaf
+					unless ( grep { $_->get_id == $id } @$sn ) {
+						push @$sn, $node;
+						$log->debug("added stopnode to taxon ".$taxon->get_name);
 					}
+					$taxon->set_generic( 'stopnodes' => $sn );
+					next NODE;
 				}				
 			}
-		},
-	);
+		}	
+	}
+}
+
+# private function to do the indexing recursively
+sub _recurse {
+	my ( $node, $cr ) = @_;
+	
+	# pre-order: apply left index
+	$node->set_generic( 'left' => $$cr++ );
+	
+	# recurse further
+	_recurse($_, $cr ) for @{ $node->get_children };
+
+	# post-order: apply right index
+	$node->set_generic( 'right' => $$cr++ );		
 }
 
 =item do_assessment
@@ -527,59 +540,57 @@ Returns a two-dimensional array (i.e. a table) where each record consists of the
 sub do_assessment {
 	my ($taxa,$tree) = @_;
 	my @result;
+	$log->info("going to perform monophyly assessment");
 	
 	# iterate over taxa
 	for my $taxon ( @{ $taxa->get_entities } ) {
 		my $name  = $taxon->get_name;
 		my $tips  =	$taxon->get_nodes; # returns all leaf nodes that map to focal taxon
 		my $tid   = $taxon->get_id;
+		my $count = scalar @$tips;
 		
-		# makes CSV strings of sequence IDs and additional metadata
+		# makes CSV strings of sequence IDs and additional metadata, if any
 		my $ids = join ',', @{ $taxon->get_generic('ids') };
-		my $meta;
-		if ( $taxon->get_generic('meta') ) {
-			$meta = join ',', @{ $taxon->get_generic('meta') };
-		}
-		else {
-			$meta = '';
+		my $metalist = $taxon->get_generic('meta');
+		my $meta = $metalist ? join ',', @$metalist : '';
+		
+		# simplest case: taxon is monophyletic, either because there is only one specimen
+		# or because they form a clade
+		if ( $count == 1 || $count == scalar(@{$tree->get_mrca($tips)->get_terminals}) ) {
+			push @result, [ $name, MONO, '', $ids, $meta ];
+			$log->debug("$name is ".MONO);
 		}
 		
-		# simplest case: taxon is monophyletic
-		if ( scalar(@{$tips}) == 1 || ( scalar(@{$tips}) == scalar(@{$tree->get_mrca($tips)->get_terminals}) ) ) {
-			push @result, [ $name, 'monophyletic', '', $ids, $meta ];
-			$log->info("$name is monophyletic");
-		}
-		
-		# taxon is NOT monophyletic
+		# taxon is NOT monophyletic. we now have one array of stopnodes for which we do
+		# all pairwise comparisons to evaluate whether the stopnodes are in each
+		# other's path. If there is a stopnode where none of the other ones are either 
+		# ancestral or descendant to it, then the taxon is polyphyletic.
 		else {
-			my @sn = @{ $taxon->get_generic('stopnodes') };
-			my $status = 'paraphyletic';
+			my @stopnodes = @{ $taxon->get_generic('stopnodes') };
 			
-			# here we traverse the array of stopnodes from more recent
-			# to more ancestral and bin them by path
-			PATH: for my $i ( 0 .. $#sn - 1 ) {
-				my $l1 = $sn[$i]->get_generic('left');    # child
-				my $r1 = $sn[$i]->get_generic('right');   # child
-				my $l2 = $sn[$i+1]->get_generic('left');  # parent
-				my $r2 = $sn[$i+1]->get_generic('right'); # parent
-				
-				# test if the focal one indeed nests within the next one
-				if ( $l1 > $l2 and $r1 < $r2 ) {
-					next PATH;
+			# count the number of distinct paths
+			my $paths = 0;			
+			PATH: for my $sn1 ( @stopnodes  ) {
+				last PATH if scalar(@stopnodes) == 1; # only one sn means paraphyletic
+				my $l1 = $sn1->get_generic('left');
+				my $r1 = $sn1->get_generic('right');
+				for my $sn2 ( @stopnodes ) {
+					my $l2 = $sn2->get_generic('left');
+					my $r2 = $sn2->get_generic('right');
+					next PATH if $l1 < $l2 and $r1 > $r2; # sn2 is nested inside sn1										
+					next PATH if $l2 < $l1 and $r2 > $r1; # sn1 is nested inside sn2
 				}
-				else {
-					$status = 'polyphyletic';
-					last PATH;
-				}
+				$paths++;
 			}
+			$log->debug("$name is ".($paths ? POLY : PARA));
 						
-			# now build the set of tanglees
-			my @tanglees = keys %{ { map { $_ => 1 } 
+			# now build the CSV string of distinct tanglees, not including focal taxon
+			my $tanglees = join ',', keys %{ { map { $_ => 1 } 
 			                grep { $_ ne $name } 
 			                 map { $_->get_taxon->get_name } 
 			                    @{ $tree->get_mrca($tips)->get_terminals} } };
 			
-			push @result, [ $name, $status, join(',',@tanglees), $ids, $meta ];
+			push @result, [ $name, ( $paths ? POLY : PARA ), $tanglees, $ids, $meta ];
 		}
 	}
 	return @result;
