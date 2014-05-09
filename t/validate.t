@@ -36,7 +36,6 @@ while( my $entry = readdir $dh ) {
 		my $infile = File::Spec->catfile( $Bin, '..', 'data', $entry );
 		
 		# run the script
-		diag("going to run '$command -i $infile'");
 		my $result = `$command -i $infile`;
 		open my $fh, '<', \$result;
 		
