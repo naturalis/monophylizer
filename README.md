@@ -1,7 +1,6 @@
 monophylizer
 ============
-
-A web tool to assess monophyly in trees as produced by BOLD systems
+A web and command line tool to assess monophyly
 
 Installation instructions
 =========================
@@ -41,3 +40,12 @@ Build status
 Currently, the build status is:
 
 [![Build Status](https://travis-ci.org/naturalis/monophylizer.svg?branch=master)](https://travis-ci.org/naturalis/monophylizer)
+
+How to cite
+===========
+Pending publication of the method, this tool can be cited as:
+
+**Vos, R.A.**, 2015. *Monophylizer: A web and command line tool to assess monophyly.* [doi: 10.5281/zenodo.16874]
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.16874.svg)](http://dx.doi.org/10.5281/zenodo.16874)
+
