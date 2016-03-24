@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Monophylizer - tree shape analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    
+    <!-- Wizard CSS -->
+	<link href="css/prettify.css" rel="stylesheet">    
+	
+	<!-- Widget CSS -->
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+	
+	<style type="text/css">
+	.panel { text-align: left; margin-top: 1em }
+	</style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Monophylizer</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--h1>Monophylize!</h1-->
+                    <img src="img/logo.png" />
+					<div id="rootwizard">
+						<ul>
+							<li><a href="#tab1" data-toggle="tab">Upload</a></li>
+							<li><a href="#tab2" data-toggle="tab">BOLD options</a></li>
+							<li><a href="#tab3" data-toggle="tab">Split/lump</a></li>
+							<li><a href="#tab4" data-toggle="tab">Output</a></li>
+							<li><a href="#tab5" data-toggle="tab">Analyze</a></li>
+						</ul>
+						<form 
+							action="/cgi-bin/monophylizer.pl" 
+							method="POST" 
+							enctype="multipart/form-data">
+							
+							<!-- Sets flag so that service returns HTML, not TSV -->
+							<input type="hidden" name="cgi" value="1" />
+							
+							<div class="tab-content">
+								<div class="tab-pane" id="tab1">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">Upload tree file</h3>
+										  </div>
+										  <div class="panel-body">
+										  
+											<!--input type="file" name="infile" /-->											
+											<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+											  <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+											  <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+											  <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+											</div>
+
+											<strong>File format:</strong>																																
+											<select name="format">
+												<option value="newick" selected="selected">newick</option>
+												<option value="nexus">nexus</option>
+												<option value="nexml">nexml</option>
+												<option value="phyloxml">phyloxml</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab2">
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">BOLD options</h3>
+										  </div>
+										  <div class="panel-body">
+										  
+											<div class="alert alert-info" role="alert">
+												<strong>Note!</strong>
+											  	The following options are optimized for the tree file dialect that BOLD exports. This dialect is invalid
+											  	according to the standards, and these options are workarounds to deal with that. <strong>If your tree comes from 
+											  	somewhere else, not BOLD, you should probably uncheck all these options.</strong>
+											</div>
+										  
+											<strong>Record separator:</strong>
+											<input 
+												type="text" 
+												name="separator" 
+												value="|" />
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="The tip names in BOLD trees consist
+												of a taxon name followed by metadata fields (specimen and sequence identifiers, localities, etc.).
+												By default, the separator between these fields is the '|'
+												symbol. If the tip names are clean binomial or trinomial names 
+												with no suffix of any kind then this option is harmless and irrelevant."></span>	
+											<br />										  
+										  
+											<input 
+												type="checkbox" 
+												checked="checked" 
+												name="comments" />
+											<strong>Keep square brackets</strong>
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="It is 
+												normally safe and intended for a tree reader to remove all text between square bracket symbols in tree descriptions, '[' and ']', 
+												because the standards specify that these brackets indicate comments. BOLD breaks this convention, 
+												and sometimes inserts square brackets after the 'record separator' in such a way that tree readers 
+												choke on the output. The best solution for dealing with this is to keep the square brackets in BOLD trees.
+												Uncheck this if your tree comes from somewhere else (example: TreeAnnotator)."></span>
+											<br />												
+										  
+											<input 
+												type="checkbox" 
+												checked="checked" 
+												name="quotes" />  
+											<strong>Treat quotes verbatim</strong>	
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="Normally, 'text inside single quotes' is used 
+												in newick and nexus tree descriptions so that characters
+												with special meanings can be used in species names. For
+												example, to use parentheses in a name such as
+												'Homo sapiens (Linnaeus)' the whole name needs to be
+												quoted, because parentheses otherwise are interpreted as 
+												a node in a tree. BOLD doesn't respect this convention: it
+												uses single quotes as apostrophes in things such as Cote d'Azur, 
+												which breaks the interpretation according to the newick standard. 
+												Therefore, quotes should probably be treated verbatim in BOLD trees.
+												Uncheck this if your tree comes from somewhere else."></span>																						                        
+											<br />
+										  
+											<input 
+												type="checkbox" 
+												checked="checked" 
+												name="whitespace" />
+											<strong>Keep whitespace</strong>	
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="In newick and nexus trees, whitespace in species 
+												names is usually escaped, either by replacing it with underscores 
+												('_') or by putting the entire species name in quotes.
+												This allows some programs to generate pretty indentation to
+												show the 'depth' of a taxon within the tree string. BOLD does
+												not follow this convention: whitespace occurs in unescaped
+												form only to delimit words, so normally
+												this needs to be kept in BOLD trees.
+												Uncheck this if your tree comes from somewhere else."></span>
+											<br />
+																								
+										</div>
+									</div>
+
+								</div>
+								<div class="tab-pane" id="tab3">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">Split/lump</h3>
+										  </div>
+										  <div class="panel-body">
+										  
+											<!--div class="alert alert-info" role="alert">
+												<strong>Note!</strong>
+											  	By default, all subspecies of the same species are lumped and the monophyly of the containing species
+											  	is assessed. By checking the box below, subspecific epithets are interpreted separately so that
+											  	monophyly among subspecies is assessed as well.
+											</div-->										  
+										  												
+											<strong>Split subspecies:</strong>
+											<input 
+												type="checkbox" 
+												name="trinomials" />                            
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="By default, this service ignores all parts of a taxonomic name following
+												the first two words. This means 
+												that subspecies ('Foo bar vulgaris') are lumped with the 
+												containing species ('Foo bar') and that polyphyly or paraphyly 
+												is therefore not assessed separately for subspecies. If you check this box,
+												subspecies will be split and assessed separately."></span>																							
+										</div>
+									</div>								
+								</div>
+								<div class="tab-pane" id="tab4">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">Output</h3>
+										  </div>
+										  <div class="panel-body">
+										  
+											<!--div class="alert alert-info" role="alert">
+												<strong>Note!</strong>
+											  	The following options deal with how to represent the output.
+											</div-->										  
+										  
+											<strong>Write output as TSV:</strong>                           
+											<input type="checkbox" name="astsv" />
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="By default, this web service produces its output as a 
+												a web page (i.e. a marked up HTML table). By checking this
+												box, the service instead produces a tab-separated 
+												spreadsheet, which can be imported directly into a variety
+												of programs, such as R."></span>	
+												<br />
+												
+											<strong>Additional metadata:</strong>
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="Here you can upload
+											a tab-separated spreadsheet file whose fields will be combined with those produced by the algorithm. You would use this
+											if you want to include more data about species (not individual specimens) in the output, so the records in this file
+											and in the output are matched by taxon names."></span>
+											
+											<!--input type="file" name="infile" /-->											
+											<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+											  <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+											  <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+											  <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+											</div>
+																						
+										</div>
+									</div>								
+								</div>
+								<div class="tab-pane" id="tab5">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title">Analyze!</h3>
+										  </div>
+										  <div class="panel-body">
+											<input type="submit" value="Go" class="btn" />																						
+										</div>
+									</div>								
+								</div>
+								<ul class="pager wizard">
+									<li class="previous first" style="display:none;"><a href="#">First</a></li>
+									<li class="previous"><a href="#">Previous</a></li>
+									<li class="next last" style="display:none;"><a href="#">Last</a></li>
+									<li class="next"><a href="#">Next</a></li>
+								</ul>
+							</div>	
+						</form>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    
+    <!-- Wizard JavaScript -->
+	<script src="js/jquery.bootstrap.wizard.min.js"></script>    
+	<script src="js/prettify.js"></script>	
+	
+	<!-- Widget JavaScript -->
+	<script src="js/jasny-bootstrap.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+	  	$('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});	
+		window.prettyPrint && prettyPrint()
+	});	
+	
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	});
+
+	</script>	
+
+</body>
+
+</html>
