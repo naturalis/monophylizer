@@ -122,13 +122,13 @@
 									</div>
 									
 									<div class="alert alert-info" role="alert">
-										<strong>Info: More about input file formats then you'll ever want to know</strong>
+										<strong>Info: More about input file formats than you'll ever want to know</strong>
 										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 										  <div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
 											  <h4 class="panel-title">
 												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-												  Newick / New Hampshire files
+												  Newick
 												</a>
 											  </h4>
 											</div>
@@ -140,11 +140,12 @@
 												Regrettably, the Newick "standard" is not followed too carefully by different programs. We have attempted to be permissive in what the monophylizer accepts but 
 												there are some caveats to keep in mind:<br /><br />
 												<ul>
+													<li><strong>Newick files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>												
 													<li>The tips in your tree should have names that consist of the species name (<code><em>Genus species</em></code> or <code><em>Genus species subspecies</em></code>), <strong>and</strong>
-													some kind of separator (such as the '|' symbol), 
+													some kind of separator (such as the <code>|</code> symbol), 
 													<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
-													You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols as long as they don't have special meaning in Newick. The following are 
-													therefore disallowed: <code>'"[]();:</code>
+													You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols besides <code>|</code> as long as they don't have special meaning in Newick. 
+													The following are therefore disallowed: <code>'"[]();:_</code>
 													</li>												
 													<li>BOLD has a tendency to break the standard, especially when you export trees with more metadata than strictly needed. If you export trees from BOLD make sure the trees contain
 													species names and unique identifiers, but nothing else. Metadata such as names of collection localities or taxonomic authorities are quite likely to contain characters that
@@ -161,36 +162,35 @@
 													strictly valid tree reader is going to remove those spaces as well, which results in concatenation of the genus and species names. We provide a workaround for this (incorrect) 
 													syntax variant in the 'Tree reading' tab, but it is up to you to know the meaning of whitespace because a tree reader can't guess this automatically.																									
 													</li>
-													<li>Newick files can contain multiple tree descriptions. The monophylizer only reads the first tree.</li>
 												</ul>
 												Here are examples of usable Newick files:<br /><br />
 												<ul>
 													<li>Newick files with quoted whitespace:
 														<ul>
-															<li>Adelidae_outgroup_rerooted.nwk</li>
-															<li>Eriocraniidae_outgroup_rerooted.nwk</li>
-															<li>Nepticulidae_outgroup_rerooted.nwk</li>
-															<li>NJ_Argyresthiidae.nwk</li>
-															<li>NJ_Coleophoridae.nwk</li>
-															<li>Psychidae_outgroup_rerooted.nwk</li>														
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_quoted/Adelidae_outgroup_rerooted.nwk">Adelidae_outgroup_rerooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_quoted/Eriocraniidae_outgroup_rerooted.nwk">Eriocraniidae_outgroup_rerooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_quoted/Nepticulidae_outgroup_rerooted.nwk">Nepticulidae_outgroup_rerooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_quoted/NJ_Argyresthiidae.nwk">NJ_Argyresthiidae.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_quoted/NJ_Coleophoridae.nwk">NJ_Coleophoridae.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_quoted/Psychidae_outgroup_rerooted.nwk">Psychidae_outgroup_rerooted.nwk</a></li>														
 														</ul>
 													</li>
 													<li>Newick files with underscored whitespace:
 														<ul>
-															<li>ML_Coleophoridae.nwk</li>
-															<li>ML_Argyresthiidae.nwk</li>
-															<li>RAxML_bipartitions.Pterophoridae_rooted.nwk</li>
-															<li>RAxML_bipartitions.Coleophoridae_rooted.nwk</li>
-															<li>RAxML_bipartitions.Gracillariidae_rooted.nwk</li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_escaped/ML_Coleophoridae.nwk">ML_Coleophoridae.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_escaped/ML_Argyresthiidae.nwk">ML_Argyresthiidae.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_escaped/RAxML_bipartitions.Pterophoridae_rooted.nwk">RAxML_bipartitions.Pterophoridae_rooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_escaped/RAxML_bipartitions.Coleophoridae_rooted.nwk">RAxML_bipartitions.Coleophoridae_rooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_escaped/RAxML_bipartitions.Gracillariidae_rooted.nwk">RAxML_bipartitions.Gracillariidae_rooted.nwk</a></li>
 														</ul>
 													</li>
-													<li>Technically invalid whitespace usage (as exported by BOLD), allowed by the monophylizer:
+													<li><strong>Technically invalid</strong> whitespace usage as exported by BOLD, allowed by the monophylizer (if 'Keep whitespace in Newick species names' is checked):
 														<ul>
-															<li>ML_Coleophoridae.nwk</li>
-															<li>ML_Argyresthiidae.nwk</li>
-															<li>RAxML_bipartitions.Pterophoridae_rooted.nwk</li>
-															<li>RAxML_bipartitions.Coleophoridae_rooted.nwk</li>
-															<li>RAxML_bipartitions.Gracillariidae_rooted.nwk</li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_unescaped_invalid/ML_Coleophoridae.nwk">ML_Coleophoridae.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_unescaped_invalid/ML_Argyresthiidae.nwk">ML_Argyresthiidae.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_unescaped_invalid/RAxML_bipartitions.Pterophoridae_rooted.nwk">RAxML_bipartitions.Pterophoridae_rooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_unescaped_invalid/RAxML_bipartitions.Coleophoridae_rooted.nwk">RAxML_bipartitions.Coleophoridae_rooted.nwk</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_unescaped_invalid/RAxML_bipartitions.Gracillariidae_rooted.nwk">RAxML_bipartitions.Gracillariidae_rooted.nwk</a></li>
 														</ul>
 													</li>
 												</ul>
@@ -201,13 +201,38 @@
 											<div class="panel-heading" role="tab" id="headingTwo">
 											  <h4 class="panel-title">
 												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-												  Nexus files
+												  Nexus
 												</a>
 											  </h4>
 											</div>
 											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 											  <div class="panel-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+												The <a href="https://dx.doi.org/10.1093%2Fsysbio%2F46.4.590">Nexus standard</a> is a more complex, plain text-based file format for phylogenetic data. Nexus files can contain other 
+												data besides trees, such as sequence alignments or other types of character state matrices, distance matrices, and so on. Many commonly-used programs read and/or write Nexus data. These
+												include FigTree, Mesquite, TreeAnnotator, MrBayes, MacClade, etc. Nexus files often - but by no means always - have the extension <code>*.nex</code> or <code>*.nxs</code>. You can recognize
+												whether your file is a Nexus file by opening it in a text editor such as NotePad on Windows or TextEdit on Mac OSX. If the very first word of the file is <code>#nexus</code>, either in
+												lower or in uppper case, then the file is most likely a Nexus file. Regrettably, the Nexus "standard" is not followed too carefully by different programs. We have attempted to be permissive 
+												in what the monophylizer accepts but there are some caveats to keep in mind:<br /><br />
+												<ul>
+													<li><strong>Nexus files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>												
+													<li>Tree descriptions in Nexus files follow the same syntax as Newick. However, in some cases the taxon names are replaced with integers that correspond with a numbered list
+													of taxon names, the so-called "translation table". This is among other reasons done to save space and cut down on redundant names in files that contain many trees for the same
+													taxa (for example in Bayesian analyses). The monophylizer accepts either usage: names embedded inside the tree statements or a separate translation table are both fine.</li>
+													<li>The tips in your tree should have names that consist of the species name (<code><em>Genus species</em></code> or <code><em>Genus species subspecies</em></code>), <strong>and</strong>
+													some kind of separator (such as the <code>|</code> symbol), 
+													<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
+													You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols besides <code>|</code> as long as they don't have special meaning in Nexus. 
+													The following are therefore disallowed: <code>'"[]();:_</code>
+													</li>												
+													<li>BOLD has a tendency to break the standard, especially when you export trees with more metadata than strictly needed. If you export trees from BOLD make sure the trees contain
+													species names and unique identifiers, but nothing else. Metadata such as names of collection localities or taxonomic authorities are quite likely to contain characters that
+													have special meanings in Nexus trees, yet BOLD does nothing to prevent their unsafe inclusion. For example, a place name such as <code>Côte d'Azur</code> is problematic, firstly 
+													because the accent circonflexe might not transfer correctly (this has to do with <a href="https://en.wikipedia.org/wiki/Character_encoding">character encoding</a>) and
+													secondly because the apostrophe is interpreted as an opening quote for which a file reader that follows the standard will expect a closing quote. Likewise, any text that
+													is <code>[inside square brackets]</code> is interpreted in a special way: file readers that follow the standard assume that such text is a comment that should normally be stripped
+													out of the tree description (some programs insert special data in these comments, though this is "non standard"). When BOLD inserts square brackets into your tree 
+													description this can break the tree reading, especially when there is an opening bracket but no closing one, which we've seen "in the wild".</li>													
+												</ul>
 											  </div>
 											</div>
 										  </div>
