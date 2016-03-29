@@ -61,6 +61,9 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#faq">FAQ</a>
+                    </li>                                                          
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                 </ul>
@@ -80,7 +83,7 @@
 					<div id="rootwizard">
 						<ul>
 							<li><a href="#tab1" data-toggle="tab">Upload</a></li>
-							<li><a href="#tab2" data-toggle="tab">BOLD options</a></li>
+							<li><a href="#tab2" data-toggle="tab">Tree reading</a></li>
 							<li><a href="#tab3" data-toggle="tab">Split/lump</a></li>
 							<li><a href="#tab4" data-toggle="tab">Output</a></li>
 							<li><a href="#tab5" data-toggle="tab">Analyze</a></li>
@@ -117,20 +120,129 @@
 											</select>
 										</div>
 									</div>
+									
+									<div class="alert alert-info" role="alert">
+										<strong>Info: More about input file formats then you'll ever want to know</strong>
+										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										  <div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+											  <h4 class="panel-title">
+												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												  Newick / New Hampshire files
+												</a>
+											  </h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+											  <div class="panel-body">
+												The simplest and most common file format for phylogenetic trees is the <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">Newick</a> (or New Hampshire) format. 
+												Newick files are simple text files whose sole contents consist of parenthetical statements describing one or more tree shapes. You can verify this by opening your tree file in a 
+												simple text editor such as NotePad on Windows, or TextEdit on Mac OSX: if you only see lots of parentheses with text inside it's probably a Newick file.
+												Regrettably, the Newick "standard" is not followed too carefully by different programs. We have attempted to be permissive in what the monophylizer accepts but 
+												there are some caveats to keep in mind:<br /><br />
+												<ul>
+													<li>The tips in your tree should have names that consist of the species name (<code><em>Genus species</em></code> or <code><em>Genus species subspecies</em></code>), <strong>and</strong>
+													some kind of separator (such as the '|' symbol), 
+													<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
+													You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols as long as they don't have special meaning in Newick. The following are 
+													therefore disallowed: <code>'"[]();:</code>
+													</li>												
+													<li>BOLD has a tendency to break the standard, especially when you export trees with more metadata than strictly needed. If you export trees from BOLD make sure the trees contain
+													species names and unique identifiers, but nothing else. Metadata such as names of collection localities or taxonomic authorities are quite likely to contain characters that
+													have special meanings in Newick trees, yet BOLD does nothing to prevent their unsafe inclusion. For example, a place name such as <code>Côte d'Azur</code> is problematic, firstly 
+													because the accent circonflexe might not transfer correctly (this has to do with <a href="https://en.wikipedia.org/wiki/Character_encoding">character encoding</a>) and
+													secondly because the apostrophe is interpreted as an opening quote for which a file reader that follows the standard will expect a closing quote. Likewise, any text that
+													is <code>[inside square brackets]</code> is interpreted in a special way: file readers that follow the standard assume that such text is a comment that should normally be stripped
+													out of the tree description (some programs insert special data in these comments, though this is "non standard"). When BOLD inserts square brackets into your tree 
+													description this can break the tree reading, especially when there is an opening bracket but no closing one, which we've seen "in the wild".</li>
+													<li>Whitespace is normally stripped out of Newick trees before they are read. If a name in a tree needs to have spaces in them, such as the space between the genus name
+													and the specific epithet, then this is done either by using an underscore symbol <code>_</code> instead of a space, or by putting the entire name in quotes. This allows 
+													certain programs to insert spaces in tree descriptions as indentation, to show the "depth" of the taxon in the tree description. When such trees are read by a standard compliant
+													tree reader, all the indentation spaces are stripped, as they should. However, BOLD inserts spaces between genus names and specific epithets without quoting the names. Any 
+													strictly valid tree reader is going to remove those spaces as well, which results in concatenation of the genus and species names. We provide a workaround for this (incorrect) 
+													syntax variant in the 'Tree reading' tab, but it is up to you to know the meaning of whitespace because a tree reader can't guess this automatically.																									
+													</li>
+													<li>Newick files can contain multiple tree descriptions. The monophylizer only reads the first tree.</li>
+												</ul>
+												Here are examples of usable Newick files:<br /><br />
+												<ul>
+													<li>Newick files with quoted whitespace:
+														<ul>
+															<li>Adelidae_outgroup_rerooted.nwk</li>
+															<li>Eriocraniidae_outgroup_rerooted.nwk</li>
+															<li>Nepticulidae_outgroup_rerooted.nwk</li>
+															<li>NJ_Argyresthiidae.nwk</li>
+															<li>NJ_Coleophoridae.nwk</li>
+															<li>Psychidae_outgroup_rerooted.nwk</li>														
+														</ul>
+													</li>
+													<li>Newick files with underscored whitespace:
+														<ul>
+															<li>ML_Coleophoridae.nwk</li>
+															<li>ML_Argyresthiidae.nwk</li>
+															<li>RAxML_bipartitions.Pterophoridae_rooted.nwk</li>
+															<li>RAxML_bipartitions.Coleophoridae_rooted.nwk</li>
+															<li>RAxML_bipartitions.Gracillariidae_rooted.nwk</li>
+														</ul>
+													</li>
+													<li>Technically invalid whitespace usage (as exported by BOLD), allowed by the monophylizer:
+														<ul>
+															<li>ML_Coleophoridae.nwk</li>
+															<li>ML_Argyresthiidae.nwk</li>
+															<li>RAxML_bipartitions.Pterophoridae_rooted.nwk</li>
+															<li>RAxML_bipartitions.Coleophoridae_rooted.nwk</li>
+															<li>RAxML_bipartitions.Gracillariidae_rooted.nwk</li>
+														</ul>
+													</li>
+												</ul>
+											  </div>
+											</div>
+										  </div>
+										  <div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo">
+											  <h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												  Nexus files
+												</a>
+											  </h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											  <div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											  </div>
+											</div>
+										  </div>
+										  <div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingThree">
+											  <h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												  XML-based formats
+												</a>
+											  </h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											  <div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											  </div>
+											</div>
+										  </div>
+										</div>	
+									</div>								
+									
 								</div>
 								<div class="tab-pane" id="tab2">
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">BOLD options</h3>
+											<h3 class="panel-title">Tree reading</h3>
 										  </div>
 										  <div class="panel-body">
 										  
 											<div class="alert alert-info" role="alert">
 												<strong>Note!</strong>
-											  	The following options are optimized for the tree file dialect that BOLD exports. This dialect is invalid
-											  	according to the standards, and these options are workarounds to deal with that. <strong>If your tree comes from 
-											  	somewhere else, not BOLD, you should probably uncheck all these options.</strong>
+											  	The following options configure how tree files are read. The monophylizer operates on trees where every tip must have both a species
+											  	name (a binomial or trinomial) and a sequence identifier, which are demarcated using a record separator. When you export trees
+											  	from BOLD this separator is by default the '|' symbol, so you can leave this setting as is when your trees come from BOLD. If you 
+											  	generate your trees in some other way make sure you update the settings here accordingly.
 											</div>
 										  
 											<strong>Record separator:</strong>
@@ -141,10 +253,10 @@
 											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="The tip names in BOLD trees consist
 												of a taxon name followed by metadata fields (specimen and sequence identifiers, localities, etc.).
 												By default, the separator between these fields is the '|'
-												symbol. If the tip names are clean binomial or trinomial names 
-												with no suffix of any kind then this option is harmless and irrelevant."></span>	
+												symbol."></span>	
 											<br />										  
 										  
+											<!--
 											<input 
 												type="checkbox" 
 												checked="checked" 
@@ -157,7 +269,7 @@
 												choke on the output. The best solution for dealing with this is to keep the square brackets in BOLD trees.
 												Uncheck this if your tree comes from somewhere else (example: TreeAnnotator)."></span>
 											<br />												
-										  
+										  										  
 											<input 
 												type="checkbox" 
 												checked="checked" 
@@ -175,21 +287,21 @@
 												Therefore, quotes should probably be treated verbatim in BOLD trees.
 												Uncheck this if your tree comes from somewhere else."></span>																						                        
 											<br />
+											-->
 										  
 											<input 
 												type="checkbox" 
 												checked="checked" 
 												name="whitespace" />
-											<strong>Keep whitespace</strong>	
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="In newick and nexus trees, whitespace in species 
+											<strong>Keep whitespace in Newick species names</strong>	
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="In Newick trees, whitespace in species 
 												names is usually escaped, either by replacing it with underscores 
 												('_') or by putting the entire species name in quotes.
 												This allows some programs to generate pretty indentation to
 												show the 'depth' of a taxon within the tree string. BOLD does
 												not follow this convention: whitespace occurs in unescaped
 												form only to delimit words, so normally
-												this needs to be kept in BOLD trees.
-												Uncheck this if your tree comes from somewhere else."></span>
+												this needs to be kept in BOLD trees."></span>
 											<br />
 																								
 										</div>
@@ -284,6 +396,17 @@
         </div>
     </section>  
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
@@ -294,7 +417,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
