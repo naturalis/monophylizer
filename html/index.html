@@ -145,7 +145,7 @@
 													some kind of separator (such as the <code>|</code> symbol), 
 													<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
 													You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols besides <code>|</code> as long as they don't have special meaning in Newick. 
-													The following are therefore disallowed: <code>'"[]();:_</code>
+													The following are therefore disallowed: <code>,'"[]();:_</code>
 													</li>												
 													<li>BOLD has a tendency to break the standard, especially when you export trees with more metadata than strictly needed. If you export trees from BOLD make sure the trees contain
 													species names and unique identifiers, but nothing else. Metadata such as names of collection localities or taxonomic authorities are quite likely to contain characters that
@@ -223,7 +223,7 @@
 													some kind of separator (such as the <code>|</code> symbol), 
 													<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
 													You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols besides <code>|</code> as long as they don't have special meaning in Nexus. 
-													The following are therefore disallowed: <code>'"[]();:_</code>
+													The following are therefore disallowed: <code>,'"[]();:_</code>
 													</li>												
 													<li>BOLD has a tendency to break the standard, especially when you export trees with more metadata than strictly needed. If you export trees from BOLD make sure the trees contain
 													species names and unique identifiers, but nothing else. Metadata such as names of collection localities or taxonomic authorities are quite likely to contain characters that
@@ -233,6 +233,37 @@
 													is <code>[inside square brackets]</code> is interpreted in a special way: file readers that follow the standard assume that such text is a comment that should normally be stripped
 													out of the tree description (some programs insert special data in these comments, though this is "non standard"). When BOLD inserts square brackets into your tree 
 													description this can break the tree reading, especially when there is an opening bracket but no closing one, which we've seen "in the wild".</li>													
+												</ul>
+												Here are examples of usable Nexus files:<br /><br />
+												<ul>
+													<li>Nexus files with underscored whitespace:
+														<ul>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped/ML_Coleophoridae.nex">ML_Coleophoridae.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped/ML_Argyresthiidae.nex">ML_Argyresthiidae.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped/RAxML_bipartitions.Pterophoridae_rooted.nex">RAxML_bipartitions.Pterophoridae_rooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped/RAxML_bipartitions.Coleophoridae_rooted.nex">RAxML_bipartitions.Coleophoridae_rooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped/RAxML_bipartitions.Gracillariidae_rooted.nex">RAxML_bipartitions.Gracillariidae_rooted.nex</a></li>
+														</ul>
+													</li>
+													<li>Nexus files without a translation table:
+														<ul>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped_no_translate/ML_Coleophoridae.nex">ML_Coleophoridae.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped_no_translate/ML_Argyresthiidae.nex">ML_Argyresthiidae.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped_no_translate/RAxML_bipartitions.Pterophoridae_rooted.nex">RAxML_bipartitions.Pterophoridae_rooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped_no_translate/RAxML_bipartitions.Coleophoridae_rooted.nex">RAxML_bipartitions.Coleophoridae_rooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_escaped_no_translate/RAxML_bipartitions.Gracillariidae_rooted.nex">RAxML_bipartitions.Gracillariidae_rooted.nex</a></li>
+														</ul>
+													</li>
+													<li>Nexus files with quoted whitespace:
+														<ul>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/Adelidae_outgroup_rerooted.nex">Adelidae_outgroup_rerooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/Eriocraniidae_outgroup_rerooted.nex">Eriocraniidae_outgroup_rerooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/Nepticulidae_outgroup_rerooted.nex">Nepticulidae_outgroup_rerooted.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/NJ_Argyresthiidae.nex">NJ_Argyresthiidae.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/NJ_Coleophoridae.nex">NJ_Coleophoridae.nex</a></li>
+															<li><a href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/Psychidae_outgroup_rerooted.nex">Psychidae_outgroup_rerooted.nex</a></li>														
+														</ul>
+													</li>													
 												</ul>
 											  </div>
 											</div>
