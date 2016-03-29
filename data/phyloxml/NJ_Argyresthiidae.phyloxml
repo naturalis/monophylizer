@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <branch_length>0.038275</branch_length>
+        <clade>
+          <branch_length>0.010790000000000008</branch_length>
+          <clade>
+            <branch_length>0.004369999999999999</branch_length>
+            <clade>
+              <branch_length>0.006890000000000007</branch_length>
+              <clade>
+                <branch_length>0.003049999999999997</branch_length>
+                <clade>
+                  <branch_length>0.002140000000000003</branch_length>
+                  <clade>
+                    <branch_length>0.0018200000000000022</branch_length>
+                    <clade>
+                      <branch_length>0.013740000000000002</branch_length>
+                      <clade>
+                        <branch_length>0.015759999999999996</branch_length>
+                        <clade>
+                          <branch_length>4.099999999999937E-4</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Argyresthia trifasciata|UKLB29F03</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia trifasciata|TLMF Lep 07379</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia trifasciata|BC ZSM Lep 25335</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia trifasciata|BC ZSM Lep 25609</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia trifasciata|BC ZSM Lep 28957</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia trifasciata|MM19390</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0010899999999999938</branch_length>
+                          <clade>
+                            <name>Argyresthia trifasciata|UKLB27G05</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia trifasciata|RMNH.INS.540943</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia trifasciata|RMNH.INS.540941</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.006070000000000006</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia arceuthina|UKLB42A06</name>
+                                  <branch_length>0.0016999999999999932</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia arceuthina|BC ZSM Lep 61405</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia arceuthina|MM03977</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia arceuthina|MM14359</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia arceuthina|TLMF Lep 07377</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia arceuthina|TLMF Lep 07378</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.006279999999999994</branch_length>
+                      <clade>
+                        <branch_length>0.03445000000000001</branch_length>
+                        <clade>
+                          <branch_length>0.005739999999999995</branch_length>
+                          <clade>
+                            <name>Argyresthia svenssoni|TLMF Lep 06589</name>
+                            <branch_length>0.0015000000000000013</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia svenssoni|TLMF Lep 04122</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.005159999999999998</branch_length>
+                          <clade>
+                            <branch_length>7.199999999999984E-4</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Argyresthia svenssoni|MM18115</name>
+                                        <branch_length>0.0015000000000000013</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Argyresthia svenssoni|MM18110</name>
+                                        <branch_length>0.0015999999999999903</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia svenssoni|MM06408</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia svenssoni|MM06445</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia svenssoni|MM06446</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia svenssoni|MM06447</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia svenssoni|MM18107</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia svenssoni|MM18108</name>
+                            <branch_length>7.800000000000029E-4</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.002790000000000001</branch_length>
+                        <clade>
+                          <branch_length>0.007650000000000004</branch_length>
+                          <clade>
+                            <branch_length>0.025800000000000003</branch_length>
+                            <clade>
+                              <name>Argyresthia laevigatella|MM18104</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Argyresthia laevigatella|MM15544</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia laevigatella|MM10151</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia laevigatella|BC ZSM Lep 28953</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.018710000000000004</branch_length>
+                            <clade>
+                              <branch_length>7.299999999999945E-4</branch_length>
+                              <clade>
+                                <branch_length>0.0033500000000000058</branch_length>
+                                <clade>
+                                  <name>Argyresthia bergiella|MM18985</name>
+                                  <branch_length>7.599999999999968E-4</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>8.399999999999935E-4</branch_length>
+                                  <clade>
+                                    <branch_length>7.500000000000007E-4</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Argyresthia bergiella|MM18117</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <name>Argyresthia bergiella|MM18113</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <name>Argyresthia bergiella|MM18112</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Argyresthia bergiella|MM09987</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Argyresthia bergiella|MM09986</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Argyresthia bergiella|MM09238</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia bergiella|MM18116</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia bergiella|MM18114</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <branch_length>5.499999999999949E-4</branch_length>
+                                <clade>
+                                  <name>Argyresthia bergiella|MM09832</name>
+                                  <branch_length>0.0033399999999999958</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia bergiella|BC ZSM Lep 28951</name>
+                                  <branch_length>0.0012599999999999972</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia bergiella|BC ZSM Lep 28955</name>
+                              <branch_length>7.89999999999999E-4</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.03812</branch_length>
+                          <clade>
+                            <branch_length>0.0036599999999999966</branch_length>
+                            <clade>
+                              <branch_length>0.0013299999999999979</branch_length>
+                              <clade>
+                                <branch_length>3.7999999999999146E-4</branch_length>
+                                <clade>
+                                  <branch_length>1.8000000000001348E-4</branch_length>
+                                  <clade>
+                                    <name>Argyresthia glabratella|TLMF Lep 07494</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <branch_length>0.0015499999999999958</branch_length>
+                                          <clade>
+                                            <name>Argyresthia glabratella|TLMF Lep 07011</name>
+                                            <branch_length>0.004569999999999991</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Argyresthia glabratella|TLMF Lep 02095</name>
+                                            <branch_length>3.2999999999999696E-4</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Argyresthia glabratella|BC ZSM Lep 25543</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Argyresthia glabratella|BC ZSM Lep 35039</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia glabratella|TLMF Lep 02096</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia glabratella|BC ZSM Lep 25536</name>
+                                  <branch_length>0.003039999999999987</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia glabratella|TLMF Lep 04271</name>
+                                <branch_length>0.0012099999999999889</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia glabratella|MM18111</name>
+                              <branch_length>2.1999999999999797E-4</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0040999999999999925</branch_length>
+                            <clade>
+                              <name>Argyresthia glabratella|MM18109</name>
+                              <branch_length>7.199999999999984E-4</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>8.299999999999974E-4</branch_length>
+                              <clade>
+                                <name>Argyresthia glabratella|MM14184</name>
+                                <branch_length>0.00137000000000001</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia glabratella|MM03262</name>
+                                <branch_length>0.004730000000000012</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.0035499999999999976</branch_length>
+                    <clade>
+                      <branch_length>0.023040000000000005</branch_length>
+                      <clade>
+                        <branch_length>0.0010300000000000031</branch_length>
+                        <clade>
+                          <name>Argyresthia aurulentella|UKLB39C09</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <name>Argyresthia aurulentella|TLMF Lep 06591</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia aurulentella|TLMF Lep 04424</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Argyresthia aurulentella|TLMF Lep 03661</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia aurulentella|MM02627</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia aurulentella|MM14643</name>
+                        <branch_length>4.699999999999982E-4</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.03705</branch_length>
+                      <clade>
+                        <branch_length>0.0014300000000000007</branch_length>
+                        <clade>
+                          <name>Argyresthia abdominalis|TLMF Lep 06594</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia abdominalis|BC ZSM Lep 61407</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>9.200000000000041E-4</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <name>Argyresthia abdominalis|MM09726</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia abdominalis|MM03140</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia abdominalis|MM02628</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.0036800000000000027</branch_length>
+                  <clade>
+                    <branch_length>0.06591000000000001</branch_length>
+                    <clade>
+                      <name>Argyresthia fundella|NHMO-08081</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia fundella|BC ZSM Lep 24961</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.048560000000000006</branch_length>
+                    <clade>
+                      <branch_length>5.400000000000127E-4</branch_length>
+                      <clade>
+                        <name>Argyresthia dilectella|MM14358</name>
+                        <branch_length>6.200000000000094E-4</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>9.299999999999864E-4</branch_length>
+                        <clade>
+                          <name>Argyresthia dilectella|MM12058</name>
+                          <branch_length>0.0013100000000000056</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia dilectella|BC ZSM Lep 61406</name>
+                          <branch_length>1.8999999999999573E-4</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia dilectella|MM06796</name>
+                      <branch_length>0.0010100000000000109</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.0034499999999999947</branch_length>
+                <clade>
+                  <branch_length>0.04937999999999999</branch_length>
+                  <clade>
+                    <name>Argyresthia thuiella|TLMF Lep 08209</name>
+                    <branch_length>0.0015999999999999903</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia thuiella|BC ZSM Lep 50861</name>
+                    <branch_length>0.0</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Argyresthia illuminatella|BC ZSM Lep 28311</name>
+                  <branch_length>0.06907</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Argyresthia praecocella|MM18986</name>
+              <branch_length>0.055499999999999994</branch_length>
+              <taxonomy></taxonomy>
+            </clade>
+          </clade>
+          <clade>
+            <branch_length>0.05612</branch_length>
+            <clade>
+              <branch_length>0.0010000000000000009</branch_length>
+              <clade>
+                <name>Argyresthia glaucinella|UKLB31A05</name>
+                <branch_length>0.0</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <branch_length>0.0</branch_length>
+                <clade>
+                  <name>Argyresthia glaucinella|MM09734</name>
+                  <branch_length>0.0</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <name>Argyresthia glaucinella|BC ZSM Lep 28323</name>
+                  <branch_length>0.0</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Argyresthia glaucinella|BC ZSM Lep 61432</name>
+              <branch_length>7.500000000000007E-4</branch_length>
+              <taxonomy></taxonomy>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <branch_length>0.00449999999999999</branch_length>
+          <clade>
+            <branch_length>0.004449999999999996</branch_length>
+            <clade>
+              <branch_length>0.041370000000000004</branch_length>
+              <clade>
+                <branch_length>0.003030000000000005</branch_length>
+                <clade>
+                  <branch_length>3.599999999999992E-4</branch_length>
+                  <clade>
+                    <branch_length>0.001339999999999994</branch_length>
+                    <clade>
+                      <name>Argyresthia retinella|UKLB42H05</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia retinella|UKLB32F09</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>5.799999999999972E-4</branch_length>
+                    <clade>
+                      <name>Argyresthia retinella|TLMF Lep 08073</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia retinella|TLMF Lep 06585</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>1.0999999999999899E-4</branch_length>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <name>Argyresthia retinella|MM13594</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia retinella|BC ZSM Lep 28961</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia retinella|MM03138</name>
+                    <branch_length>0.0</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <name>Argyresthia retinella|MM02583</name>
+                <branch_length>0.009239999999999998</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.005780000000000007</branch_length>
+              <clade>
+                <branch_length>0.019779999999999992</branch_length>
+                <clade>
+                  <branch_length>0.003909999999999997</branch_length>
+                  <clade>
+                    <branch_length>3.599999999999992E-4</branch_length>
+                    <clade>
+                      <branch_length>4.200000000000037E-4</branch_length>
+                      <clade>
+                        <branch_length>2.7000000000000635E-4</branch_length>
+                        <clade>
+                          <branch_length>4.099999999999937E-4</branch_length>
+                          <clade>
+                            <name>Argyresthia goedartella|UKLB38D09</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia goedartella|UKLB15G03</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Argyresthia goedartella|TLMF Lep 08224</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia goedartella|TLMF Lep 04381</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Argyresthia goedartella|RMNH.INS.541026</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <name>Argyresthia goedartella|RMNH.INS.538501</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Argyresthia goedartella|RMNH.INS.538497</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Argyresthia goedartella|RMNH.INS.538495</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <name>Argyresthia goedartella|RMNH.INS.538481</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <name>Argyresthia goedartella|MM03136</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>0.0</branch_length>
+                                              <clade>
+                                                <name>Argyresthia goedartella|BC ZSM Lep 37788</name>
+                                                <branch_length>0.0</branch_length>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <name>Argyresthia goedartella|BC ZSM Lep 28318</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Argyresthia goedartella|BC ZSM Lep 28317</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0011899999999999966</branch_length>
+                          <clade>
+                            <name>Argyresthia goedartella|UKLB34F10</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia goedartella|BC ZSM Lep 38072</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia goedartella|RMNH.INS.540914</name>
+                        <branch_length>0.0013100000000000056</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia goedartella|MM12019</name>
+                      <branch_length>0.001130000000000006</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia goedartella|RMNH.INS.538475</name>
+                    <branch_length>0.0010799999999999976</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.007419999999999996</branch_length>
+                  <clade>
+                    <branch_length>0.005529999999999993</branch_length>
+                    <clade>
+                      <name>Argyresthia goedartella|TLMF Lep 02219</name>
+                      <branch_length>0.0013900000000000023</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>1.0999999999999899E-4</branch_length>
+                      <clade>
+                        <name>Argyresthia goedartella|TLMF Lep 00558</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia goedartella|MM02340</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia goedartella|BC ZSM Lep 35036</name>
+                    <branch_length>6.700000000000039E-4</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.06006</branch_length>
+                <clade>
+                  <branch_length>6.400000000000017E-4</branch_length>
+                  <clade>
+                    <name>Argyresthia brockeella|UKLB43A04</name>
+                    <branch_length>0.0</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <branch_length>2.0000000000006124E-5</branch_length>
+                    <clade>
+                      <branch_length>3.8000000000000533E-4</branch_length>
+                      <clade>
+                        <branch_length>5.200000000000066E-4</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Argyresthia brockeella|UKLB33B10</name>
+                                          <branch_length>7.400000000000045E-4</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Argyresthia brockeella|UKLB26B01</name>
+                                          <branch_length>0.0010600000000000054</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Argyresthia brockeella|BC ZSM Lep 28316</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia brockeella|BC ZSM Lep 28956</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia brockeella|BC ZSM Lep 28958</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia brockeella|BC ZSM Lep 35037</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia brockeella|MM03133</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia brockeella|MM08132</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia brockeella|TLMF Lep 04285</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia brockeella|UKLB31A02</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia brockeella|MM02309</name>
+                        <branch_length>0.0010799999999999976</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia brockeella|BC ZSM Lep 28954</name>
+                      <branch_length>0.0011700000000000044</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Argyresthia brockeella|TLMF Lep 03619</name>
+                  <branch_length>9.200000000000041E-4</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <branch_length>0.01396</branch_length>
+            <clade>
+              <branch_length>0.020739999999999995</branch_length>
+              <clade>
+                <name>Argyresthia pulchella|MM13731</name>
+                <branch_length>0.0</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <branch_length>0.0</branch_length>
+                <clade>
+                  <name>Argyresthia pulchella|MM12465</name>
+                  <branch_length>0.0</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <name>Argyresthia pulchella|MM02299</name>
+                  <branch_length>0.0</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.0014300000000000007</branch_length>
+              <clade>
+                <branch_length>0.0014500000000000068</branch_length>
+                <clade>
+                  <branch_length>0.017119999999999996</branch_length>
+                  <clade>
+                    <branch_length>0.0066900000000000015</branch_length>
+                    <clade>
+                      <branch_length>0.003049999999999997</branch_length>
+                      <clade>
+                        <name>Argyresthia conjugella|UKLB39C11</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <name>Argyresthia conjugella|TLMF Lep 08070</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>5.000000000000004E-4</branch_length>
+                                  <clade>
+                                    <name>Argyresthia conjugella|TLMF Lep 04359</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>5.000000000000004E-4</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Argyresthia conjugella|BC ZSM Lep 28974</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Argyresthia conjugella|BC ZSM Lep 23048</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia conjugella|BC ZSM Lep 23049</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia conjugella|BC ZSM Lep 28325</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia conjugella|BC ZSM Lep 28976</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia conjugella|MM02292</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia conjugella|TLMF Lep 03626</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>4.999999999999449E-5</branch_length>
+                      <clade>
+                        <name>Argyresthia conjugella|MM08380</name>
+                        <branch_length>0.0015000000000000013</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia conjugella|MM06838</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.005769999999999997</branch_length>
+                    <clade>
+                      <name>Argyresthia conjugella|UKLB15G10</name>
+                      <branch_length>0.0020700000000000024</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>0.0010300000000000031</branch_length>
+                      <clade>
+                        <branch_length>0.0012300000000000089</branch_length>
+                        <clade>
+                          <name>Argyresthia conjugella|TLMF Lep 08269</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <name>Argyresthia conjugella|TLMF Lep 02237</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia conjugella|MM03137</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia conjugella|BC ZSM Lep 37516</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia conjugella|TLMF Lep 07449</name>
+                        <branch_length>2.6999999999999247E-4</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.02969999999999999</branch_length>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <name>Argyresthia albistria|UKLB39D02</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>0.0</branch_length>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Argyresthia albistria|UKLB30G08</name>
+                                        <branch_length>0.0015000000000000013</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Argyresthia albistria|BC ZSM Lep 28328</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia albistria|BC ZSM Lep 28966</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia albistria|BC ZSM Lep 28968</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia albistria|BC ZSM Lep 28970</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia albistria|MM06773</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia albistria|MM09511</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia albistria|MM13589</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia albistria|MM17949</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia albistria|TLMF Lep 08464</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia albistria|UKLB29C02</name>
+                    <branch_length>0.0</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.0021800000000000014</branch_length>
+                <clade>
+                  <branch_length>0.003940000000000013</branch_length>
+                  <clade>
+                    <branch_length>0.02078999999999999</branch_length>
+                    <clade>
+                      <branch_length>0.013579999999999995</branch_length>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia semitestacella|TLMF Lep 07313</name>
+                                  <branch_length>0.001460000000000003</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia semifusca|UKLB33F10</name>
+                                  <branch_length>0.004640000000000005</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia semifusca|KB08002</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia semitestacella|BC ZSM Lep 28327</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia semitestacella|BC ZSM Lep 28964</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia semitestacella|BC ZSM Lep 37517</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia semitestacella|BC ZSM Lep 61513</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.005820000000000006</branch_length>
+                      <clade>
+                        <branch_length>0.0010799999999999976</branch_length>
+                        <clade>
+                          <name>Argyresthia semifusca|MM23199</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia semifusca|MM18106</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia semifusca|KBE-07045</name>
+                        <branch_length>6.199999999999956E-4</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.021949999999999997</branch_length>
+                    <clade>
+                      <branch_length>8.499999999999897E-4</branch_length>
+                      <clade>
+                        <name>Argyresthia pygmaeella|UKLB42G08</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>3.0000000000002247E-5</branch_length>
+                        <clade>
+                          <branch_length>2.1999999999999797E-4</branch_length>
+                          <clade>
+                            <name>Argyresthia pygmaeella|UKLB31E11</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia pygmaeella|TLMF Lep 05329</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0013299999999999979</branch_length>
+                          <clade>
+                            <name>Argyresthia pygmaeella|MM03153</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia pygmaeella|MM03135</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>6.599999999999939E-4</branch_length>
+                      <clade>
+                        <name>Argyresthia pygmaeella|TLMF Lep 06593</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia pygmaeella|NHMO-07037</name>
+                              <branch_length>0.0015000000000000013</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia pygmaeella|BC ZSM Lep 61481</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia pygmaeella|BC ZSM Lep 64339</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia pygmaeella|MM02585</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.0029499999999999943</branch_length>
+                  <clade>
+                    <branch_length>0.0014799999999999952</branch_length>
+                    <clade>
+                      <branch_length>0.022059999999999996</branch_length>
+                      <clade>
+                        <branch_length>0.00202999999999999</branch_length>
+                        <clade>
+                          <branch_length>7.00000000000145E-5</branch_length>
+                          <clade>
+                            <branch_length>2.0999999999998797E-4</branch_length>
+                            <clade>
+                              <branch_length>3.2999999999999696E-4</branch_length>
+                              <clade>
+                                <name>Argyresthia spinosella|UKLB30F03</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia spinosella|MM06777</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia spinosella|MM06775</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0011700000000000044</branch_length>
+                              <clade>
+                                <name>Argyresthia spinosella|RMNH.INS.540810</name>
+                                <branch_length>0.0030999999999999917</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia spinosella|RMNH.INS.538810</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0013199999999999878</branch_length>
+                            <clade>
+                              <name>Argyresthia spinosella|RMNH.INS.544503</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia spinosella|RMNH.INS.538809</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia spinosella|MM06776</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.005510000000000001</branch_length>
+                        <clade>
+                          <branch_length>0.0019800000000000095</branch_length>
+                          <clade>
+                            <name>Argyresthia spinosella|TLMF Lep 07380</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia spinosella|BC ZSM Lep 28965</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0010700000000000015</branch_length>
+                          <clade>
+                            <name>Argyresthia spinosella|BC ZSM Lep 37514</name>
+                            <branch_length>0.004909999999999998</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia spinosella|BC ZSM Lep 28967</name>
+                            <branch_length>0.0012899999999999995</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.01847</branch_length>
+                      <clade>
+                        <branch_length>0.0011700000000000044</branch_length>
+                        <clade>
+                          <name>Argyresthia curvella|UKLB39C10</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <name>Argyresthia curvella|MM06847</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia curvella|BC ZSM Lep 28962</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia curvella|BC ZSM Lep 28321</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0036800000000000027</branch_length>
+                        <clade>
+                          <name>Argyresthia curvella|MM13745</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia curvella|MM10162</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.007319999999999993</branch_length>
+                    <clade>
+                      <branch_length>0.012809999999999988</branch_length>
+                      <clade>
+                        <name>Argyresthia bonnetella|UKLB39D01</name>
+                        <branch_length>0.004519999999999996</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0025300000000000045</branch_length>
+                        <clade>
+                          <name>Argyresthia bonnetella|UKLB33A11</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0015000000000000013</branch_length>
+                          <clade>
+                            <name>Argyresthia bonnetella|RMNH.INS.544462</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia bonnetella|RMNH.INS.544458</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Argyresthia bonnetella|RMNH.INS.540903</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia bonnetella|RMNH.INS.540820</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Argyresthia bonnetella|RMNH.INS.538496</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <name>Argyresthia bonnetella|RMNH.INS.538487</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Argyresthia bonnetella|MM06735</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <name>Argyresthia bonnetella|MM06734</name>
+                                              <branch_length>0.0015000000000000013</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Argyresthia bonnetella|BC ZSM Lep 28972</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Argyresthia bonnetella|BC ZSM Lep 38071</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Argyresthia bonnetella|MM06733</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.0033100000000000074</branch_length>
+                      <clade>
+                        <branch_length>0.017619999999999997</branch_length>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Argyresthia submontana|TLMF Lep 04356</name>
+                                          <branch_length>0.0015000000000000013</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Argyresthia sorbiella|MM02629</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Argyresthia sorbiella|BC ZSM Lep 53160</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia sorbiella|MM06767</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia sorbiella|MM06781</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia sorbiella|MM13593</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia sorbiella|MM14256</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia sorbiella|NHMO-06126</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia sorbiella|TLMF Lep 02360</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia sorbiella|TLMF Lep 08413</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.015490000000000004</branch_length>
+                        <clade>
+                          <branch_length>1.5999999999999348E-4</branch_length>
+                          <clade>
+                            <name>Argyresthia pruniella|TLMF Lep 08052</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Argyresthia pruniella|TLMF Lep 04357</name>
+                              <branch_length>0.0015000000000000013</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia pruniella|MM18105</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0010600000000000054</branch_length>
+                          <clade>
+                            <branch_length>0.0011400000000000021</branch_length>
+                            <clade>
+                              <branch_length>0.0014500000000000068</branch_length>
+                              <clade>
+                                <branch_length>0.0015000000000000013</branch_length>
+                                <clade>
+                                  <name>Argyresthia pruniella|TLMF Lep 08259</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia pruniella|TLMF Lep 05328</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia pruniella|MM09531</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0016500000000000126</branch_length>
+                              <clade>
+                                <name>Argyresthia pruniella|BC ZSM Lep 61410</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Argyresthia pruniella|BC ZSM Lep 28969</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia pruniella|BC ZSM Lep 28326</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>3.2999999999999696E-4</branch_length>
+                            <clade>
+                              <name>Argyresthia pruniella|BC ZSM Lep 28971</name>
+                              <branch_length>0.0014000000000000123</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>9.999999999998899E-5</branch_length>
+                              <clade>
+                                <name>Argyresthia pruniella|TLMF Lep 04101</name>
+                                <branch_length>0.0014899999999999913</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>1.0000000000010001E-5</branch_length>
+                                <clade>
+                                  <name>Argyresthia pruniella|BC ZSM Lep 61595</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Argyresthia pruniella|MM17950</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <name>Argyresthia pruniella|MM21022</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Argyresthia pruniella|TLMF Lep 02121</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Argyresthia pruniella|UKLB38D11</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Argyresthia pruniella|UKLB39C12</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>Paradoxus osyridellus|TLMF Lep 03141</name>
+        <branch_length>0.038275</branch_length>
+        <taxonomy></taxonomy>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>

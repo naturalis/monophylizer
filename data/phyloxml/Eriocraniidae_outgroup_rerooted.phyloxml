@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <branch_length>0.101895</branch_length>
+        <clade>
+          <branch_length>0.024870000000000003</branch_length>
+          <clade>
+            <branch_length>8.199999999999874E-4</branch_length>
+            <clade>
+              <branch_length>0.005580000000000029</branch_length>
+              <clade>
+                <branch_length>7.099999999999884E-4</branch_length>
+                <clade>
+                  <name>Dyseriocrania subpurpurella|UKLB27F01</name>
+                  <branch_length>0.0</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <branch_length>0.0</branch_length>
+                  <clade>
+                    <name>Dyseriocrania subpurpurella|BC ZSM Lep 29126</name>
+                    <branch_length>0.0</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <name>Dyseriocrania subpurpurella|RMNH.INS.540907</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>0.0</branch_length>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <branch_length>3.4000000000000696E-4</branch_length>
+                          <clade>
+                            <name>Dyseriocrania subpurpurella|MM05294</name>
+                            <branch_length>0.0022300000000000098</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Dyseriocrania subpurpurella|KLM Lep 00365</name>
+                            <branch_length>0.0010700000000000154</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Dyseriocrania subpurpurella|BC ZSM Lep 29125</name>
+                          <branch_length>0.0011599999999999944</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Dyseriocrania subpurpurella|BC ZSM Lep 29127</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <name>Dyseriocrania subpurpurella|BC ZSM Lep 50809</name>
+                <branch_length>7.699999999999929E-4</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>6.800000000000139E-4</branch_length>
+              <clade>
+                <branch_length>6.599999999999939E-4</branch_length>
+                <clade>
+                  <branch_length>9.000000000000119E-4</branch_length>
+                  <clade>
+                    <branch_length>9.699999999999709E-4</branch_length>
+                    <clade>
+                      <name>Dyseriocrania subpurpurella|TLMF Lep 02370</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>0.0</branch_length>
+                      <clade>
+                        <name>Dyseriocrania subpurpurella|MM05325</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Dyseriocrania subpurpurella|MM17299</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Dyseriocrania subpurpurella|MM17300</name>
+                    <branch_length>5.499999999999949E-4</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Dyseriocrania subpurpurella|MM05356</name>
+                  <branch_length>0.0023299999999999987</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <name>Dyseriocrania subpurpurella|TLMF Lep 02369</name>
+                <branch_length>9.000000000000119E-4</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>Dyseriocrania subpurpurella|TLMF Lep 04983</name>
+            <branch_length>0.002140000000000003</branch_length>
+            <taxonomy></taxonomy>
+          </clade>
+        </clade>
+        <clade>
+          <branch_length>0.018589999999999995</branch_length>
+          <clade>
+            <branch_length>0.005879999999999996</branch_length>
+            <clade>
+              <branch_length>0.007050000000000001</branch_length>
+              <clade>
+                <branch_length>0.029359999999999997</branch_length>
+                <clade>
+                  <branch_length>0.0025199999999999945</branch_length>
+                  <clade>
+                    <branch_length>4.999999999999449E-5</branch_length>
+                    <clade>
+                      <name>Eriocrania sparrmannella|MM14627</name>
+                      <branch_length>0.0012899999999999856</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>2.1000000000001573E-4</branch_length>
+                      <clade>
+                        <name>Eriocrania sparrmannella|MM13938</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania sparrmannella|MM13914</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Eriocrania sparrmannella|MM08559</name>
+                    <branch_length>0.0</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Eriocrania sparrmannella|BC ZSM Lep 23236</name>
+                  <branch_length>0.0037599999999999856</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.04249</branch_length>
+                <clade>
+                  <name>Eriocrania salopiella|MM15503</name>
+                  <branch_length>0.001710000000000017</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <name>Eriocrania salopiella|BC ZSM Lep 23231</name>
+                  <branch_length>0.0029900000000000204</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.043550000000000005</branch_length>
+              <clade>
+                <branch_length>6.199999999999817E-4</branch_length>
+                <clade>
+                  <branch_length>9.800000000000086E-4</branch_length>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <name>Eriocrania cicatricella|MM17913</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Eriocrania cicatricella|MM08798</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <branch_length>0.0</branch_length>
+                      <clade>
+                        <name>Eriocrania cicatricella|NHMO-08006</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania cicatricella|MM08792</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.0</branch_length>
+                      <clade>
+                        <name>Eriocrania cicatricella|BC ZSM Lep 29129</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania cicatricella|MM17914</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Eriocrania cicatricella|BC ZSM Lep 23235</name>
+                  <branch_length>6.200000000000094E-4</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <name>Eriocrania cicatricella|MM00436</name>
+                <branch_length>8.800000000000197E-4</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <branch_length>0.0046800000000000175</branch_length>
+            <clade>
+              <branch_length>0.06518000000000002</branch_length>
+              <clade>
+                <branch_length>3.599999999999992E-4</branch_length>
+                <clade>
+                  <branch_length>2.1999999999999797E-4</branch_length>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <name>Heringocrania unimaculella|MM08800</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Heringocrania unimaculella|MM17911</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.0</branch_length>
+                    <clade>
+                      <name>Heringocrania unimaculella|TLMF Lep 02953</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Heringocrania unimaculella|MM00433</name>
+                      <branch_length>0.0</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Heringocrania unimaculella|BC ZSM Lep 29128</name>
+                  <branch_length>0.0012800000000000034</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <name>Heringocrania unimaculella|BC ZSM Lep 50808</name>
+                <branch_length>0.0011899999999999966</branch_length>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.011119999999999991</branch_length>
+              <clade>
+                <branch_length>0.03407000000000002</branch_length>
+                <clade>
+                  <branch_length>0.0012599999999999834</branch_length>
+                  <clade>
+                    <branch_length>3.9000000000000146E-4</branch_length>
+                    <clade>
+                      <branch_length>3.2999999999999696E-4</branch_length>
+                      <clade>
+                        <name>Eriocrania semipurpurella|MM16679</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <name>Eriocrania semipurpurella|MM19755</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <name>Eriocrania semipurpurella|MM19768</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Eriocrania semipurpurella|MM19753</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM19771</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <branch_length>0.0</branch_length>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <name>Eriocrania semipurpurella|MM05324</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Eriocrania semipurpurella|MM19775</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Eriocrania semipurpurella|MM19769</name>
+                                                <branch_length>0.0</branch_length>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Eriocrania semipurpurella|MM19835</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Eriocrania semipurpurella|MM19776</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Eriocrania semipurpurella|MM19770</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Eriocrania semipurpurella|MM16675</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Eriocrania semipurpurella|MM19828</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Eriocrania semipurpurella|MM09028</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|MM19830</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Eriocrania semipurpurella|MM19773</name>
+                      <branch_length>0.0027699999999999947</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Eriocrania semipurpurella|MM19833</name>
+                    <branch_length>0.0011099999999999999</branch_length>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Eriocrania semipurpurella|MM13110</name>
+                  <branch_length>2.9000000000001247E-4</branch_length>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.0024200000000000055</branch_length>
+                <clade>
+                  <branch_length>0.036250000000000004</branch_length>
+                  <clade>
+                    <branch_length>0.001689999999999997</branch_length>
+                    <clade>
+                      <branch_length>9.599999999999886E-4</branch_length>
+                      <clade>
+                        <branch_length>3.800000000000192E-4</branch_length>
+                        <clade>
+                          <branch_length>4.699999999999982E-4</branch_length>
+                          <clade>
+                            <branch_length>6.499999999999839E-4</branch_length>
+                            <clade>
+                              <branch_length>5.100000000000104E-4</branch_length>
+                              <clade>
+                                <branch_length>7.099999999999884E-4</branch_length>
+                                <clade>
+                                  <name>Eriocrania sangii|MM19761</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Eriocrania sangii|MM19760</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <name>Eriocrania sangii|MM05315</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Eriocrania sangii|MM05316</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Eriocrania sangii|MM12061</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Eriocrania sangii|MM17912</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Eriocrania sangii|MM17954</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Eriocrania sangii|MM17927</name>
+                                <branch_length>7.999999999999952E-4</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Eriocrania sangii|MM14777</name>
+                              <branch_length>0.00274000000000002</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>1.4999999999998348E-4</branch_length>
+                            <clade>
+                              <branch_length>7.500000000000284E-4</branch_length>
+                              <clade>
+                                <branch_length>9.299999999999864E-4</branch_length>
+                                <clade>
+                                  <name>Eriocrania sangii|MM19759</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Eriocrania sangii|BC ZSM Lep 50806</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Eriocrania sangii|MM19767</name>
+                                <branch_length>5.699999999999872E-4</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Eriocrania sangii|MM19766</name>
+                              <branch_length>0.0023500000000000187</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Eriocrania sangii|MM17929</name>
+                          <branch_length>0.004179999999999989</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania sangii|MM05750</name>
+                        <branch_length>0.0011500000000000121</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Eriocrania sangii|MM05747</name>
+                      <branch_length>0.0021100000000000008</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.0013299999999999979</branch_length>
+                    <clade>
+                      <branch_length>6.499999999999839E-4</branch_length>
+                      <clade>
+                        <branch_length>3.5000000000001696E-4</branch_length>
+                        <clade>
+                          <name>Eriocrania sangii|MM08793</name>
+                          <branch_length>3.1999999999998696E-4</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>5.300000000000027E-4</branch_length>
+                          <clade>
+                            <branch_length>6.099999999999994E-4</branch_length>
+                            <clade>
+                              <name>Eriocrania sangii|MM08799</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Eriocrania sangii|MM00431</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Eriocrania sangii|MM00391</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Eriocrania sangii|MM08795</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Eriocrania sangii|MM17926</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Eriocrania sangii|TLMF Lep 02973</name>
+                            <branch_length>8.900000000000019E-4</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania sangii|MM21223</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Eriocrania sangii|MM17924</name>
+                      <branch_length>0.003259999999999985</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.01372000000000001</branch_length>
+                  <clade>
+                    <branch_length>0.021330000000000016</branch_length>
+                    <clade>
+                      <branch_length>0.0023100000000000065</branch_length>
+                      <clade>
+                        <branch_length>0.0</branch_length>
+                        <clade>
+                          <branch_length>0.0010699999999999876</branch_length>
+                          <clade>
+                            <branch_length>4.400000000000237E-4</branch_length>
+                            <clade>
+                              <branch_length>7.500000000000007E-4</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <branch_length>0.0</branch_length>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <branch_length>0.0015000000000000013</branch_length>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM14779</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM14780</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>3.999999999998449E-5</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.0</branch_length>
+                                                    <clade>
+                                                      <branch_length>3.0000000000002247E-4</branch_length>
+                                                      <clade>
+                                                        <branch_length>0.0</branch_length>
+                                                        <clade>
+                                                          <branch_length>0.0</branch_length>
+                                                          <clade>
+                                                            <name>Eriocrania semipurpurella|MM13112</name>
+                                                            <branch_length>0.0</branch_length>
+                                                            <taxonomy></taxonomy>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Eriocrania semipurpurella|MM00414</name>
+                                                            <branch_length>0.0</branch_length>
+                                                            <taxonomy></taxonomy>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <name>Eriocrania semipurpurella|MM19825</name>
+                                                          <branch_length>0.0</branch_length>
+                                                          <taxonomy></taxonomy>
+                                                        </clade>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM13116</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>7.999999999999674E-5</branch_length>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM13127</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM00403</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM21218</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Eriocrania semipurpurella|MM13108</name>
+                                                <branch_length>0.0</branch_length>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Eriocrania semipurpurella|MM21224</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Eriocrania semipurpurella|MM00430</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Eriocrania semipurpurella|MM13119</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Eriocrania semipurpurella|MM00432</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Eriocrania semipurpurella|MM21219</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Eriocrania semipurpurella|MM21220</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|MM17909</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM05748</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Eriocrania semipurpurella|MM13117</name>
+                              <branch_length>7.500000000000007E-4</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0011600000000000221</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM16676</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|NHMO-08002</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Eriocrania semipurpurella|MM16677</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <name>Eriocrania semipurpurella|MM17925</name>
+                                      <branch_length>0.0</branch_length>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Eriocrania semipurpurella|MM17922</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Eriocrania semipurpurella|MM17928</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Eriocrania semipurpurella|NHMO-08003</name>
+                                          <branch_length>0.0015000000000000013</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Eriocrania semipurpurella|MM17923</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Eriocrania semipurpurella|MM13106</name>
+                          <branch_length>5.499999999999949E-4</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania semipurpurella|MM00392</name>
+                        <branch_length>0.0</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.001700000000000007</branch_length>
+                      <clade>
+                        <branch_length>0.0012000000000000066</branch_length>
+                        <clade>
+                          <name>Eriocrania semipurpurella|MM08797</name>
+                          <branch_length>0.0</branch_length>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <branch_length>0.0</branch_length>
+                          <clade>
+                            <branch_length>6.099999999999994E-4</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <branch_length>0.0015000000000000013</branch_length>
+                                  <clade>
+                                    <name>Eriocrania semipurpurella|MM21221</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Eriocrania semipurpurella|MM17955</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|MM00405</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM21225</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Eriocrania semipurpurella|MM00429</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>9.500000000000064E-4</branch_length>
+                            <clade>
+                              <name>Eriocrania semipurpurella|MM08794</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM17910</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM13111</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Eriocrania semipurpurella|MM00404</name>
+                        <branch_length>8.599999999999997E-4</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.012659999999999949</branch_length>
+                    <clade>
+                      <name>Eriocrania semipurpurella|MM00390</name>
+                      <branch_length>2.5999999999998247E-4</branch_length>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <branch_length>8.200000000000429E-4</branch_length>
+                      <clade>
+                        <name>Eriocrania semipurpurella|KLM Lep 00366</name>
+                        <branch_length>9.600000000000164E-4</branch_length>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <branch_length>4.5999999999996044E-4</branch_length>
+                        <clade>
+                          <branch_length>0.0014199999999999768</branch_length>
+                          <clade>
+                            <name>Eriocrania semipurpurella|TLMF Lep 06672</name>
+                            <branch_length>0.0</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|BC ZSM Lep 61472</name>
+                                  <branch_length>0.0015000000000000013</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|TLMF Lep 02954</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Eriocrania semipurpurella|TLMF Lep 01774</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Eriocrania semipurpurella|BC ZSM Lep 50807</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>8.00000000000245E-5</branch_length>
+                          <clade>
+                            <name>Eriocrania semipurpurella|MM14781</name>
+                            <branch_length>0.0014899999999999913</branch_length>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <branch_length>0.0</branch_length>
+                            <clade>
+                              <name>Eriocrania semipurpurella|MM13105</name>
+                              <branch_length>0.0</branch_length>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <branch_length>0.0</branch_length>
+                              <clade>
+                                <name>Eriocrania semipurpurella|MM13129</name>
+                                <branch_length>0.0</branch_length>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <branch_length>0.0</branch_length>
+                                <clade>
+                                  <name>Eriocrania semipurpurella|MM19757</name>
+                                  <branch_length>0.0</branch_length>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.0</branch_length>
+                                  <clade>
+                                    <name>Eriocrania semipurpurella|MM13122</name>
+                                    <branch_length>0.0</branch_length>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.0</branch_length>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <name>Eriocrania semipurpurella|MM13125</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Eriocrania semipurpurella|MM19764</name>
+                                        <branch_length>0.0</branch_length>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.0</branch_length>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <name>Eriocrania semipurpurella|MM05745</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Eriocrania semipurpurella|MM21222</name>
+                                          <branch_length>0.0</branch_length>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.0</branch_length>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <name>Eriocrania semipurpurella|MM12060</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Eriocrania semipurpurella|MM19838</name>
+                                            <branch_length>0.0</branch_length>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.0</branch_length>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <name>Eriocrania semipurpurella|MM19756</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Eriocrania semipurpurella|MM13128</name>
+                                              <branch_length>0.0</branch_length>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.0</branch_length>
+                                            <clade>
+                                              <branch_length>0.0</branch_length>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <name>Eriocrania semipurpurella|MM19827</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Eriocrania semipurpurella|MM13124</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <branch_length>0.0</branch_length>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM14778</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM19750</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.0</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.0</branch_length>
+                                                    <clade>
+                                                      <name>Eriocrania semipurpurella|MM19826</name>
+                                                      <branch_length>0.0</branch_length>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Eriocrania semipurpurella|MM19765</name>
+                                                      <branch_length>0.0</branch_length>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.0</branch_length>
+                                                    <clade>
+                                                      <branch_length>0.0</branch_length>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM13109</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM05749</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.0</branch_length>
+                                                      <clade>
+                                                        <branch_length>0.0</branch_length>
+                                                        <clade>
+                                                          <branch_length>0.0</branch_length>
+                                                          <clade>
+                                                            <branch_length>0.0</branch_length>
+                                                            <clade>
+                                                              <name>Eriocrania semipurpurella|MM13130</name>
+                                                              <branch_length>0.0015000000000000013</branch_length>
+                                                              <taxonomy></taxonomy>
+                                                            </clade>
+                                                            <clade>
+                                                              <name>Eriocrania semipurpurella|MM05321</name>
+                                                              <branch_length>0.0</branch_length>
+                                                              <taxonomy></taxonomy>
+                                                            </clade>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Eriocrania semipurpurella|MM05319</name>
+                                                            <branch_length>0.0</branch_length>
+                                                            <taxonomy></taxonomy>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <name>Eriocrania semipurpurella|MM05746</name>
+                                                          <branch_length>0.0</branch_length>
+                                                          <taxonomy></taxonomy>
+                                                        </clade>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM13113</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>0.0</branch_length>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <name>Eriocrania semipurpurella|MM13121</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Eriocrania semipurpurella|MM05742</name>
+                                                  <branch_length>0.0</branch_length>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.0</branch_length>
+                                                <clade>
+                                                  <branch_length>0.0</branch_length>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM19754</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Eriocrania semipurpurella|MM19837</name>
+                                                    <branch_length>0.0</branch_length>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.0</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.0</branch_length>
+                                                    <clade>
+                                                      <branch_length>0.0</branch_length>
+                                                      <clade>
+                                                        <branch_length>0.0</branch_length>
+                                                        <clade>
+                                                          <branch_length>0.0</branch_length>
+                                                          <clade>
+                                                            <branch_length>0.0</branch_length>
+                                                            <clade>
+                                                              <branch_length>0.0</branch_length>
+                                                              <clade>
+                                                                <branch_length>0.0</branch_length>
+                                                                <clade>
+                                                                  <name>Eriocrania semipurpurella|MM05323</name>
+                                                                  <branch_length>0.0</branch_length>
+                                                                  <taxonomy></taxonomy>
+                                                                </clade>
+                                                                <clade>
+                                                                  <name>Eriocrania semipurpurella|MM19751</name>
+                                                                  <branch_length>0.0</branch_length>
+                                                                  <taxonomy></taxonomy>
+                                                                </clade>
+                                                              </clade>
+                                                              <clade>
+                                                                <name>Eriocrania semipurpurella|MM19831</name>
+                                                                <branch_length>0.0</branch_length>
+                                                                <taxonomy></taxonomy>
+                                                              </clade>
+                                                            </clade>
+                                                            <clade>
+                                                              <name>Eriocrania semipurpurella|MM13118</name>
+                                                              <branch_length>0.0</branch_length>
+                                                              <taxonomy></taxonomy>
+                                                            </clade>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Eriocrania semipurpurella|MM19752</name>
+                                                            <branch_length>0.0</branch_length>
+                                                            <taxonomy></taxonomy>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <name>Eriocrania semipurpurella|MM00434</name>
+                                                          <branch_length>0.0</branch_length>
+                                                          <taxonomy></taxonomy>
+                                                        </clade>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM08796</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.0</branch_length>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM13123</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Eriocrania semipurpurella|MM13107</name>
+                                                        <branch_length>0.0</branch_length>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.0</branch_length>
+                                                    <clade>
+                                                      <name>Eriocrania semipurpurella|MM05320</name>
+                                                      <branch_length>0.0</branch_length>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Eriocrania semipurpurella|MM13126</name>
+                                                      <branch_length>0.0</branch_length>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>Micropterix tunbergella|TLMF Lep 07950</name>
+        <branch_length>0.10189500000000003</branch_length>
+        <taxonomy></taxonomy>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>
