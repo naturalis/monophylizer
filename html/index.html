@@ -143,7 +143,9 @@
 														Regrettably, the Newick "standard" is not followed too carefully by different programs. We have attempted to be permissive in what the monophylizer accepts but 
 														there are some caveats to keep in mind:
 														<ul>
-															<li class="info"><strong>Newick files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>												
+															<li class="info"><strong>Newick files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>	
+															<li class="info"><strong>The monophylizer operates strictly on topology. Branch lengths are therefore optional: you can use either cladograms or phylograms.
+															If you do provide branch lengths, they can be arbitrary length integers, floating point numbers, or use scientific notation.</strong></li>											
 															<li class="info">The tips in your tree should have names that consist of the species name (<code><em>Genus species</em></code> or <code><em>Genus species subspecies</em></code>), <strong>and</strong>
 															some kind of separator (such as the <code>|</code> symbol), 
 															<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
@@ -206,6 +208,15 @@
 																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_indented/RAxML_bipartitions.Gracillariidae_rooted.nwk">RAxML_bipartitions.Gracillariidae_rooted.nwk</a></li>
 																</ul>
 															</li>															
+															<li class="info">Newick cladograms. All syntax rules about quoting and whitespace apply, the only difference is the absence of branch lengths:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_cladograms/ML_Coleophoridae.nwk">ML_Coleophoridae.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_cladograms/ML_Argyresthiidae.nwk">ML_Argyresthiidae.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_cladograms/RAxML_bipartitions.Pterophoridae_rooted.nwk">RAxML_bipartitions.Pterophoridae_rooted.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_cladograms/RAxML_bipartitions.Coleophoridae_rooted.nwk">RAxML_bipartitions.Coleophoridae_rooted.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_cladograms/RAxML_bipartitions.Gracillariidae_rooted.nwk">RAxML_bipartitions.Gracillariidae_rooted.nwk</a></li>
+																</ul>
+															</li>															
 														</ul>
 													  </div>
 													</div>
@@ -227,7 +238,9 @@
 														lower or in uppper case, then the file is most likely a Nexus file. Regrettably, the Nexus "standard" is not followed too carefully by different programs. We have attempted to be permissive 
 														in what the monophylizer accepts but there are some caveats to keep in mind:
 														<ul>
-															<li class="info"><strong>Nexus files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>												
+															<li class="info"><strong>Nexus files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>	
+															<li class="info"><strong>The monophylizer operates strictly on topology. Branch lengths are therefore optional: you can use either cladograms or phylograms.
+															If you do provide branch lengths, they can be arbitrary length integers, floating point numbers, or use scientific notation.</strong></li>											
 															<li class="info"><strong>Nexus files can contain data "blocks" besides trees. The monophylizer ignores all non-tree blocks.</strong></li>
 															<li class="info">Tree descriptions in Nexus files follow the same syntax as Newick. However, in some cases the taxon names are replaced with integers that correspond with a numbered list
 															of taxon names, the so-called "translation table". This is done to save space and cut down on redundant names in files that contain many trees for the same
