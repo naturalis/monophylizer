@@ -215,6 +215,7 @@
 												in what the monophylizer accepts but there are some caveats to keep in mind:<br /><br />
 												<ul>
 													<li><strong>Nexus files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>												
+													<li><strong>Nexus files can contain data "blocks" besides trees. The monophylizer ignores all non-tree blocks.</strong></li>
 													<li>Tree descriptions in Nexus files follow the same syntax as Newick. However, in some cases the taxon names are replaced with integers that correspond with a numbered list
 													of taxon names, the so-called "translation table". This is among other reasons done to save space and cut down on redundant names in files that contain many trees for the same
 													taxa (for example in Bayesian analyses). The monophylizer accepts either usage: names embedded inside the tree statements or a separate translation table are both fine.</li>
