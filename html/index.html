@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Monophylizer - tree shape analysis</title>
+    <title>Monophylizer</title>
+    
+    <link rel="icon" href="img/favicon.png" sizes="32x32">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -155,7 +157,7 @@
 															secondly because the apostrophe is interpreted as an opening quote for which a file reader that follows the standard will expect a closing quote. Likewise, any text that
 															is <code>[inside square brackets]</code> is interpreted in a special way: file readers that follow the standard assume that such text is a comment that should normally be stripped
 															out of the tree description (some programs insert special data in these comments, though this is "non standard"). When BOLD inserts square brackets into your tree 
-															description this can break the tree reading, especially when there is an opening bracket but no closing one, something which we've seen "in the wild".</li>
+															description this can break the tree reading, especially when there is an opening bracket but no closing one, something that we've actually seen "in the wild".</li>
 															<li class="info">Whitespace is normally stripped out of Newick trees before they are read. If a name in a tree needs to have spaces in them, such as the space between the genus name
 															and the specific epithet, then this is done either by using an underscore symbol <code>_</code> instead of a space, or by putting the entire name in quotes. This allows 
 															certain programs to insert spaces in tree descriptions as indentation, to show the "depth" of the taxon in the tree description. When such trees are read by a standard compliant
@@ -194,6 +196,16 @@
 																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_unescaped_invalid/RAxML_bipartitions.Gracillariidae_rooted.nwk">RAxML_bipartitions.Gracillariidae_rooted.nwk</a></li>
 																</ul>
 															</li>
+															<li class="info">Indented Newick files with underscored whitespace. These are technically <strong>valid</strong>, but the monophylizer only accepts these
+															if 'Keep whitespace in Newick species names' is <strong>unchecked</strong>. This is so that the common case of BOLD trees as input can be processed with default settings:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_indented/ML_Coleophoridae.nwk">ML_Coleophoridae.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_indented/ML_Argyresthiidae.nwk">ML_Argyresthiidae.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_indented/RAxML_bipartitions.Pterophoridae_rooted.nwk">RAxML_bipartitions.Pterophoridae_rooted.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_indented/RAxML_bipartitions.Coleophoridae_rooted.nwk">RAxML_bipartitions.Coleophoridae_rooted.nwk</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/newick_indented/RAxML_bipartitions.Gracillariidae_rooted.nwk">RAxML_bipartitions.Gracillariidae_rooted.nwk</a></li>
+																</ul>
+															</li>															
 														</ul>
 													  </div>
 													</div>
