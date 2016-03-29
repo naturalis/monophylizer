@@ -81,7 +81,7 @@
                     <!--h1>Monophylize!</h1-->
                     <img src="img/logo.png" alt="Monophylize!" />
 					<div id="rootwizard">
-						<ul>
+						<ul id="wizard">
 							<li><a href="#tab1" data-toggle="tab">Upload</a></li>
 							<li><a href="#tab2" data-toggle="tab">Tree reading</a></li>
 							<li><a href="#tab3" data-toggle="tab">Split/lump</a></li>
@@ -121,8 +121,10 @@
 									
 											<br /><br />
 											<div class="alert alert-info" role="alert">
-												<strong>Info: More about tree file formats than you'll ever want to know</strong>
-												<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover"></span>	
+												<a role="button" data-toggle="collapse" href="#accordion">												
+												Click here for more about tree file formats than you'll ever want to know</a>
+												<div class="panel-group collapse" id="accordion">
 												  <div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="headingOne">
 													  <h4 class="panel-title">
@@ -297,7 +299,7 @@
 											<div class="alert alert-info" role="alert">
 												<strong>Note!</strong>
 											  	The following options configure how tree files are read. The monophylizer operates on trees where every tip must have both a species
-											  	name (a binomial or trinomial) and a sequence identifier, which are demarcated using a record separator. When you export trees
+											  	name (a binomial or trinomial) and a unique identifier, which are demarcated using a record separator. When you export trees
 											  	from BOLD this separator is by default the '|' symbol, so you can leave this setting as is when your trees come from BOLD. If you 
 											  	generate your trees in some other way make sure you update the settings here accordingly.
 											</div>
@@ -343,8 +345,8 @@
 												which breaks the interpretation according to the newick standard. 
 												Therefore, quotes should probably be treated verbatim in BOLD trees.
 												Uncheck this if your tree comes from somewhere else."></span>																						                        
+											-->												
 											<br />
-											-->
 										  
 											<input 
 												type="checkbox" 
@@ -411,7 +413,7 @@
 												box, the service instead produces a tab-separated 
 												spreadsheet, which can be imported directly into a variety
 												of programs, such as R."></span>	
-												<br />
+												<br /><br />
 												
 											<strong>Additional metadata:</strong>
 											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="Here you can upload
