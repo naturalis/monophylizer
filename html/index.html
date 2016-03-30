@@ -233,7 +233,7 @@
 													  <div class="panel-body">
 														The <a href="https://dx.doi.org/10.1093%2Fsysbio%2F46.4.590">Nexus standard</a> is a more complex, plain text-based file format for phylogenetic data. Nexus files can contain other 
 														data besides trees, such as sequence alignments or other types of character state matrices, distance matrices, and so on. Many commonly-used programs read and/or write Nexus data. These
-														include FigTree, Mesquite, TreeAnnotator, MrBayes, MacClade, etc. Nexus files often - but by no means always - have the extension <code>*.nex</code> or <code>*.nxs</code>. You can recognize
+														include FigTree, Mesquite, TreeAnnotator, MrBayes, MacClade, PAUP*, etc. Nexus files often - but by no means always - have the extension <code>*.nex</code> or <code>*.nxs</code>. You can recognize
 														whether your file is a Nexus file by opening it in a text editor such as NotePad on Windows or TextEdit on Mac OSX. If the very first word of the file is <code>#nexus</code>, either in
 														lower or in uppper case, then the file is most likely a Nexus file. Regrettably, the Nexus "standard" is not followed too carefully by different programs. We have attempted to be permissive 
 														in what the monophylizer accepts but there are some caveats to keep in mind:
@@ -290,6 +290,15 @@
 																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_quoted/Psychidae_outgroup_rerooted.nex">Psychidae_outgroup_rerooted.nex</a></li>														
 																</ul>
 															</li>													
+															<li class="info">Nexus cladograms:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_cladograms/ML_Coleophoridae.nex">ML_Coleophoridae.nex</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_cladograms/ML_Argyresthiidae.nex">ML_Argyresthiidae.nex</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_cladograms/RAxML_bipartitions.Pterophoridae_rooted.nex">RAxML_bipartitions.Pterophoridae_rooted.nex</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_cladograms/RAxML_bipartitions.Coleophoridae_rooted.nex">RAxML_bipartitions.Coleophoridae_rooted.nex</a></li>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexus_cladograms/RAxML_bipartitions.Gracillariidae_rooted.nex">RAxML_bipartitions.Gracillariidae_rooted.nex</a></li>
+																</ul>
+															</li>															
 														</ul>
 													  </div>
 													</div>
@@ -304,7 +313,11 @@
 													</div>
 													<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 													  <div class="panel-body">
-														Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+														Many of the ambiguities and different dialects in plain text-based file formats are due to differences in the way whitespace is treated, the way data is broken up into "words" or tokens.
+														Extensible markup language (XML), and the generic parsers that are available for it, go some way to removing these tokenization issues. In addition, because formal grammars can be
+														defined and published, some other ambiguities (such as number formats) can be resolved as well. Two such grammars have been developed for phylogenetics:
+														<a href="http://phyloxml.org">phyloXML</a> and <a href="http://nexml.org">NeXML</a>. The former was developed with use cases in comparative genomics (such as orthology 
+														assessment) in mind, the latter was developed to represent the block-like data structure of Nexus files as XML.
 													  </div>
 													</div>
 												  </div>
