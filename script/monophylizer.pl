@@ -623,7 +623,7 @@ Content-type: text/html
 			body { font-family: verdana, arial, sans-serif; font-size: small }
 			th { text-align: left }
 		</style>
-		<script type="text/javascript" src="/sorttable.js"></script>
+		<script type="text/javascript" src="/monophylizer/sorttable.js"></script>
 	</head>
 	<body>
 		<h1>Results, May 2014 algorithm version  (click column headers to sort)</h1>
