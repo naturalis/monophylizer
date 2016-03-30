@@ -85,10 +85,9 @@
 					<div id="rootwizard">
 						<ul id="wizard">
 							<li><a href="#tab1" data-toggle="tab">Upload</a></li>
-							<li><a href="#tab2" data-toggle="tab">Tree reading</a></li>
-							<li><a href="#tab3" data-toggle="tab">Split/lump</a></li>
-							<li><a href="#tab4" data-toggle="tab">Output</a></li>
-							<li><a href="#tab5" data-toggle="tab">Analyze</a></li>
+							<li><a href="#tab2" data-toggle="tab">Name processing</a></li>
+							<li><a href="#tab3" data-toggle="tab">Output</a></li>
+							<li><a href="#tab4" data-toggle="tab">Analyze</a></li>
 						</ul>
 						<form 
 							action="http://monophylizer.naturalis.nl/cgi-bin/monophylizer.pl" 
@@ -317,7 +316,85 @@
 														Extensible markup language (XML), and the generic parsers that are available for it, go some way to removing these tokenization issues. In addition, because formal grammars can be
 														defined and published, some other ambiguities (such as number formats) can be resolved as well. Two such grammars have been developed for phylogenetics:
 														<a href="http://phyloxml.org">phyloXML</a> and <a href="http://nexml.org">NeXML</a>. The former was developed with use cases in comparative genomics (such as orthology 
-														assessment) in mind, the latter was developed to represent the block-like data structure of Nexus files as XML.
+														assessment) in mind, the latter was developed to represent the block-like data structure of Nexus files as XML. You can recognize these files by opening them in a text editor such as 
+														NotePad on Windows or TextEdit on Mac OSX. In both cases, as for all XML documents, they are likely to start with a in instruction such as the following:
+														<code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>, which is then followed, respectively, by a statement that begins with <code>&lt;phyloxml</code> for phyloXML, or
+														with <code>&lt;nex:nexml</code> for NeXML. Assuming your files are valid (which can be verified using the respective grammars of the standards) there are only a few caveats to keep
+														in mind when using these files in the monophylizer:
+														<ul>
+															<li class="info"><strong>Both phyloXML and NeXML files can contain multiple tree descriptions. The monophylizer only reads the first tree.</strong></li>	
+															<li class="info"><strong>The monophylizer operates strictly on topology. Branch lengths are therefore optional: you can use either cladograms or phylograms.</strong></li>											
+															<li class="info">The tips in your tree should have names that consist of the species name (<code><em>Genus species</em></code> or <code><em>Genus species subspecies</em></code>), <strong>and</strong>
+															some kind of separator (such as the <code>|</code> symbol), 
+															<strong>and then</strong> some kind of unique identifier such as a specimen or sequence identifier. In total, each name should therefore look something like <code>'Genus species|ID2347'</code>
+															You can specify which record separator symbol you're using in the 'Tree reading' tab. You can use other symbols besides <code>|</code> as long as they don't have special meaning in Newick. 
+															The following are therefore disallowed: <code>,'"[]();:_</code>
+															</li>															
+														</ul>
+														Here are examples of usable XML-based files:
+														<ul>
+															<li class="info">Phylograms in phyloXML:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/Adelidae_outgroup_rerooted.phyloxml">Adelidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/Eriocraniidae_outgroup_rerooted.phyloxml">Eriocraniidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/ML_Argyresthiidae.phyloxml">ML_Argyresthiidae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/ML_Coleophoridae.phyloxml">ML_Coleophoridae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/NJ_Argyresthiidae.phyloxml">NJ_Argyresthiidae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/NJ_Coleophoridae.phyloxml">NJ_Coleophoridae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/Nepticulidae_outgroup_rerooted.phyloxml">Nepticulidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/Psychidae_outgroup_rerooted.phyloxml">Psychidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/RAxML_bipartitions.Coleophoridae_rooted.phyloxml">RAxML_bipartitions.Coleophoridae_rooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/RAxML_bipartitions.Gracillariidae_rooted.phyloxml">RAxML_bipartitions.Gracillariidae_rooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml/RAxML_bipartitions.Pterophoridae_rooted.phyloxml">RAxML_bipartitions.Pterophoridae_rooted.phyloxml</a>																																
+																</ul>
+															</li>
+															<li class="info">Cladograms in phyloXML:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/Adelidae_outgroup_rerooted.phyloxml">Adelidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/Eriocraniidae_outgroup_rerooted.phyloxml">Eriocraniidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/ML_Argyresthiidae.phyloxml">ML_Argyresthiidae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/ML_Coleophoridae.phyloxml">ML_Coleophoridae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/NJ_Argyresthiidae.phyloxml">NJ_Argyresthiidae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/NJ_Coleophoridae.phyloxml">NJ_Coleophoridae.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/Nepticulidae_outgroup_rerooted.phyloxml">Nepticulidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/Psychidae_outgroup_rerooted.phyloxml">Psychidae_outgroup_rerooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/RAxML_bipartitions.Coleophoridae_rooted.phyloxml">RAxML_bipartitions.Coleophoridae_rooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/RAxML_bipartitions.Gracillariidae_rooted.phyloxml">RAxML_bipartitions.Gracillariidae_rooted.phyloxml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/phyloxml_cladograms/RAxML_bipartitions.Pterophoridae_rooted.phyloxml">RAxML_bipartitions.Pterophoridae_rooted.phyloxml</a>																
+																
+																</ul>
+															</li>
+															<li class="info">Phylograms in NeXML:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/Adelidae_outgroup_rerooted.xml">Adelidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/Eriocraniidae_outgroup_rerooted.xml">Eriocraniidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/ML_Argyresthiidae.xml">ML_Argyresthiidae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/ML_Coleophoridae.xml">ML_Coleophoridae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/NJ_Argyresthiidae.xml">NJ_Argyresthiidae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/NJ_Coleophoridae.xml">NJ_Coleophoridae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/Nepticulidae_outgroup_rerooted.xml">Nepticulidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/Psychidae_outgroup_rerooted.xml">Psychidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/RAxML_bipartitions.Coleophoridae_rooted.xml">RAxML_bipartitions.Coleophoridae_rooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/RAxML_bipartitions.Gracillariidae_rooted.xml">RAxML_bipartitions.Gracillariidae_rooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml/RAxML_bipartitions.Pterophoridae_rooted.xml">RAxML_bipartitions.Pterophoridae_rooted.xml</a>
+																</ul>
+															</li>
+															<li class="info">Cladograms in NeXML:
+																<ul>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/Adelidae_outgroup_rerooted.xml">Adelidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/Eriocraniidae_outgroup_rerooted.xml">Eriocraniidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/ML_Argyresthiidae.xml">ML_Argyresthiidae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/ML_Coleophoridae.xml">ML_Coleophoridae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/NJ_Argyresthiidae.xml">NJ_Argyresthiidae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/NJ_Coleophoridae.xml">NJ_Coleophoridae.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/Nepticulidae_outgroup_rerooted.xml">Nepticulidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/Psychidae_outgroup_rerooted.xml">Psychidae_outgroup_rerooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/RAxML_bipartitions.Coleophoridae_rooted.xml">RAxML_bipartitions.Coleophoridae_rooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/RAxML_bipartitions.Gracillariidae_rooted.xml">RAxML_bipartitions.Gracillariidae_rooted.xml</a>
+																	<li class="info"><a target="_blank" href="https://raw.githubusercontent.com/naturalis/monophylizer/master/data/nexml_cladograms/RAxML_bipartitions.Pterophoridae_rooted.xml">RAxML_bipartitions.Pterophoridae_rooted.xml</a>																
+																</ul>
+															</li>														
+														</ul>
 													  </div>
 													</div>
 												  </div>
@@ -330,13 +407,12 @@
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">Tree reading</h3>
+											<h3 class="panel-title">Name processing</h3>
 										  </div>
 										  <div class="panel-body">
 										  
 											<div class="alert alert-info" role="alert">
-												<strong>Note!</strong>
-											  	The following options configure how tree files are read. The monophylizer operates on trees where every tip must have both a species
+											  	The following options configure how tip names are processed. The monophylizer operates on trees where every tip must have both a species
 											  	name (a binomial or trinomial) and a unique identifier, which are demarcated using a record separator. When you export trees
 											  	from BOLD this separator is by default the '|' symbol, so you can leave this setting as is when your trees come from BOLD. If you 
 											  	generate your trees in some other way make sure you update the settings here accordingly.
@@ -399,40 +475,23 @@
 												not follow this convention: whitespace occurs in unescaped
 												form only to delimit words, so normally
 												this needs to be kept in BOLD trees."></span>
-											<br />
-																								
-										</div>
-									</div>
-
-								</div>
-								<div class="tab-pane" id="tab3">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h3 class="panel-title">Split/lump</h3>
-										  </div>
-										  <div class="panel-body">
-										  
-											<!--div class="alert alert-info" role="alert">
-												<strong>Note!</strong>
-											  	By default, all subspecies of the same species are lumped and the monophyly of the containing species
-											  	is assessed. By checking the box below, subspecific epithets are interpreted separately so that
-											  	monophyly among subspecies is assessed as well.
-											</div-->										  
-										  												
-											<strong>Split subspecies:</strong>
+											<br /><br />
+													
 											<input 
 												type="checkbox" 
 												name="trinomials" />                            
+											<strong>Split subspecies</strong>												
 											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="By default, this service ignores all parts of a taxonomic name following
 												the first two words. This means 
 												that subspecies ('Foo bar vulgaris') are lumped with the 
 												containing species ('Foo bar') and that polyphyly or paraphyly 
 												is therefore not assessed separately for subspecies. If you check this box,
-												subspecies will be split and assessed separately."></span>																							
+												subspecies will be split and assessed separately."></span>																																																												
 										</div>
-									</div>								
+									</div>
+
 								</div>
-								<div class="tab-pane" id="tab4">
+								<div class="tab-pane" id="tab3">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h3 class="panel-title">Output</h3>
@@ -469,7 +528,7 @@
 										</div>
 									</div>								
 								</div>
-								<div class="tab-pane" id="tab5">
+								<div class="tab-pane" id="tab4">
 									<div class="panel panel-default">
 										<div class="panel-heading">
 											<h3 class="panel-title">Analyze!</h3>
