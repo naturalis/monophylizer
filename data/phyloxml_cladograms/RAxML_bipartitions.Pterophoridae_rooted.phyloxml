@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <clade>
+          <clade>
+            <clade>
+              <name>Emmelina monodactyla|UKLB25D04</name>
+              <taxonomy></taxonomy>
+            </clade>
+            <clade>
+              <clade>
+                <name>Emmelina monodactyla|UKLB28F07</name>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <name>Emmelina monodactyla|GU706791</name>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <name>Emmelina monodactyla|TLMF Lep 08009</name>
+            <taxonomy></taxonomy>
+          </clade>
+        </clade>
+        <clade>
+          <clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <name>Hellinsia lienigianus|HM876267</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Hellinsia lienigianus|TLMF Lep 06535</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Hellinsia lienigianus|HM871455</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Hellinsia lienigianus|UKLB32G04</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Hellinsia lienigianus|HQ968261</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Porrittia galactodactyla|HM876547</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Oidaematophorus rogenhoferi|JF860265</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Oidaematophorus rogenhoferi|HM873225</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Oidaematophorus rogenhoferi|HQ968919</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Oidaematophorus rogenhoferi|HM873344</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Oidaematophorus rogenhoferi|HM381420</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <name>Oidaematophorus vafradactylus|MM19229</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <name>Oidaematophorus lithodactyla|UKLB13B02</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Oidaematophorus lithodactyla|HM874362</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Oidaematophorus lithodactyla|HM874688</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Oidaematophorus lithodactyla|TLMF Lep 07513</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Oidaematophorus lithodactyla|NHMO-06072</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Oidaematophorus giganteus|TLMF Lep 03155</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Agdistis meridionalis|UKLB41C04</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Agdistis meridionalis|JN261749</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Agdistis bennetii|JN261744</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Agdistis neglecta|JN261747</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Agdistis adactyla|HM902061</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Agdistis satanas|JN261745</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Agdistis satanas|JN261746</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Puerphorus olbiadactylus|JN307779</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Puerphorus olbiadactylus|JN307780</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Gypsochares bigoti|JN307778</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Gypsochares bigoti|JN307777</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Hellinsia alpinus|TLMF Lep 03169</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Hellinsia carphodactyla|RMNH.INS.540932</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Hellinsia carphodactyla|GU706762</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Adaina microdactyla|TLMF Lep 08451</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Adaina microdactyla|GU707337</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Adaina microdactyla|HQ955203</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Adaina microdactyla|UKLB27D11</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Adaina microdactyla|GU706975</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Adaina microdactyla|RMNH.INS.541056</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Hellinsia pectodactylus|JN277263</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Hellinsia chrysocomae|TLMF Lep 03166</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Hellinsia cinerariae|TLMF Lep 03164</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Hellinsia osteodactylus|JF859654</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Hellinsia osteodactylus|HQ955176</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Hellinsia osteodactylus|HQ968225</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Hellinsia osteodactylus|HM871825</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Hellinsia osteodactylus|HQ570323</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Hellinsia osteodactylus|HQ570360</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Hellinsia didactylites|HM871456</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Hellinsia distinctus|JF853919</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Calyciphora albodactylus|TLMF Lep 04005</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Calyciphora albodactylus|HM872955</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Calyciphora nephelodactyla|HQ968778</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Calyciphora nephelodactyla|TLMF Lep 05318</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <name>Hellinsia tephradactyla|HM871824</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <name>Hellinsia tephradactyla|HM871823</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Hellinsia tephradactyla|TLMF Lep 08396</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Hellinsia tephradactyla|UKLB32C07</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Hellinsia tephradactyla|JF859894</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Hellinsia tephradactyla|BC ZSM Lep 51015</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <name>Pselnophorus heterodactyla|HM872837</name>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Pterophorus pentadactyla|RMNH.INS.540811</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Pterophorus pentadactyla|UKLB25F04</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Pterophorus pentadactyla|GU707012</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Pterophorus pentadactyla|HM386987</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Pterophorus pentadactyla|HQ955174</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Pterophorus pentadactyla|HQ955577</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Pterophorus pentadactyla|GU707011</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Merrifieldia leucodactyla|TLMF Lep 05319</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Merrifieldia leucodactyla|HM873150</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Merrifieldia leucodactyla|HQ968776</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Merrifieldia leucodactyla|HM381482</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Merrifieldia leucodactyla|GU706727</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Merrifieldia tridactyla|UKLB41C10</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Merrifieldia tridactyla|GU706725</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Merrifieldia tridactyla|GU707014</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Merrifieldia tridactyla|HM871949</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Merrifieldia tridactyla|HM871951</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Merrifieldia baliodactylus|NHMO-07023</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Merrifieldia baliodactylus|BC ZSM Lep 51009</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Merrifieldia baliodactylus|GU707294</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Merrifieldia baliodactylus|GU706726</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Merrifieldia bystropogonis|TLMF Lep 04787</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Merrifieldia malacodactyla|JN277265</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Wheeleria spilodactylus|JN307782</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Wheeleria spilodactylus|JN307783</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <name>Amblyptilia acanthadactyla|HM874352</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Amblyptilia acanthadactyla|UKLB23D05</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Amblyptilia acanthadactyla|HM874354</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Amblyptilia acanthadactyla|HQ968802</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Amblyptilia acanthadactyla|HM874353</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Amblyptilia acanthadactyla|HM901994</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Amblyptilia acanthadactyla|HM872815</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Amblyptilia acanthadactyla|HQ955177</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Amblyptilia acanthadactyla|HQ941466</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Amblyptilia acanthadactyla|UKLB32G01</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <name>Amblyptilia punctidactyla|HM875884</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Amblyptilia punctidactyla|UKLB34D11</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Amblyptilia punctidactyla|HQ968803</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Amblyptilia punctidactyla|HM387025</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Amblyptilia punctidactyla|NHMO-06015</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Amblyptilia punctidactyla|HM871031</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Amblyptilia punctidactyla|HM871457</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Amblyptilia punctidactyla|BC ZSM Lep 51028</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Buszkoiana capnodactylus|JN277216</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Buszkoiana capnodactylus|HM376265</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Gillmeria pallidactyla|NHMO-08160</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Gillmeria pallidactyla|GU707018</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Gillmeria pallidactyla|HM871459</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Gillmeria pallidactyla|HM872706</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Gillmeria pallidactyla|JF859669</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Gillmeria miantodactylus|TLMF Lep 05310</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Gillmeria ochrodactyla|BC ZSM Lep 64381</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Gillmeria ochrodactyla|HM873596</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Gillmeria ochrodactyla|TLMF Lep 05313</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Platyptilia tesseradactyla|HM874566</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Platyptilia tesseradactyla|HM872200</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Platyptilia tesseradactyla|JN277220</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Platyptilia nemoralis|HQ955175</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Platyptilia nemoralis|TLMF Lep 04508</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Platyptilia nemoralis|HM873031</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Platyptilia calodactyla|TLMF Lep 08411</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Platyptilia calodactyla|MM03100</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Platyptilia calodactyla|MM18373</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Platyptilia calodactyla|HQ570336</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Platyptilia tesseradactyla|JN277245</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Platyptilia tesseradactyla|TLMF Lep 05317</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Platyptilia gonodactyla|TLMF Lep 05315</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Platyptilia gonodactyla|HM396483</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Platyptilia gonodactyla|JF859893</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Platyptilia gonodactyla|NHMO-07075</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Platyptilia gonodactyla|GU706668</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Platyptilia gonodactyla|HQ570376</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Platyptilia calodactyla|HM871821</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Stenoptilia mimula|JN277260</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Stenoptilia mimula|JN277261</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia pelidnodactyla|HM876544</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Stenoptilia pelidnodactyla|HM876027</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia bigoti|HQ968800</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia buvati|HQ968544</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Stenoptilia alpinalis|HQ968552</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Stenoptilia islandicus|HM396375</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Stenoptilia brigantiensis|HQ968555</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Stenoptilia brigantiensis|HQ968553</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Stenoptilia mercantourica|HQ968968</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia veronicae|MM03096</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Stenoptilia veronicae|HM875143</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia pterodactyla|GU706532</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Stenoptilia pterodactyla|TLMF Lep 08404</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Stenoptilia pterodactyla|HM901993</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia stigmatodactylus|HM422207</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Stenoptilia stigmatodactyla|TLMF Lep 05325</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Stenoptilia annadactyla|HM391808</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia annadactyla|GU706533</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia annadactyla|TLMF Lep 07503</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Stenoptilia annadactyla|GU706794</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia bipunctidactyla|MM19955</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Stenoptilia bipunctidactyla|HM871659</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Stenoptilia bipunctidactyla|HM874528</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Stenoptilia bipunctidactyla|BC ZSM Lep 61138</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Stenoptilia bipunctidactyla|TLMF Lep 07320</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Stenoptilia bipunctidactyla|HM873282</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Stenoptilia bipunctidactyla|UKLB41C08</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia coprodactylus|HM381507</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia coprodactylus|HM381430</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Stenoptilia coprodactylus|HQ968722</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Stenoptilia coprodactylus|GU706636</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Stenoptilia coprodactylus|HM381384</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Stenoptilia coprodactylus|HM381527</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Stenoptilia coprodactylus|GU706637</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Stenoptilia coprodactylus|HQ968945</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Stenoptilia coprodactylus|TLMF Lep 05322</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Stenoptilia nolckeni|MM05626</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Stenoptilia lutescens|JN277234</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Stenoptilia lutescens|HQ968774</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia pneumonanthes|JN277213</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Stenoptilia pneumonanthes|BC ZSM Lep 50715</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Stenoptilia pneumonanthes|HQ968550</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Stenoptilia pneumonanthes|HQ968543</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Stenoptilia graphodactyla|HM422136</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Stenoptilia graphodactyla|TLMF Lep 08403</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Stenoptilia graphodactyla|JN277232</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Stenoptilia zophodactylus|UKLB41C07</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Stenoptilia zophodactylus|JN277214</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Stenoptilia zophodactylus|TLMF Lep 07356</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Stenoptilia zophodactylus|JF853950</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Stenoptilia zophodactylus|GU706793</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Stenoptilia zophodactylus|BC ZSM Lep 61171</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Stenoptilia zophodactylus|JN277262</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Capperia trichodactyla|JF854535</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Capperia celeusi|GU707075</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Capperia celeusi|GU706888</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Capperia celeusi|HQ968539</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Capperia britanniodactylus|UKLB13D01</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Geina didactyla|HM871826</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Geina didactyla|MM06822</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Geina didactyla|HM432301</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Buckleria paludum|MM17614</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Buckleria paludum|MM17615</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Buckleria paludum|MM21110</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Buckleria paludum|GU706890</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Marasmarcha lunaedactyla|UKLB41C05</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Marasmarcha lunaedactyla|HQ955296</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Marasmarcha lunaedactyla|HM874962</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Stangeia siceliota|JN277259</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <name>Stenoptilodes taprobanes|JN277219</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Cnaemidophorus rhododactyla|BC ZSM Lep 64367</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Cnaemidophorus rhododactyla|GU707299</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Cnaemidophorus rhododactyla|GU706872</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Cnaemidophorus rhododactyla|HM901995</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Crombrugghia laetus|HQ968545</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Crombrugghia laetus|JN307279</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Crombrugghia laetus|HQ968541</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Oxyptilus chrysodactyla|HM875272</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Oxyptilus chrysodactyla|MM21124</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Oxyptilus chrysodactyla|MM03469</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Crombrugghia kollari|HQ968547</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Crombrugghia kollari|HQ968546</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Crombrugghia tristis|HM381512</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <name>Crombrugghia buvati|HQ968536</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Crombrugghia distans|HQ968542</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Crombrugghia jaeckhi|HQ968540</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Crombrugghia distans|MM14803</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Crombrugghia distans|MM10601</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Crombrugghia tristis|MM10635</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Crombrugghia tristis|MM03546</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Crombrugghia distans|MM10605</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Crombrugghia propedistans|HQ968537</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <name>Oxyptilus ericetorum|MM06943</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <name>Oxyptilus ericetorum|HM873585</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Oxyptilus ericetorum|KBE-07014</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Oxyptilus pilosellae|GU707017</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Oxyptilus pilosellae|GU706701</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Oxyptilus pilosellae|HM874342</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Oxyptilus pilosellae|BC ZSM Lep 61538</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Oxyptilus pilosellae|TLMF Lep 05316</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Oxyptilus pilosellae|KBE-07010</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Oxyptilus pilosellae|HQ955561</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Oxyptilus pilosellae|JF853420</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Oxyptilus pilosellae|JN277228</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Oxyptilus pilosellae|HM875267</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Oxyptilus parvidactyla|HQ563790</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Oxyptilus parvidactyla|HM874514</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Oxyptilus parvidactyla|HQ955612</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Oxyptilus parvidactyla|HM901992</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Oxyptilus parvidactyla|MM03775</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>Alucita hexadactyla|UKLB34A09</name>
+        <taxonomy></taxonomy>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>

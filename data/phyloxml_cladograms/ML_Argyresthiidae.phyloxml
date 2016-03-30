@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <clade>
+          <clade>
+            <clade>
+              <clade>
+                <name>Argyresthia pulchella|HM871471</name>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Argyresthia conjugella|GU706340</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia conjugella|HM873892</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia conjugella|HM873529</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <name>Argyresthia conjugella|TLMF Lep 07449</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Argyresthia conjugella|UKLB15G10</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia conjugella|JN263008</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <name>Argyresthia albistria|HM391874</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia albistria|UKLB30G08</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia sorbiella|HM871643</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia sorbiella|BC ZSM Lep 53160</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia submontana|JN263036</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia bonnetella|UKLB39D01</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Argyresthia bonnetella|HQ955527</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia bonnetella|HM873449</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia bonnetella|HM405804</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Argyresthia pruniella|HQ955405</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Argyresthia pruniella|TLMF Lep 05328</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia pruniella|HM874338</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Argyresthia pruniella|BC ZSM Lep 61595</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Argyresthia pruniella|JN263032</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Argyresthia pruniella|HQ955526</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia pruniella|JF854127</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia pruniella|JN263037</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia semitestacella|TLMF Lep 07313</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Argyresthia semifusca|UKLB33F10</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Argyresthia semitestacella|HQ955406</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia semifusca|HM387223</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia semifusca|JF854128</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia semifusca|KBE-07045</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia pygmaeella|HM871836</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia pygmaeella|TLMF Lep 05329</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia pygmaeella|NHMO-07037</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia pygmaeella|BC ZSM Lep 61481</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia spinosella|HM873477</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia spinosella|RMNH.INS.538809</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Argyresthia spinosella|HQ955520</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Argyresthia spinosella|JN263007</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia spinosella|HQ955522</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Argyresthia spinosella|RMNH.INS.538810</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia spinosella|RMNH.INS.540810</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia curvella|HM874602</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia curvella|GU707322</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <clade>
+                <name>Argyresthia retinella|HM871620</name>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <name>Argyresthia retinella|HQ570278</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Argyresthia retinella|UKLB32F09</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia retinella|TLMF Lep 08073</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia retinella|TLMF Lep 06585</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia retinella|HQ955517</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Argyresthia retinella|HM875671</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <clade>
+              <clade>
+                <name>Argyresthia brockeella|HM871475</name>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <clade>
+                  <name>Argyresthia brockeella|UKLB33B10</name>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <name>Argyresthia brockeella|HQ955512</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia brockeella|JN263029</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia brockeella|GU707321</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <name>Argyresthia goedartella|HM871490</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia goedartella|JF859801</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Argyresthia goedartella|BC ZSM Lep 35036</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Argyresthia goedartella|HM875159</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia goedartella|RMNH.INS.538475</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Argyresthia goedartella|HQ955403</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Argyresthia goedartella|HQ563674</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Argyresthia goedartella|RMNH.INS.540914</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <clade>
+            <clade>
+              <name>Argyresthia fundella|GU706913</name>
+              <taxonomy></taxonomy>
+            </clade>
+            <clade>
+              <name>Argyresthia praecocella|MM18986</name>
+              <taxonomy></taxonomy>
+            </clade>
+          </clade>
+          <clade>
+            <clade>
+              <clade>
+                <name>Argyresthia glaucinella|BC ZSM Lep 61432</name>
+                <taxonomy></taxonomy>
+              </clade>
+              <clade>
+                <name>Argyresthia glaucinella|GU707319</name>
+                <taxonomy></taxonomy>
+              </clade>
+            </clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <name>Argyresthia dilectella|HM876037</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <name>Argyresthia dilectella|HM873494</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Argyresthia dilectella|HM875177</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia dilectella|BC ZSM Lep 61406</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia svenssoni|JN263033</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia svenssoni|TLMF Lep 06589</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia svenssoni|JF854132</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia svenssoni|JF854130</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Argyresthia svenssoni|MM18115</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia svenssoni|HM873235</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Argyresthia illuminatella|HQ955402</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia bergiella|HQ955513</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Argyresthia bergiella|HQ955510</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia bergiella|HM874453</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Argyresthia bergiella|JF854136</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Argyresthia bergiella|MM18116</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Argyresthia bergiella|HM874190</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Argyresthia bergiella|MM18985</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia laevigatella|HQ955511</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Argyresthia glabratella|GU707216</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Argyresthia glabratella|TLMF Lep 07011</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia glabratella|JF859683</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Argyresthia glabratella|JF854133</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Argyresthia glabratella|JN263034</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Argyresthia glabratella|GU707214</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Argyresthia glabratella|JF854131</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia glabratella|HM871905</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia glabratella|HM875937</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Argyresthia thuiella|TLMF Lep 08209</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Argyresthia thuiella|BC ZSM Lep 50861</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia abdominalis|BC ZSM Lep 61407</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia abdominalis|TLMF Lep 06594</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Argyresthia abdominalis|HM871642</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia arceuthina|UKLB42A06</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia arceuthina|BC ZSM Lep 61405</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Argyresthia trifasciata|GU706912</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Argyresthia trifasciata|RMNH.INS.540941</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <name>Argyresthia aurulentella|HM876198</name>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <name>Argyresthia aurulentella|HM871641</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>Paradoxus osyridellus|JN307330</name>
+        <taxonomy></taxonomy>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>

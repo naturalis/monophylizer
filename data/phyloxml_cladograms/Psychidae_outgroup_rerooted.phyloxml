@@ -1,0 +1,2763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <phylogeny rooted="true">
+    <clade>
+      <clade>
+        <clade>
+          <clade>
+            <name>Placodoma calpella|CLV27207</name>
+            <taxonomy></taxonomy>
+          </clade>
+          <clade>
+            <name>Placodoma calpella|CLV27307</name>
+            <taxonomy></taxonomy>
+          </clade>
+        </clade>
+        <clade>
+          <clade>
+            <clade>
+              <clade>
+                <clade>
+                  <name>Bankesia montanella|CLV5115</name>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <name>Bankesia conspurcatella|clv07.1</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                    <clade>
+                      <name>Bankesia conspurcatella|clv07</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Bankesia conspurcatella|MM19358</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Taleporia tubulosa|MM09952</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Taleporia borealis|MM08287</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Taleporia tubulosa|CLV3538</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Taleporia tubulosa|MM02176</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Taleporia tubulosa|KLM Lep 00359</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <clade>
+                                                        <clade>
+                                                          <clade>
+                                                            <clade>
+                                                              <name>Taleporia tubulosa|clv12</name>
+                                                              <taxonomy></taxonomy>
+                                                            </clade>
+                                                            <clade>
+                                                              <name>Taleporia tubulosa|TLMF Lep 08242</name>
+                                                              <taxonomy></taxonomy>
+                                                            </clade>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Taleporia borealis|MM08592</name>
+                                                            <taxonomy></taxonomy>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <name>Taleporia tubulosa|MM10085</name>
+                                                          <taxonomy></taxonomy>
+                                                        </clade>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Taleporia tubulosa|MM09951</name>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Taleporia borealis|MM08591</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Taleporia borealis|MM08276</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <name>Taleporia tubulosa|CLV5121</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Taleporia tubulosa|BC ZSM Lep 64276</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Taleporia tubulosa|BC ZSM Lep 64348</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Taleporia tubulosa|CLV3535</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Taleporia tubulosa|CLV3646</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Taleporia tubulosa|CLV3534</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Taleporia tubulosa|NHMO-07002</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Taleporia tubulosa|MM14274</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Taleporia tubulosa|MM05290</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Taleporia tubulosa|BC ZSM Lep 53199</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Taleporia tubulosa|clv13</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Taleporia tubulosa|clv18</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Taleporia tubulosa|BC ZSM Lep 29211</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Taleporia tubulosa|MM02175</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Taleporia tubulosa|CLV3647</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Taleporia tubulosa|CLV3536</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Taleporia politella|CLV1733</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Taleporia tubulosa|CLV3529</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Taleporia tubulosa|CLV3649</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Taleporia tubulosa|CLV3532</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Taleporia politella|CLV3388</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Taleporia tubulosa|CLV3648</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Taleporia tubulosa|CLV3531</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Taleporia tubulosa|MM13263</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Taleporia politella|TLMF Lep 06613</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Taleporia politella|CLV23708</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Taleporia politella|CLV23608</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Taleporia tubulosa|CLV23508</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Taleporia tubulosa|CLV1731</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Taleporia tubulosa|TLMF Lep 02172</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Taleporia politella|TLMF Lep 02170</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Taleporia politella|TLMF Lep 04112</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Taleporia tubulosa|CLV3530</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Taleporia tubulosa|UT07</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Taleporia tubulosa|UT09</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Taleporia tubulosa|UT08</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Taleporia defoliella|CLV5111</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Pseudobankesia vernella|CLV5112</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Pseudobankesia vernella|TLMF Lep 06830</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Pseudobankesia vernella|TLMF Lep 06829</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Pseudobankesia vernella|CLV18108</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Pseudobankesia casaella|CLV5113</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Diplodoma laichartingella|clv16.1</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Diplodoma laichartingella|MM13096</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Diplodoma laichartingella|MM20606</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Diplodoma laichartingella|BC ZSM Lep 53307</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Diplodoma laichartingella|MM08640</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Diplodoma laichartingella|MM05707</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Diplodoma laichartingella|MM05826</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Diplodoma laichartingella|MM10121</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Diplodoma laichartingella|clv16</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Diplodoma laichartingella|CLV1723</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Diplodoma laichartingella|BC ZSM Lep 64281</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <name>Sciopetris melitensis|CLV27007</name>
+              <taxonomy></taxonomy>
+            </clade>
+          </clade>
+          <clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Eumasia parietariella|STG80</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Eumasia parietariella|TLMF Lep 02176</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Eumasia parietariella|TLMF Lep 07752</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Eumasia parietariella|TLMF Lep 07753</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Eumasia parietariella|CLV2198</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Eumasia parietariella|TLMF Lep 06457</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Eumasia parietariella|CLV3433</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <name>Eumasia parietariella|CLV3434</name>
+                    <taxonomy></taxonomy>
+                  </clade>
+                </clade>
+                <clade>
+                  <name>Eumasia parietariella|STG79</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <name>Eumasia parietariella|TLMF Lep 03889</name>
+                  <taxonomy></taxonomy>
+                </clade>
+                <clade>
+                  <name>Eumasia parietariella|TLMF Lep 03888</name>
+                  <taxonomy></taxonomy>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Dahlica triquetrella|CLV0509</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Dahlica triquetrella|clv06</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Dahlica triquetrella|CLV5119</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Dahlica triquetrella|CLV3612</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Dahlica triquetrella|CLV3618</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Dahlica triquetrella|CLV3616</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Dahlica triquetrella|CLV3615</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Dahlica triquetrella|CLV5120</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Dahlica triquetrella|MM14716</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Dahlica triquetrella|CLV3614</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Dahlica triquetrella|CLV3617</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV3605</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV361011</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV3611</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV3452</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV3453</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Dahlica triquetrella|BC ZSM Lep 29209</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV3606</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV360711</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV360911</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Dahlica triquetrella|CLV360811</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Dahlica triquetrella|MM09674</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Postsolenobia thomanni|CLV510812</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Brevantennia reliqua|CLV3394</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Brevantennia reliqua|CLV3637</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Brevantennia reliqua|CLV3635</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Brevantennia reliqua|CLV3395</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Brevantennia reliqua|CLV3636</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Brevantennia reliqua|CLV3393</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Brevantennia reliqua|CLV3638</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Brevantennia triglavensis|CLV3392</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Brevantennia triglavensis|CLV3641</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Brevantennia triglavensis|CLV3643</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Brevantennia styriaca|STG82</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Brevantennia styriaca|CLV3604</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Brevantennia styriaca|CLV3634</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Brevantennia styriaca|CLV1724</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Brevantennia adriatica|CLV3639</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Brevantennia adriatica|CLV3640</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Postsolenobia juliella|CLV3583</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Postsolenobia juliella|CLV3582</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Postsolenobia juliella|CLV3581</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Postsolenobia juliella|CLV3401</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Postsolenobia juliella|CLV3402</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Postsolenobia nanosella|CLV3579</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Postsolenobia nanosella|CLV3404</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Postsolenobia nanosella|CLV3580</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Postsolenobia nanosella|CLV1990</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Postsolenobia nanosella|CLV1991</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Postsolenobia nanosella|CLV3405</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <name>Postsolenobia juliella|CLV1989</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Postsolenobia juliella|CLV1986</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Postsolenobia juliella|CLV1728</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <name>Postsolenobia juliella|CLV3400</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <name>Postsolenobia juliella|CLV3399</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Narycia duplicella|MM19356</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Narycia duplicella|CLV3577</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Narycia duplicella|CLV3449</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Narycia duplicella|CLV3578</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Narycia duplicella|clv10</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Narycia duplicella|clv17</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Narycia duplicella|BC ZSM Lep 24918</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Narycia duplicella|CLV3450</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Narycia duplicella|CLV3575</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Narycia duplicella|BC ZSM Lep 29210</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Narycia duplicella|TLMF Lep 02377</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Narycia duplicella|CLV3574</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Narycia duplicella|CLV3576</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Narycia duplicella|UKLB31E02</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Narycia duplicella|CLV3451</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <name>Bacotia claustrella|CLV20308</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <name>Bacotia claustrella|clv20</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Bacotia claustrella|clv106</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Bacotia claustrella|BC ZSM Lep 29212</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Luffia ferchaultella|clv02</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Luffia lapidella|clv35</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Luffia ferchaultella|clv04</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Luffia ferchaultella|clv03</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Luffia lapidella|clv01.1</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <name>Luffia lapidella|clv52</name>
+                      <taxonomy></taxonomy>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Ptilocephala wockei|BC ZSM Lep 63482</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Ptilocephala wockei|CLV3555</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Ptilocephala wockei|CLV3554</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Ptilocephala albida|TLMF Lep 07779</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Ptilocephala albida|TLMF Lep 07780</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Ptilocephala matthesi|TLMF Lep 06844</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Ptilocephala albida|BC ZSM Lep 63481</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Ptilocephala pyrenaella|CLV3544</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Ptilocephala matthesi|CLV3541</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Ptilocephala matthesi|CLV19208</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Ptilocephala albida|TLMF Lep 06843</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Ptilocephala plumifera|CLV3488</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Ptilocephala plumifera|clv48</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Ptilocephala plumifera|TLMF Lep 07781</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Ptilocephala plumifera|CLV1994</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Ptilocephala plumifera|CLV1717</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Ptilocephala plumifera|CLV3549</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Ptilocephala plumifera|TLMF Lep 07784</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Ptilocephala plumifera|TLMF Lep 07783</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Ptilocephala plumifera|TLMF Lep 06845</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Ptilocephala plumifera|CLV5127</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Ptilocephala muscella|TLMF Lep 06834</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Ptilocephala muscella|TLMF Lep 06836</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Ptilocephala muscella liguriensis|CLV3553</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Ptilocephala muscella|TLMF Lep 06835</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Ptilocephala muscella liguriensis|CLV3552</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Ptilocephala muscella|TLMF Lep 03680</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Ptilocephala muscella|TLMF Lep 03679</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Ptilocephala muscella|CLV3550</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Ptilocephala colossa|CLV19108</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Leptopterix hirsutella|BC ZSM Lep 64280</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Leptopterix hirsutella|CLV3558</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Oreopsyche tenella|CLV19008</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Ptilocephala agrostidis|CLV3540</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Amicta cabrerai|CLV18808</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Oiketicoides febretta|CLV3455</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Oiketicoides febretta|CLV3454</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <name>Oiketicoides lutea|BC ZSM Lep 31933</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <name>Ptilocephala kahri|BC ZSM Lep 30806</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Sterrhopterix standfussi|MM17518</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Sterrhopterix standfussi|MM14127</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Sterrhopterix standfussi|BC ZSM Lep 27793</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Sterrhopterix standfussi|TLMF Lep 02756</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Sterrhopterix standfussi|BC ZSM Lep 64275</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Sterrhopterix standfussi|BC ZSM Lep 50691</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Sterrhopterix standfussi|MM08502</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Sterrhopterix standfussi|MM08501</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Sterrhopterix standfussi|CLV1718</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Sterrhopterix fusca|BC ZSM Lep 50690</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Sterrhopterix fusca|BC ZSM Lep 53190</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Sterrhopterix fusca|clv29</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Sterrhopterix fusca|CLV3572</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Sterrhopterix fusca|TLMF Lep 00281</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Sterrhopterix fusca|clv100</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Sterrhopterix fusca|CLV3569</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Sterrhopterix fusca|CLV3570</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Sterrhopterix fusca|CLV1714</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Sterrhopterix fusca|BC ZSM Lep 64274</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Sterrhopterix fusca|BC ZSM Lep 51066</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Sterrhopterix fusca|CLV3571</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Phalacropterix praecellens|CLV3521</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Phalacropterix praecellens|CLV3519</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Phalacropterix praecellens|CLV3520</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Phalacropterix praecellens|CLV3385</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Phalacropterix praecellens|CLV3384</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Phalacropterix praecellens|CLV3523</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Phalacropterix graslinella|clv50</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Phalacropterix graslinella|MM05485</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Phalacropterix graslinella|MM05491</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Phalacropterix graslinella|MM18078</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Phalacropterix graslinella|CLV3522</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Phalacropterix graslinella|CLV3524</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Phalacropterix graslinella|CLV3556</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Phalacropterix graslinella|CLV3557</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Phalacropterix fritschi|CLV5129</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Megalophanes viciella|BC ZSM Lep 53184</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Megalophanes viciella|TLMF Lep 07747</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Megalophanes viciella|BC ZSM Lep 37966</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Megalophanes viciella|BC ZSM Lep 51370</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Megalophanes stetinensis|clv31</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Megalophanes stetinensis|clv32</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Megalophanes stetinensis|clv30</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Megalophanes turatii|TLMF Lep 07749</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Megalophanes viciella|TLMF Lep 07744</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Megalophanes viciella|CLV3470</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Megalophanes viciella|CLV3527</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Megalophanes viciella|CLV3469</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Megalophanes viciella|clv49</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Megalophanes turatii|CLV3526</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Megalophanes turatii|CLV3525</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Megalophanes viciella|STG78</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Megalophanes viciella|TLMF Lep 07750</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Megalophanes viciella|TLMF Lep 07751</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Megalophanes turatii|TLMF Lep 07748</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <name>Phalacropterix apiformis|CLV5128</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                          <clade>
+                            <name>Phalacropterix apiformis|CLV3546</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Pachythelia villosella|MM14630</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Pachythelia villosella|CLV3514</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Pachythelia villosella|CLV24208</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Pachythelia villosella|CLV3512</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Pachythelia villosella|TLMF Lep 07774</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Pachythelia villosella|TLMF Lep 07773</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Pachythelia villosella|UT12</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Pachythelia villosella|CLV3513</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Pachythelia villosella|CLV3511</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Pachythelia villosella|MM14629</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Pachythelia villosella|CLV351011</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Pachythelia villosella|clv28</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Pachythelia villosella|clv27</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Pachythelia villosella villosella|CLV5125</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <name>Acanthopsyche atra|MM08398</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Acanthopsyche atra|CLV3518</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Acanthopsyche atra|CLV3516</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Acanthopsyche atra|CLV3517</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Acanthopsyche atra|clv26</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Acanthopsyche zelleri|CLV1716</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Acanthopsyche atra|clv25</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Acanthopsyche zelleri|CLV3456</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Acanthopsyche atra|MM13930</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Acanthopsyche atra|MM05703</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Acanthopsyche atra|CLV23908</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Acanthopsyche zelleri|CLV3515</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <name>Canephora hirsuta|CLV3564</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Canephora hirsuta|CLV3562</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Canephora hirsuta|MM17363</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <clade>
+                                                        <clade>
+                                                          <clade>
+                                                            <clade>
+                                                              <name>Canephora hirsuta|MM08632</name>
+                                                              <taxonomy></taxonomy>
+                                                            </clade>
+                                                            <clade>
+                                                              <clade>
+                                                                <name>Canephora hirsuta|clv179</name>
+                                                                <taxonomy></taxonomy>
+                                                              </clade>
+                                                              <clade>
+                                                                <name>Canephora hirsuta|clv180</name>
+                                                                <taxonomy></taxonomy>
+                                                              </clade>
+                                                            </clade>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Canephora hirsuta|CLV3565</name>
+                                                            <taxonomy></taxonomy>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <name>Canephora hirsuta|BC ZSM Lep 30805</name>
+                                                          <taxonomy></taxonomy>
+                                                        </clade>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Canephora hirsuta|clv47</name>
+                                                        <taxonomy></taxonomy>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Canephora hirsuta|CLV3567</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Canephora hirsuta|BC ZSM Lep 50692</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <name>Canephora hirsuta|CLV3560</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Canephora hirsuta|CLV3561</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Canephora hirsuta|CLV3568</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Canephora hirsuta|MM19908</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Canephora hirsuta|CLV3566</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Canephora hirsuta|CLV3559</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Canephora hirsuta|CLV3563</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Canephora hirsuta|MM00310</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Canephora hirsuta|CLV1729</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Acanthopsyche ecksteini|CLV3543</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <name>Typhonia ciliaris|CLV3387</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Typhonia beatricis|BC ZSM Lep 63485</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Typhonia beatricis|BC ZSM Lep 63484</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Typhonia beatricis|BC ZSM Lep 63487</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Typhonia beatricis|CLV27107</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <name>Typhonia ciliaris|TLMF Lep 05247</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                                <clade>
+                                  <name>Typhonia pliginskii|CLV18408</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <name>Typhonia ciliaris|BC ZSM Lep 63483</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                            <clade>
+                              <name>Typhonia ciliaris|CLV18308</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <name>Typhonia ciliaris|CLV3386</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <name>Typhonia ciliaris|CLV18508</name>
+                        <taxonomy></taxonomy>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <clade>
+                        <clade>
+                          <name>Penestoglossa dardoinella|CLV18608</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Penestoglossa dardoinella|BC ZSM Lep 30809</name>
+                          <taxonomy></taxonomy>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Rebelia herrichiella|BC ZSM Lep add 0140</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Rebelia herrichiella|BC ZSM Lep add 0135</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Rebelia herrichiella|BC ZSM Lep add 0132</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Rebelia sapho|CLV3465</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Rebelia bavarica|BC ZSM Lep 37491</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <name>Rebelia styriaca|CLV3482</name>
+                                <taxonomy></taxonomy>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <name>Psychidea nudella|STG90</name>
+                              <taxonomy></taxonomy>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <name>Stichobasis postmeridianus|CLV5010</name>
+                            <taxonomy></taxonomy>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Epichnopterix kovacsi|CLV23308</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Epichnopterix sieboldi|clv42</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Epichnopterix sieboldi|BC ZSM Lep 64278</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Epichnopterix alpina|TLMF Lep 06840</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Epichnopterix alpina|TLMF Lep 06839</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <clade>
+                                                    <name>Epichnopterix alpina|TLMF Lep 06831</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <name>Epichnopterix alpina|TLMF Lep 06833</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Epichnopterix alpina|TLMF Lep 06832</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Epichnopterix plumella|MM20607</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Epichnopterix sieboldi|BC ZSM Lep add 0137</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Epichnopterix sieboldi|BC ZSM Lep 27823</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <name>Epichnopterix kovacsi|CLV1721</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Epichnopterix alpina|CLV23008</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <name>Epichnopterix alpina|CLV3500</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Epichnopterix alpina|CLV3499</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <name>Epichnopterix kovacsi|CLV3494</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Epichnopterix plumella|BC ZSM Lep 64277</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Epichnopterix sieboldi|CLV3495</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Epichnopterix montana|CLV3497</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Epichnopterix alpina|CLV3498</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Epichnopterix montana|CLV3496</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Epichnopterix sieboldi|CLV5124</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Epichnopterix plumella|clv79</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Epichnopterix plumella|clv14</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Epichnopterix montana|CLV5123</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Whittleia retiella|MM20558</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Whittleia retiella|MM18871</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Whittleia retiella|clv103</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Whittleia retiella|clv78</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Anaproutia raiblensis|CLV3663</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Anaproutia raiblensis|CLV3667</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Anaproutia raiblensis|CLV3662</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Anaproutia raiblensis|CLV3653</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Anaproutia raiblensis|CLV3418</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Anaproutia raiblensis|CLV1722</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Anaproutia raiblensis|CLV3666</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Anaproutia raiblensis|CLV3668</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Anaproutia raiblensis|CLV3459</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Anaproutia norvegica|MM08507</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Anaproutia norvegica|MM15521</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Anaproutia norvegica|MM08508</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Bijugis bombycella|BC ZSM Lep 41975</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Bijugis bombycella|TLMF Lep 02259</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Bijugis bombycella|BC ZSM Lep 25382</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Bijugis bombycella|CLV18208</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Bijugis pectinella|clv41</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Bijugis bombycella|CLV3485</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Bijugis bombycella|BC ZSM Lep 53205</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Bijugis bombycella|BC ZSM Lep 64273</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Proutia betulina|CLV3431</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <clade>
+                                                    <name>Proutia betulina|CLV3462</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Proutia betulina|BC ZSM Lep 29213</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Proutia betulina|clv159</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Proutia betulina|clv22</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Proutia betulina|TLMF Lep 08235</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Proutia rotunda|UT02</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Proutia betulina|CLV3439</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Proutia rotunda|MM17048</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Proutia betulina|clv158</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Proutia betulina|CLV3432</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Proutia betulina|CLV3458</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Proutia betulina|CLV3430</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Proutia betulina|CLV3429</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Anaproutia reticulatella|TLMF Lep 07767</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Anaproutia reticulatella|TLMF Lep 07766</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Anaproutia reticulatella|TLMF Lep 07768</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Anaproutia comitella|CLV340911</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Anaproutia comitella|CLV3665</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Anaproutia comitella|CLV1711</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <name>Anaproutia comitella|CLV3412</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                          <clade>
+                                            <name>Anaproutia comitella|CLV3417</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Anaproutia comitella|CLV341011</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Anaproutia comitella|CLV3415</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Anaproutia comitella|CLV1732</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Anaproutia comitella|CLV3664</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Anaproutia comitella|CLV23108</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Psyche crassiorella|CLV3425</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Psyche crassiorella|CLV23408</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Psyche crassiorella|CLV3419</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <clade>
+                                                    <name>Psyche crassiorella|CLV3427</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <name>Psyche crassiorella|TLMF Lep 06612</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Psyche crassiorella|CLV3463</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Psyche crassiorella|MM13251</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <name>Psyche crassiorella|MM13248</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Psyche crassiorella|MM13249</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Psyche crassiorella|UT14</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Psyche crassiorella|MM13247</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>Psyche crassiorella|TLMF Lep 02260</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Psyche crassiorella|MM12065</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Psyche crassiorella|CLV1712</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Psyche crassiorella|BC ZSM Lep 61597</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Psyche crassiorella|CLV5122</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Psyche crassiorella|CLV1715</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <name>Psyche crassiorella|BC ZSM Lep 30807</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Psyche crassiorella|MM13250</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <name>Psyche crassiorella|CLV1713</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <name>Psyche crassiorella|BC ZSM Lep 64282</name>
+                                  <taxonomy></taxonomy>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <name>Psyche casta|CLV3457</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Psyche casta|CLV3444</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <name>Psyche casta|CLV3441</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Psyche casta|clv08</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Psyche casta|CLV3464</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <name>Psyche casta|CLV3424</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Psyche casta|CLV3443</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <name>Psyche casta|CLV3442</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <name>Psyche casta|CLV3423</name>
+                                            <taxonomy></taxonomy>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <name>Psyche casta|CLV3461</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <name>Psyche casta|BC ZSM Lep 53194</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Psyche casta|MM06274</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Psyche casta|MM21036</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Psyche casta|MM10019</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Psyche casta|BC ZSM Lep 29214</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Psyche casta|MM21034</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Psyche casta|BC ZSM Lep 37967</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <name>Psyche casta|BC ZSM Lep 35040</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <clade>
+                                    <name>Psyche casta|CLV3428</name>
+                                    <taxonomy></taxonomy>
+                                  </clade>
+                                  <clade>
+                                    <clade>
+                                      <name>Psyche casta|BC ZSM Lep 36631</name>
+                                      <taxonomy></taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <clade>
+                                        <name>Psyche casta|MM14890</name>
+                                        <taxonomy></taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <clade>
+                                          <name>Psyche casta|MM08506</name>
+                                          <taxonomy></taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <name>Psyche casta|MM06388</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                                <clade>
+                                                  <name>Psyche casta|MM08505</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <name>Psyche casta|MM06387</name>
+                                                <taxonomy></taxonomy>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <clade>
+                                                <clade>
+                                                  <clade>
+                                                    <name>Psyche casta|MM21160</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Psyche casta|MM14341</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <clade>
+                                                    <name>Psyche casta|MM06556</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <clade>
+                                                      <name>Psyche casta|MM21035</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Psyche casta|MM08593</name>
+                                                      <taxonomy></taxonomy>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <clade>
+                                                  <clade>
+                                                    <name>Psyche casta|MM00049</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Psyche casta|MM18619</name>
+                                                    <taxonomy></taxonomy>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <name>Psyche casta|MM14342</name>
+                                                  <taxonomy></taxonomy>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <clade>
+                                              <name>Psyche casta|MM21175</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <name>Psyche casta|MM12066</name>
+                                              <taxonomy></taxonomy>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+      <clade>
+        <name>Dryadaula heindeli|BC ZSM Lep 53186</name>
+        <taxonomy></taxonomy>
+      </clade>
+    </clade>
+  </phylogeny>
+</phyloxml>
