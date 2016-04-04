@@ -122,7 +122,7 @@
 									
 											<br /><br />
 											<div class="alert alert-info" role="alert">
-												<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover"></span>	
+												<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-trigger="focus" data-toggle="popover"></span>	
 												<a role="button" data-toggle="collapse" href="#accordion">												
 												Click here for more about tree file formats than you'll ever want to know</a>
 												<div class="panel-group collapse" id="accordion">
@@ -423,7 +423,7 @@
 												type="text" 
 												name="separator" 
 												value="|" />
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="The tip names in BOLD trees consist
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="The tip names in BOLD trees consist
 												of a taxon name followed by metadata fields (specimen and sequence identifiers, localities, etc.).
 												By default, the separator between these fields is the '|'
 												symbol."></span>	
@@ -435,7 +435,7 @@
 												checked="checked" 
 												name="comments" />
 											<strong>Keep square brackets</strong>
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="It is 
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="It is 
 												normally safe and intended for a tree reader to remove all text between square bracket symbols in tree descriptions, '[' and ']', 
 												because the standards specify that these brackets indicate comments. BOLD breaks this convention, 
 												and sometimes inserts square brackets after the 'record separator' in such a way that tree readers 
@@ -448,7 +448,7 @@
 												checked="checked" 
 												name="quotes" />  
 											<strong>Treat quotes verbatim</strong>	
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="Normally, 'text inside single quotes' is used 
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="Normally, 'text inside single quotes' is used 
 												in newick and nexus tree descriptions so that characters
 												with special meanings can be used in species names. For
 												example, to use parentheses in a name such as
@@ -467,7 +467,7 @@
 												checked="checked" 
 												name="whitespace" />
 											<strong>Keep whitespace in Newick species names</strong>	
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="In Newick trees, whitespace in species 
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="In Newick trees, whitespace in species 
 												names is usually escaped, either by replacing it with underscores 
 												('_') or by putting the entire species name in quotes.
 												This allows some programs to generate pretty indentation to
@@ -481,7 +481,7 @@
 												type="checkbox" 
 												name="trinomials" />                            
 											<strong>Split subspecies</strong>												
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="By default, this service ignores all parts of a taxonomic name following
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="By default, this service ignores all parts of a taxonomic name following
 												the first two words. This means 
 												that subspecies ('Foo bar vulgaris') are lumped with the 
 												containing species ('Foo bar') and that polyphyly or paraphyly 
@@ -505,7 +505,7 @@
 										  
 											<strong>Write output as TSV:</strong>                           
 											<input type="checkbox" name="astsv" />
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="By default, this web service produces its output as a 
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="By default, this web service produces its output as a 
 												a web page (i.e. a marked up HTML table). By checking this
 												box, the service instead produces a tab-separated 
 												spreadsheet, which can be imported directly into a variety
@@ -513,7 +513,7 @@
 												<br /><br />
 												
 											<strong>Additional metadata:</strong>
-											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="Here you can upload
+											<span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-trigger="focus" data-content="Here you can upload
 											a tab-separated spreadsheet file whose fields will be combined with those produced by the algorithm. You would use this
 											if you want to include more data about species (not individual specimens) in the output, so the records in this file
 											and in the output are matched by taxon names."></span>
