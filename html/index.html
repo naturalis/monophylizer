@@ -534,9 +534,9 @@
                     		The steps of the algorithm are described in the manuscript
                     		(see: 'How to cite') of which this service is a part. In short:
                     		<ol>
-                    			<li>Extract all distinct taxon names from the tree</li>
                     			<li>Label all interior nodes with a pre- and a post-order
                     			index.</li>
+                    			<li>Extract all distinct taxa from the tree</li>
                     			<li>For each taxon:
                     			<ol type="i"> 
                     				<li>Collect all tips that belong to it</li>
@@ -545,19 +545,19 @@
                     				this set is identical to the set of step 
                     				<code>i.</code> then the taxon is monophyletic
                     				and the analysis moves on to the next taxon.</li>
-                    				<li>Collect all that subtend tips from the focal 
+                    				<li>Collect all nodes that subtend tips from the focal 
                     				taxon as well as at least one other taxon and 
-                    				sort these their post-order index.</li>
+                    				sort these by their post-order index.</li>
                     				<li>Group the collected, sorted nodes 
                     				into distinct root-to-tip paths. Internal nodes 
                     				that are nested in each other are identified 
                     				(and collected in the same group) by checking that 
                     				the pre-order index of the focal node is larger, 
                     				and the post-order index of the focal node is smaller 
-                    				than that of the next node. If there is more than 
-                    				one distinct root-to-tip path (i.e., group), the 
-                    				taxon is considered polyphyletic, otherwise 
-                    				paraphyletic.</li>
+                    				than that of the next node in the sorted list. If 
+                    				there is more than one distinct root-to-tip path 
+                    				(i.e., group), the taxon is considered polyphyletic, 
+                    				otherwise paraphyletic.</li>
                     				<li>For each first (i.e. most recent) node in each 
                     				group, collect all subtended species. The union of 
                     				these sets across groups forms the set of entangled 
