@@ -56,6 +56,10 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.col-lg-12 {
+    text-align: left;
+}
+
 .contact-section {
     height: 100%;
     padding-top: 150px;
