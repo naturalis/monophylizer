@@ -22,7 +22,16 @@ monophylizer.pl - assesses taxonomic monophyly on Barcode of Life trees
 
 =head1 SYNOPSIS
 
-    perl monophylizer.pl [--help, or other options and arguments]
+    # to get help on the command line
+    $ perl monophylizer.pl --help
+    
+    # example run
+    $ perl monophylizer.pl \
+        -infile tree.nwk \
+	-format newick \
+	-astsv \
+	-verbose \ 
+            > outfile.tsv
  
 =head1 OPTIONS AND ARGUMENTS
 
