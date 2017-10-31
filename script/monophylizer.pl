@@ -22,7 +22,7 @@ monophylizer.pl - assesses taxonomic monophyly on Barcode of Life trees
 
 =head1 SYNOPSIS
 
- monophylizer.pl [--help, or other options and arguments]
+    perl monophylizer.pl [--help, or other options and arguments]
  
 =head1 OPTIONS AND ARGUMENTS
 
