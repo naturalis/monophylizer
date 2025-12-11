@@ -13,7 +13,7 @@ use constant PARA => 'paraphyletic';
 use constant POLY => 'polyphyletic';
 
 # release version for ExtUtils::MakeMaker to parse
-our $VERSION = '0.1';
+use version 0.77; our $VERSION = qv("v1.0.0");
 my $log;
 
 =head1 NAME
