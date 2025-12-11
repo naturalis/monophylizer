@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+    
+    strategy:
+      matrix:
+        perl-version:
+          - '5.10'
+          - '5.12'
+          - '5.14'
+          - '5.16'
+    
+    name: Perl ${{ matrix.perl-version }}
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Perl
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+        perl-version: ${{ matrix.perl-version }}
+    
+    - name: Show Perl version
+      run: perl -V
+    
+    - name: Install dependencies
+      run: |
+        cpanm --notest Bio::Phylo
+        cpanm --notest --installdeps .
+    
+    - name: Run Makefile.PL
+      run: perl Makefile.PL
+    
+    - name: Run tests
+      run: make test

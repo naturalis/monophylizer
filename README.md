@@ -39,7 +39,7 @@ Build status
 
 Currently, the build status is:
 
-[![Build Status](https://travis-ci.org/naturalis/monophylizer.svg?branch=master)](https://travis-ci.org/naturalis/monophylizer)
+[![CI](https://github.com/naturalis/monophylizer/actions/workflows/ci.yml/badge.svg)](https://github.com/naturalis/monophylizer/actions/workflows/ci.yml)
 
 How to cite
 ===========
