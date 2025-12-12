@@ -1,0 +1,31 @@
+Species	Assessment	Tanglees	IDs	Metadata
+Argyresthia abdominalis	monophyletic		HM871642,BC_ZSM_Lep_61407,TLMF_Lep_06594	
+Argyresthia albistria	monophyletic		HM391874,UKLB30G08	
+Argyresthia arceuthina	monophyletic		UKLB42A06,BC_ZSM_Lep_61405	
+Argyresthia aurulentella	monophyletic		HM876198,HM871641	
+Argyresthia bergiella	monophyletic		HQ955513,HQ955510,HM874453,MM18985,JF854136,MM18116,HM874190	
+Argyresthia bonnetella	monophyletic		UKLB39D01,HM405804,HQ955527,HM873449	
+Argyresthia brockeella	monophyletic		HM871475,UKLB33B10,GU707321,HQ955512,JN263029	
+Argyresthia conjugella	monophyletic		HM873529,TLMF_Lep_07449,GU706340,HM873892,UKLB15G10,JN263008	
+Argyresthia curvella	monophyletic		HM874602,GU707322	
+Argyresthia dilectella	monophyletic		HM876037,HM873494,HM875177,BC_ZSM_Lep_61406	
+Argyresthia fundella	monophyletic		GU706913	
+Argyresthia glabratella	monophyletic		GU707216,JF854131,HM871905,HM875937,TLMF_Lep_07011,JF859683,GU707214,JF854133,JN263034	
+Argyresthia glaucinella	monophyletic		BC_ZSM_Lep_61432,GU707319	
+Argyresthia goedartella	monophyletic		BC_ZSM_Lep_35036,RMNH.INS.540914,HM871490,JF859801,HQ563674,HQ955403,HM875159,RMNH.INS.538475	
+Argyresthia illuminatella	monophyletic		HQ955402	
+Argyresthia laevigatella	monophyletic		HQ955511	
+Argyresthia praecocella	monophyletic		MM18986	
+Argyresthia pruniella	monophyletic		JN263037,JF854127,HQ955405,BC_ZSM_Lep_61595,TLMF_Lep_05328,HM874338,JN263032,HQ955526	
+Argyresthia pulchella	monophyletic		HM871471	
+Argyresthia pygmaeella	monophyletic		HM871836,TLMF_Lep_05329,NHMO-07037,BC_ZSM_Lep_61481	
+Argyresthia retinella	monophyletic		HM871620,HM875671,HQ570278,HQ955517,TLMF_Lep_06585,UKLB32F09,TLMF_Lep_08073	
+Argyresthia semifusca	paraphyletic	Argyresthia semitestacella	JF854128,KBE-07045,UKLB33F10,HM387223	
+Argyresthia semitestacella	paraphyletic	Argyresthia semifusca	TLMF_Lep_07313,HQ955406	
+Argyresthia sorbiella	monophyletic		HM871643,BC_ZSM_Lep_53160	
+Argyresthia spinosella	monophyletic		HM873477,RMNH.INS.538809,HQ955520,RMNH.INS.538810,RMNH.INS.540810,JN263007,HQ955522	
+Argyresthia submontana	monophyletic		JN263036	
+Argyresthia svenssoni	monophyletic		JN263033,TLMF_Lep_06589,JF854132,JF854130,MM18115,HM873235	
+Argyresthia thuiella	monophyletic		TLMF_Lep_08209,BC_ZSM_Lep_50861	
+Argyresthia trifasciata	monophyletic		GU706912,RMNH.INS.540941	
+Paradoxus osyridellus	monophyletic		JN307330
