@@ -1,5 +1,8 @@
 monophylizer
 ============
+
+![](https://cpants.cpanauthors.org/release/RVOSA/Bio-Monophylizer-v1.0.0.svg)
+
 A web and command line tool to assess monophyly
 
 Installation instructions
