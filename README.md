@@ -2,6 +2,7 @@ monophylizer
 ============
 
 ![](https://cpants.cpanauthors.org/release/RVOSA/Bio-Monophylizer-v1.0.0.svg)
+[![CI](https://github.com/naturalis/monophylizer/actions/workflows/ci.yml/badge.svg)](https://github.com/naturalis/monophylizer/actions/workflows/ci.yml)
 
 A web and command line tool to assess monophyly
 
@@ -36,13 +37,6 @@ files.
 * If the javascript file sorttable.js is not in the "document root", you will need to 
 edit monophylizer.pl such that the output HTML can find it. This is at time of writing
 at line 250.
-
-Build status
-============
-
-Currently, the build status is:
-
-[![CI](https://github.com/naturalis/monophylizer/actions/workflows/ci.yml/badge.svg)](https://github.com/naturalis/monophylizer/actions/workflows/ci.yml)
 
 How to cite
 ===========
